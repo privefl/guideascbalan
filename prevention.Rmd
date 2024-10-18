@@ -1,0 +1,27 @@
+```{r setup, include=FALSE}
+source("knitr-options.R")
+source("spelling-check.R")
+```
+
+# Prévention des blessures {-}
+
+La prévention des blessures est essentielle pour maintenir une pratique régulière et performante.  
+Voici quelques conseils :
+
+## Principales blessures en course à pied {-}
+
+Les blessures les plus courantes incluent :
+- La tendinite (d'Achille, rotulienne, etc.)
+- Les douleurs au genou (syndrome de la bandelette ilio-tibiale)
+- Les fractures de stress.
+
+## Stratégies de prévention {-}
+
+Adoptez une bonne technique de course, portez des chaussures appropriées,  
+et n'oubliez pas de renforcer les muscles stabilisateurs.  
+Écoutez votre corps et n'ignorez pas les douleurs persistantes.
+
+## Importance du renforcement musculaire {-}
+
+Le renforcement musculaire aide à prévenir les blessures en améliorant la stabilité et la force des muscles.  
+Intégrez des exercices spécifiques pour les jambes, le tronc et les hanches dans votre programme d'entraînement.

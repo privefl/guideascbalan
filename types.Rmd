@@ -1,0 +1,91 @@
+```{r setup, include=FALSE}
+source("knitr-options.R")
+source("spelling-check.R")
+```
+
+# Les différents types d'entraînements et leur rôle {-}
+
+Chaque type d'entraînement joue un rôle clé dans la progression du coureur.
+Voici les principales séances utilisées en course à pied :
+
+## Endurance fondamentale (EF) {-}
+
+L'endurance fondamentale est une course à faible intensité,
+souvent réalisée à 70-75% de la fréquence cardiaque maximale (FCM).
+Elle constitue la base de la majorité des entraînements.
+
+**Objectifs** :
+- Développer l'endurance aérobie.
+- Favoriser la récupération active.
+
+**Exemple** :
+Courir 1 heure à 70-75% de votre FCM.
+Cette allure est confortable, vous pouvez parler facilement.
+
+## Séances de seuil {-}
+
+Les séances de seuil consistent à courir à une allure modérément intense (85-90% FCM).
+Elles sont souvent tenues sur des durées de 20 à 40 minutes.
+
+**Objectifs** :
+- Améliorer la capacité à maintenir une allure soutenue sur de longues distances.
+
+**Exemple** :
+Courir 3 x 10 minutes à 85% FCM avec 3 minutes de récupération entre chaque série.
+
+## Fractionné {-}
+
+Le fractionné alterne des phases de course rapide à haute intensité (90-100% FCM)
+avec des périodes de récupération active ou de repos.
+Ce type d'entraînement permet de travailler à des intensités élevées sans accumuler trop de fatigue.
+
+**Objectifs** :
+
+- Améliorer la vitesse maximale aérobie (VMA) et la puissance aérobie.
+
+**Exemple** :
+10 x 400 m à 90% FCM avec 1 minute de récupération entre chaque série.
+
+## Endurance active (ou tempo) {-}
+
+L'endurance active est un entraînement à intensité modérée, légèrement en-dessous du seuil lactique,
+autour de 80-85% FCM.
+C'est une allure que vous pouvez maintenir pendant une durée prolongée,
+mais qui nécessite plus de concentration que l'endurance fondamentale.
+
+**Objectifs** :
+
+- Améliorer l'endurance et la capacité à maintenir un effort prolongé.
+
+**Exemple** :
+Courir 45 minutes à 80% FCM.
+
+## Sortie longue {-}
+
+La sortie longue est une séance clé pour ceux qui préparent des courses de longue distance
+(semi-marathon, marathon, trail).
+Elle consiste à courir à allure modérée (70-80% FCM) sur une longue durée (1h30 et plus).
+
+**Objectifs** :
+
+- Développer la résistance et l'endurance musculaire.
+
+- Apprendre à gérer son effort sur une longue distance.
+
+**Exemple** :
+Sortie de 1h45 à 70-75% FCM.
+
+## Plyométrie et renforcement musculaire {-}
+
+La course à pied sollicite intensément les muscles des jambes et le tronc.
+Le renforcement musculaire et la plyométrie (exercices explosifs) permettent
+d'améliorer la puissance, l'efficacité biomécanique, et de prévenir les blessures.
+
+**Objectifs** :
+
+- Renforcer les muscles stabilisateurs et améliorer la foulée.
+
+- Prévenir les blessures par un travail musculaire ciblé.
+
+**Exemple** :
+Séance de 30 minutes avec des squats, fentes, sauts, planches, et gainage.

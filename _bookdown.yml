@@ -1,4 +1,4 @@
-rmd_files: ["index.Rmd"]
+rmd_files: ["index.Rmd", "gestion.Rmd", "VMA-FCM.Rmd", "types.Rmd", "plans.Rmd", "suivi.Rmd", "prevention.Rmd", "nutrition.Rmd", "motivation.Rmd", "conclu.Rmd"]
 output_dir: docs
 new_session: yes
 # language:
