@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan"
-author: "Florian et les entraîneurs"
-date: "`r Sys.Date()`"
+author: "Par Florian et les entraîneurs"
+date: "Mis à jour le `r { Sys.setlocale('LC_TIME', 'fr_FR'); format(Sys.Date(), format='%d %B %Y') }`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -22,8 +22,7 @@ source("spelling-check.R")
 # Introduction {-}
 
 Bienvenue sur le **Guide du coureur**, un site conçu pour les membres de notre club de course, quel que soit leur niveau ou leur expérience.
-Ce guide vous aidera à comprendre les différents types d'entraînements,
-comment structurer une saison, et comment progresser efficacement tout en minimisant les risques de blessures.
+Ce guide vous aidera à comprendre les différents types d'entraînements, et comment progresser efficacement tout en minimisant les risques de blessures.
 
 Que vous vous entraîniez pour un 10 km, un semi-marathon ou un marathon,
 vous trouverez ici les principes fondamentaux et des conseils pratiques pour atteindre vos objectifs.
