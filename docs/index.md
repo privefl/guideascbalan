@@ -32,7 +32,7 @@ en fonction de vos capacités et de vos ambitions, afin d'améliorer vos perform
 
 **N'hésitez pas à demander aux entraîneurs des conseils et des plans d'entraînement personnalisés.**
 
-Nous avons 4 entraîneurs :
+Nous avons 4 entraîneurs au club :
 
 Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
