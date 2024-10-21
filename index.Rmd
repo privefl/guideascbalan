@@ -29,3 +29,15 @@ vous trouverez ici les principes fondamentaux et des conseils pratiques pour att
 
 L'objectif est d'apprendre à structurer vos séances de manière intelligente,
 en fonction de vos capacités et de vos ambitions, afin d'améliorer vos performances en course à pied.
+
+
+## Les entraîneurs {-}
+
+**N'hésitez pas à demander aux entraîneurs des conseils et des plans d'entraînement personnalisés.**
+
+Nous avons 4 entraîneurs :
+
+Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](photos/jean-jacques_berrard.png) | ![](photos/lionel_salmon.png) | ![](photos/laurent_rognard.png) | ![](photos/frederic_berlioz.png)
+

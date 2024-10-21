@@ -1,8 +1,4 @@
-```{r setup, include=FALSE}
-WORDS_TO_IGNORE <- "l'EF"
-source("knitr-options.R")
-source("spelling-check.R")
-```
+
 
 # Les différents types d'entraînements et leur rôle {-}
 

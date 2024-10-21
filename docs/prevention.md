@@ -1,7 +1,4 @@
-```{r setup, include=FALSE}
-source("knitr-options.R")
-source("spelling-check.R")
-```
+
 
 # Prévention des blessures {-}
 
