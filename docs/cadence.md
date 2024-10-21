@@ -27,7 +27,7 @@ Cela dépend également du niveau du coureur, de la vitesse de course et de la m
 
 - **Coureurs débutants** :
 La cadence moyenne des débutants peut souvent se situer autour de 150-160 ppm.
-Travailler progressivement à augmenter la cadence, sans exagérer, peut être bénéfique pour l’efficacité. Ma cadence après 2 ans au club était toujours de 155.
+Travailler progressivement à augmenter la cadence, sans exagérer, peut être bénéfique pour l’efficacité.
 
 - **Coureurs confirmés** :
 Les coureurs plus expérimentés ont tendance à courir dans la plage de 170-180 ppm, surtout sur des distances comme le 10 km ou le semi-marathon.
@@ -38,6 +38,7 @@ En augmentant progressivement la cadence, ils réduisent leur risque de blessure
 - **Écoutez votre cadence actuelle** :
  Votre montre de course vous donnera votre cadence.
  Cela vous permet de savoir où vous vous situez actuellement.
+ Ma cadence après 2 ans au club était toujours de 155 ; j'y travaille désormais et elle est maintenant de 165 après un mois.
 
 - **Augmentez progressivement** :
  Si votre cadence est inférieure à 170 ppm, essayez de l'augmenter de 5 en 5 progressivement,
@@ -46,7 +47,7 @@ En augmentant progressivement la cadence, ils réduisent leur risque de blessure
 
 - **Entraînez-vous en fractionné** :
  Les entraînements de fractionné, où vous alternez des phases de course rapide et de récupération,
- sont d’excellents moyens d'augmenter la cadence de manière naturelle.
+ sont de bons moyens d'augmenter la cadence de manière naturelle.
 
 - **Faites attention à votre technique** :
  Assurez-vous de garder une posture droite, d'avoir une attaque médiane ou avant-pied, et d'éviter les foulées trop longues.

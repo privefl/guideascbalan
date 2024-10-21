@@ -9,8 +9,7 @@ Voici les principales séances utilisées en course à pied :
 
 C'est une partie très importante de l'entraînement et doit représenter au moins 70% du volume d'entraînement. Pourtant, l'EF est souvent négligée ou courue beaucoup trop rapidement.
 
-L'endurance fondamentale est souvent qualifiée de "lente" car elle est réalisée à une intensité relativement basse,
-représentant environ 60 à 75 % de la FCM.
+L'endurance fondamentale est souvent qualifiée de "lente" car elle est réalisée à une intensité souvent jugée trop basse, représentant environ 60 à 75 % de la FCM.
 Cette allure lente a un rôle clé dans l'entraînement des coureurs, et son objectif principal est de développer la capacité aérobie
 de manière progressive et efficace sans surcharger l'organisme.
 
@@ -96,7 +95,7 @@ Courir 3 x 10 minutes à 85% FCM avec 3 minutes de récupération entre chaque s
 
 Le fractionné alterne des phases de course rapide à haute intensité (90-105% VMA)
 avec des périodes de récupération active ou de repos.
-On pourra courir des 200 à 105% de la VMA, des 400 à 100% et des 1000 à 90-95%.
+On pourra courir des 200m à 105% de la VMA, des 400 à 100%, et des 1000 à 90-95%.
 Ce type d'entraînement permet de travailler à des intensités élevées sans accumuler trop de fatigue.
 
 **Objectif** :
@@ -131,7 +130,7 @@ La sortie longue est une séance clé pour ceux qui préparent des courses de lo
 (semi-marathon, marathon, trail).
 Elle consiste à courir à allure modérée (70-80% FCM) sur une longue durée (1h30 et plus).
 
-Elle se pratique généralement pendant le week-end. Il y a des groupes du club qui courent régulièrement le week-end ; on va mettre en place un document les recensant en ligne ; demandez l'URL à quelqu'un du club.
+Elle se pratique généralement pendant le week-end. Il y a des groupes du club qui courent régulièrement le week-end ; on va mettre en place un document les recensant en ligne ; demandez l'URL à quelqu'un du club pour ne pas courir tout seul ces séances.
 
 **Objectifs** :
 

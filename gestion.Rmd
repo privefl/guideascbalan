@@ -18,8 +18,7 @@ Les étirements passifs sont généralement effectués après l'entraînement, p
 
 ## Le principe de surcharge progressive {-}
 
-Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge de travail
-(fréquence, volume, intensité).
+Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge d'entraînement (fréquence, volume, intensité).
 Toutefois, cette augmentation doit rester raisonnable (10% par semaine en général) pour éviter le surentraînement.
 
 ## Gestion de la fatigue et prévention du surentraînement {-}
@@ -34,8 +33,8 @@ Le repos est tout aussi important que l'entraînement.
 Il permet au corps de se réparer et de s'adapter aux efforts fournis.
 Assurez-vous d'inclure des jours de repos actifs et des séances légères dans votre programme.
 
-Après un effort intense, le corps subit une phase de fatigue,
-mais avec une récupération appropriée, il se renforce et s'adapte, menant à une amélioration des performances ; ce processus s'appelle la surcompensation.
+Après un effort intense, le corps subit une phase de fatigue. 
+Mais, avec une récupération appropriée, il se renforce et s'adapte, menant à une amélioration des performances ; ce processus s'appelle la surcompensation.
 Si le temps de récupération est trop court, le risque de blessures et de stagnation des performances augmente.
 
 Il existe plusieurs types de récupération :
