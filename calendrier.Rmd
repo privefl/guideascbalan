@@ -1,9 +1,3 @@
----
-output:
-  html_document:
-    css: styles.css
----
-
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- "iCal"
 source("knitr-options.R")

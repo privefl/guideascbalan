@@ -1,9 +1,3 @@
----
-output:
-  html_document:
-    css: styles.css
----
-
 
 
 # Calendrier {-}

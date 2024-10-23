@@ -13,31 +13,58 @@ Voici des exemples de plans d'entraînement pour différentes distances :
 
 Un plan typique de 8 semaines pourrait inclure :
 
-- 3 séances de course par semaine (1 EF, 1 seuil, 1 fractionné).
-
 - 1 sortie longue par semaine.
 
-- 1 jour de renforcement musculaire.
+- 3 séances de course plus courtes par semaine (1 EF, 1 seuil, 1 fractionné).
+
+- 1 séance de renforcement musculaire.
+
+Un plan plus léger :
+
+- Endurance fondamentale : 30 min à 45 min à une allure confortable.  
+
+- Fractionnés courts : 5 x 1 min à allure rapide, récupération 1 min entre les répétitions.  
+
+- Sortie longue : 45 min à 1 heure à une allure confortable.  
+
 
 ## Préparer un semi-marathon {-}
 
 Un plan de 12 semaines pourrait inclure :
 
-- 4 séances de course par semaine (2 EF, 1 seuil, 1 fractionné).
-
 - 1 sortie longue en augmentant progressivement la distance.
 
-- 1 jour de renforcement musculaire.
+- 4 séances de course plus courtes par semaine (2 EF, 1 seuil, 1 fractionné).
+
+- 1 séance de renforcement musculaire.
+
+Un plan plus léger :
+
+- Endurance fondamentale : 45 min à 1 heure à une allure confortable.  
+
+- Entraînement au seuil : 3 x 10 min à allure semi-marathon, récupération 3 min entre les répétitions.  
+
+- Sortie longue : 1h15 à 1h45 à une allure confortable. 
+
 
 ## Préparer un marathon {-}
 
 Un plan de 16 semaines pourrait inclure :
 
-- 4-5 séances de course par semaine (2-3 EF, 1 seuil, 1-2 fractionnés).
-
 - 1 sortie longue, augmentant progressivement la distance jusqu'à 30 km.
 
-- 1 jour de renforcement musculaire.
+- 4-5 séances de course plus courtes par semaine (2-3 EF, 1 seuil, 1-2 fractionnés).
+
+- 1 séance de renforcement musculaire.
+
+Un plan plus léger :
+
+- Endurance fondamentale : 1 heure à 1h15 à une allure confortable. 
+
+- Fractionnés longs : 5 x 1000 m à allure rapide, récupération 2 min entre les répétitions.  
+
+- Sortie longue : 1h45 à 2h15 à une allure confortable.
+
 
 ## Préparation pour le trail {-}
 

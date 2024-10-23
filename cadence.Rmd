@@ -35,7 +35,7 @@ En augmentant progressivement la cadence, ils réduisent leur risque de blessure
 
 ## Comment améliorer votre cadence ? {-}
 
-- **Écoutez votre cadence actuelle** :
+- **Mesurez votre cadence actuelle** :
  Votre montre de course vous donnera votre cadence.
  Cela vous permet de savoir où vous vous situez actuellement.
  Ma cadence après 2 ans au club était toujours de 155 ; j'y travaille désormais et elle est maintenant de 165 après un mois.

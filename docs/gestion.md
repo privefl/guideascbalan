@@ -15,8 +15,28 @@ Les étirements passifs sont généralement effectués après l'entraînement, p
 
 ## Le principe de surcharge progressive {-}
 
-Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge d'entraînement (fréquence, volume, intensité).
-Toutefois, cette augmentation doit rester raisonnable (10% par semaine en général) pour éviter le surentraînement.
+Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge d'entraînement.
+Cette charge peut être augmentée de trois façons principales : en jouant sur la fréquence (le nombre de séances par semaine),
+le volume (la durée ou la distance parcourue), ou l'intensité (la vitesse ou l'effort consenti).
+
+**Cependant, il est important de ne pas augmenter ces trois facteurs en même temps**, et cette augmentation doit rester raisonnable (10% par semaine en général).
+Sinon, cela augmenterait considérablement le risque de surentraînement et de blessure.
+
+L'augmentation progressive de la charge d'entraînement doit être raisonnée.
+En général, il est conseillé de se concentrer sur **un seul facteur à la fois**.
+L'ordre de priorité recommandé est le suivant :
+
+1. **Fréquence** : Si vous faites moins de trois séances par semaine, commencez par augmenter le nombre de séances
+avant d'augmenter la durée ou l'intensité. Ajouter une séance supplémentaire (comme une séance courte d'endurance fondamentale) permet de mieux répartir le volume et de favoriser la récupération active.
+
+2. **Volume** : Une fois que vous avez stabilisé votre fréquence hebdomadaire, vous pouvez progressivement augmenter
+la durée ou la distance totale de vos séances. Cela aide à développer l'endurance. Respectez la règle des 10 %,
+c'est-à-dire n'augmentez pas le volume total de plus de 10 % par semaine.
+
+3. **Intensité** : Enfin, une fois que vous êtes à l'aise avec la fréquence et le volume, vous pouvez commencer
+à ajouter ou augmenter des séances plus intenses (comme du fractionné ou des courses à allure spécifique).
+Cependant, veillez à ce que les séances intensives restent bien espacées et que la récupération soit suffisante.
+
 
 ## Gestion de la fatigue et prévention du surentraînement {-}
 

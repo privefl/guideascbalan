@@ -1,5 +1,5 @@
 ```{r setup, include=FALSE}
-WORDS_TO_IGNORE <- "l'EF"
+WORDS_TO_IGNORE <- "d'EF"
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -11,10 +11,12 @@ Voici les principales séances utilisées en course à pied :
 
 ## Endurance fondamentale (EF) {-}
 
-C'est une partie très importante de l'entraînement et doit représenter au moins 70% du volume d'entraînement. Pourtant, l'EF est souvent négligée ou courue beaucoup trop rapidement.
+C'est une partie très importante de l'entraînement et doit représenter au moins 70% du volume d'entraînement. Pourtant, l'endurance fondamentale est souvent négligée ou courue beaucoup trop rapidement.
 
 L'endurance fondamentale est souvent qualifiée de "lente" car elle est réalisée à une intensité souvent jugée trop basse, représentant environ 60 à 75 % de la FCM.
 C'est une allure à laquelle on peut parler sans être essoufflé ou bien respirer par le nez.
+Par exemple, ma FC cible pour mes sorties d'endurance est d'environ 140 bpm ; pour l'instant, cela correspond à une allure de 5'50'' au km (soit une vitesse de 10,3 km/h, soit 60% de ma VMA).
+
 Cette allure lente a un rôle clé dans l'entraînement des coureurs, et son objectif principal est de développer la capacité aérobie
 de manière progressive et efficace sans surcharger l'organisme.
 
@@ -87,7 +89,7 @@ que ce soit pour la performance ou pour éviter les blessures.
 
 ## Séances de seuil {-}
 
-Les séances de seuil consistent à courir à une allure modérément intense (85-90% FCM).
+Les séances de seuil consistent à courir à une allure modérément intense (85-90% FCM), qui est légèrement plus rapide que la vitesse sur semi-marathon (généralement 5 à 10 secondes plus rapide par km).
 Elles sont souvent tenues sur des durées de 20 à 40 minutes.
 
 **Objectif** :
@@ -104,7 +106,7 @@ On pourra courir des 200m à 105% de la VMA, des 400 à 100%, et des 1000 à 90-
 Ce type d'entraînement permet de travailler à des intensités élevées sans accumuler trop de fatigue.
 
 **Objectif** :
-Améliorer la VMA et la puissance aérobie.
+Améliorer la VMA, la VO2max, et la puissance aérobie (la capacité à produire de l'énergie en utilisant l'oxygène).
 
 **Exemple** :
 10 x 400 m à 100% VMA avec 1 minute de récupération entre chaque série.
@@ -113,15 +115,16 @@ Pour les fractionnés, deux types de récupération sont possibles:
 
 - Récupérations courtes : Elles sont utilisées pour travailler la résistance à la fatigue et la récupération rapide tout en augmentant la capacité aérobie. Plutôt destiné à des coureurs de 10 km à marathon (nous).
 
-- Récupérations longues (comme 2-3 minutes) : Travaillent la puissance aérobie pure, permettant de maintenir un pourcentage plus élevé de la VMA sur chaque répétition.
+- Récupérations longues (comme 2-3 minutes) : Travaillent la puissance aérobie pure ; prendre plus de pause permet de maintenir une vitesse plus élevée sur chaque répétition.
 
 
 ## Endurance active (ou tempo) {-}
 
-L'endurance active est un entraînement à intensité modérée, légèrement en-dessous du seuil lactique,
+L'endurance active est un entraînement à intensité modérée, légèrement en-dessous du seuil lactique (un point critique au delà duquel le corps commence à produire de l'acide lactique à un rythme supérieur à celui auquel il peut l'éliminer),
 autour de 80-85% FCM.
 C'est une allure que vous pouvez maintenir pendant une durée prolongée,
 mais qui nécessite plus de concentration que l'endurance fondamentale.
+C'est un type de séance que je ne pratique pas personnellement ; je préfère faire une séance d'EF avec des blocs d'allure spécifique compétition.
 
 **Objectif** :
 Améliorer l'endurance et la capacité à maintenir un effort prolongé.
@@ -133,7 +136,9 @@ Courir 45 minutes à 80% FCM.
 
 La sortie longue est une séance clé pour ceux qui préparent des courses de longue distance
 (semi-marathon, marathon, trail).
-Elle consiste à courir à allure modérée (70-80% FCM) sur une longue durée (1h30 et plus).
+Elle consiste à courir à allure modérée (70-80% FCM) sur une longue durée (1h et plus). 
+C'est globalement une séance d'EF, mais plus longue. 
+On pourra aussi y inclure des blocs d'allure spécifique à la compétition préparée.
 
 Elle se pratique généralement pendant le week-end. Il y a des groupes du club qui courent régulièrement le week-end ; on va mettre en place un document les recensant en ligne ; demandez l'URL à quelqu'un du club pour ne pas courir tout seul ces séances.
 
