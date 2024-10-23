@@ -14,6 +14,7 @@ Comprendre ces notions est essentiel pour structurer vos séances d'entraînemen
 ## Qu'est-ce que la VMA ? {-}
 
 La VMA est la vitesse à laquelle un coureur utilise le maximum d'oxygène que son corps peut consommer pendant l'effort (VO2max en mL/min/kg).
+Pour en savoir plus sur la VO2max, regardez [cette vidéo](https://www.youtube.com/watch?v=MIVSIIvEhj0).
 Elle est souvent considérée comme un bon indicateur de la performance aérobie d'un coureur (sa capacité à utiliser efficacement l'oxygène pendant un effort prolongé).
 La VMA est généralement mesurée en km/h et peut être déterminée par des tests spécifiques (cf. la section [Test VMA du club](#testvma)).
 
