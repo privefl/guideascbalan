@@ -13,12 +13,16 @@ pre code {
   white-space: inherit;
 }
 
+.book h1 {
+  font-size: 1.9em !important;
+}
+
 .book h2 {
-  font-size: 1.7em !important;
+  font-size: 1.65em !important;
 }
 
 .book h3 {
-  font-size: 1.3em !important;
+  font-size: 1.2em !important;
 }
 
 html,body        {height:100%;}
