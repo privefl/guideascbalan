@@ -94,6 +94,8 @@ Améliorer la capacité à maintenir une allure soutenue sur de longues distance
 **Exemple** :
 Courir 3 x 10 minutes à 85% FCM avec 3 minutes de récupération entre chaque série.
 
+La séance du jeudi s'y prête bien.
+
 ## Fractionné {-}
 
 Le fractionné alterne des phases de course rapide à haute intensité (90-105% VMA)
@@ -106,6 +108,8 @@ Améliorer la VMA, la VO2max, et la puissance aérobie (la capacité à produire
 
 **Exemple** :
 10 x 400 m à 100% VMA avec 1 minute de récupération entre chaque série.
+
+C'est la séance du mardi.
 
 Pour les fractionnés, deux types de récupération sont possibles:
 
