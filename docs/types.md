@@ -3,6 +3,7 @@
 # Les différents types d'entraînements et leur rôle {-}
 
 Chaque type d'entraînement joue un rôle clé dans la progression du coureur.
+Pour aller plus loin sur les zones et les types d'entraînement, regardez [cette vidéo](https://www.youtube.com/watch?v=UmcyMyQW2pU). 
 Voici les principales séances utilisées en course à pied :
 
 ## Endurance fondamentale (EF) {-}
@@ -81,8 +82,6 @@ Bien qu'elle puisse sembler moins stimulante que les séances rapides, elle est 
 que ce soit pour la performance ou pour éviter les blessures.
 
 
-
-
 ## Séances de seuil {-}
 
 Les séances de seuil consistent à courir à une allure modérément intense (85-90% FCM), qui est légèrement plus rapide que la vitesse sur semi-marathon (généralement 5 à 10 secondes plus rapide par km).
@@ -95,6 +94,7 @@ Améliorer la capacité à maintenir une allure soutenue sur de longues distance
 Courir 3 x 10 minutes à 85% FCM avec 3 minutes de récupération entre chaque série.
 
 La séance du jeudi s'y prête bien.
+
 
 ## Fractionné {-}
 
@@ -132,6 +132,7 @@ Améliorer l'endurance et la capacité à maintenir un effort prolongé.
 **Exemple** :
 Courir 45 minutes à 80% FCM.
 
+
 ## Sortie longue {-}
 
 La sortie longue est une séance clé pour ceux qui préparent des courses de longue distance
@@ -150,6 +151,7 @@ Elle se pratique généralement pendant le week-end. Il y a des groupes du club 
 
 **Exemple** :
 Sortie de 1h45 à 70-75% FCM.
+
 
 ## Plyométrie et renforcement musculaire {-}
 
