@@ -8,6 +8,7 @@ source("spelling-check.R")
 
 Chaque type d'entraînement joue un rôle clé dans la progression du coureur.
 Pour aller plus loin sur les zones et les types d'entraînement, regardez [cette vidéo](https://www.youtube.com/watch?v=UmcyMyQW2pU). 
+Pour aller plus loin plus particulièrement sur l'endurance fondamentale, regardez [cette vidéo](https://www.youtube.com/watch?v=Ef6HfDqHZIg).
 Voici les principales séances utilisées en course à pied :
 
 ## Endurance fondamentale (EF) {-}
