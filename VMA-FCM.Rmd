@@ -46,6 +46,7 @@ Pour calculer la VMA en fonction de la durée du test, il suffit d'appliquer la 
 La Fréquence Cardiaque Maximale (FCM) est le nombre maximum de battements par minute (bpm) que votre cœur peut atteindre lors d'un effort maximal.
 La FCM diminue avec l'âge, mais les formules comme `FCM = 220 - âge` sont trop générales ; c'est très variable d'un coureur à l'autre. 
 Les montres de course modernes arrivent à l'estimer lors des efforts intenses.
+Pour aller plus loin sur la fréquence cardiaque, regardez [cette vidéo](https://www.youtube.com/watch?v=c7f2gWekBXE).
 
 ### Pourquoi est-elle importante ? {-}
 
