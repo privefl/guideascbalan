@@ -174,3 +174,16 @@ Pour aller plus loin sur le renforcement musculaire et la préparation physique,
 
 **Exemple** :
 Séance de 30 minutes avec des squats, fentes, sauts, planches, et gainage.
+
+
+<!-- ## Récapitulatif {-} -->
+
+<!-- | Type d'entraînement        | Amélioration de l'endurance | Amélioration de la VMA | Développement de la puissance aérobie | Renforcement musculaire | Préparation mentale | -->
+<!-- |----------------------------|:-----------------------------:|:-------------------------:|:---------------------------------------:|:--------------------------:|:----------------------:| -->
+<!-- | **Endurance fondamentale** | +++                         | +                       | +                                     | +                        | ++                   | -->
+<!-- | **Fractionnés courts**     | +                           | +++                     | +++                                   | ++                       | +                    | -->
+<!-- | **Fractionnés longs**      | ++                          | ++                      | +++                                   | +                        | ++                   | -->
+<!-- | **Entraînement au seuil**  | +++                         | +                       | ++                                    | +                        | +++                  | -->
+<!-- | **Sorties longues**        | +++                         | +                       | ++                                    | +++                      | ++                   | -->
+<!-- | **Préparation Physique Générale** | +            |                         | +                                     | +++                      | +                    | -->
+<!-- | **Gammes (techniques)**    | +                           |                         | +                                     | ++                       | +                    | -->
