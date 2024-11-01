@@ -53,6 +53,7 @@ Assurez-vous d'inclure des jours de repos actifs et des séances légères dans 
 Après un effort intense, le corps subit une phase de fatigue. 
 Mais, avec une récupération appropriée, il se renforce et s'adapte, menant à une amélioration des performances ; ce processus s'appelle la surcompensation.
 Si le temps de récupération est trop court, le risque de blessures et de stagnation des performances augmente.
+Pour aller plus loin sur les temps de récupération, regardez [cette vidéo](https://www.youtube.com/watch?v=NTKeLwErKvQ).
 
 Il existe plusieurs types de récupération :
 
