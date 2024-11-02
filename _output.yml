@@ -1,7 +1,10 @@
 bookdown::gitbook:
+  toc_depth: 2
   css: style.css
   config:
     toc:
+      collapse: section
+      scroll_highlight: yes
       before: |
         <li><a href="./index.html">Le Guide du Coureur<br>(bit.ly/guideascbalan)</a></li>
       after: |

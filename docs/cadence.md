@@ -1,3 +1,5 @@
+
+
 # La cadence de course et son importance {-}
 
 La cadence de course, ou nombre de pas par minute (ppm), est un facteur clé de l'efficacité et de la sécurité en course à pied.
@@ -27,7 +29,7 @@ Cela dépend également du niveau du coureur, de la vitesse de course et de la m
 
 - **Coureurs débutants** :
 La cadence moyenne des débutants peut souvent se situer autour de 150-160 ppm.
-Travailler progressivement à augmenter la cadence, sans exagérer, peut être bénéfique pour l’efficacité.
+Travailler progressivement à augmenter la cadence, sans exagérer, peut être bénéfique pour l'efficacité.
 
 - **Coureurs confirmés** :
 Les coureurs plus expérimentés ont tendance à courir dans la plage de 170-180 ppm, surtout sur des distances comme le 10 km ou le semi-marathon.
