@@ -40,12 +40,13 @@ En augmentant progressivement la cadence, ils réduisent leur risque de blessure
 - **Mesurez votre cadence actuelle** :
  Votre montre de course vous donnera votre cadence.
  Cela vous permet de savoir où vous vous situez actuellement.
- Ma cadence après 2 ans au club était toujours de 155 ; j'y travaille désormais et elle est maintenant de 165 après un mois.
+ Ma cadence après 2 ans au club était toujours de 152 ; j'y travaille désormais et elle est maintenant de 165 après six semaines.
 
 - **Augmentez progressivement** :
  Si votre cadence est inférieure à 170 ppm, essayez de l'augmenter de 5 en 5 progressivement,
  jusqu'à atteindre une cadence qui vous permet de courir efficacement et confortablement. 
  Le mieux pour s'entraîner à une cadence spécifique est de courir en écoutant une playlist spécialement conçue pour ça (j'utilise [celles-ci](https://www.youtube.com/results?search_query=Easily+PB%EF%BD%9CNot+tired%EF%BD%9CPrecise+BPM%EF%BD%9C60+MIN+Running+Music%EF%BD%9C%2356%EF%BD%9C%E6%9F%92%E9%9B%B6%E5%A4%9C%E8%B7%91) en ce moment).
+ Il peut être plus simple de se focaliser sur la cadence au niveau des bras ; les jambes devraient suivre naturellement.
 
 - **Entraînez-vous en fractionné** :
  Les entraînements de fractionné, où vous alternez des phases de course rapide et de récupération,
