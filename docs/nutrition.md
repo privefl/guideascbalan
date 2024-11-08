@@ -14,11 +14,12 @@ Les glucides sont essentiels pour fournir de l'énergie pendant les courses.
 
 Rester hydraté est crucial, surtout lors des séances longues ou par temps chaud.
 Buvez de l'eau régulièrement et envisagez des boissons isotoniques pour les efforts prolongés.
+N'attendez pas d'avoir soif pour boire, c'est souvent trop tard.
 
 ## Nutrition avant, pendant et après l'effort {-}
 
-- Avant une course, privilégiez des aliments riches en glucides et faibles en matières grasses.
+- Avant une course, privilégiez des aliments riches en glucides (lents) et faibles en matières grasses. Ne surtout pas consommer des sucres rapides juste avant une course.
 
-- Pendant l'effort, des gels ou des barres énergétiques peuvent être utiles.
+- Pendant l'effort, des gels ou des barres énergétiques peuvent être utiles. Il faudra absolument les tester à l'entraînement avant la course.
 
 - Après l'effort, une combinaison de protéines et de glucides aide à la récupération.

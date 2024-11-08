@@ -25,7 +25,7 @@ La VMA est généralement mesurée en km/h et peut être déterminée par des te
 ### Pourquoi est-elle importante ? {-}
 
 - **Détermination des allures d'entraînement** :
-La VMA permet de définir des intensités d'entraînement précises pour le développement de l'endurance, des séances de seuil et de fractionnés (cf. prochaine partie sur les types d'entraînements).
+La VMA permet de définir des intensités d'entraînement précises, notamment pour les séances de fractionnés (cf. prochaine partie sur les types d'entraînements).
 
 - **Suivi des progrès** :
 En mesurant la VMA régulièrement, vous pouvez évaluer votre progression au fil du temps
@@ -63,8 +63,7 @@ et réduit le risque de blessures.
 Pour maximiser vos performances, il est essentiel de comprendre comment utiliser la VMA et la FCM dans votre programme d'entraînement :
 
 - **Séances basées sur la VMA** :
-Utilisez votre VMA pour planifier vos entraînements en définissant des allures spécifiques
-pour l'endurance, le seuil et le fractionné.
+Utilisez votre VMA pour planifier vos entraînements en définissant des allures spécifiques pour le fractionné.
 
 - **Contrôle de l'intensité avec la FCM** :
 Surveillez votre fréquence cardiaque pendant les séances pour vous assurer que vous travaillez dans

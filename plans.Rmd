@@ -15,7 +15,7 @@ Un plan typique de 8 semaines pourrait inclure :
 
 - 1 sortie longue par semaine.
 
-- 3 séances de course plus courtes par semaine (1 EF, 1 seuil, 1 fractionné).
+- 3 séances de course plus courtes par semaine (1 EF, 1 spécifique, 1 fractionné).
 
 - 1 séance de renforcement musculaire.
 
@@ -34,7 +34,7 @@ Un plan de 12 semaines pourrait inclure :
 
 - 1 sortie longue en augmentant progressivement la distance.
 
-- 4 séances de course plus courtes par semaine (2 EF, 1 seuil, 1 fractionné).
+- 4 séances de course plus courtes par semaine (2 EF, 1 spécifique, 1 fractionné).
 
 - 1 séance de renforcement musculaire.
 
@@ -42,7 +42,7 @@ Un plan plus léger :
 
 - Endurance fondamentale : 45 min à 1 heure à une allure confortable.  
 
-- Entraînement au seuil : 3 x 10 min à allure semi-marathon, récupération 3 min entre les répétitions.  
+- Entraînement allure spécifique : 3 x 10 min à allure semi-marathon, récupération 3 min entre les répétitions.  
 
 - Sortie longue : 1h15 à 1h45 à une allure confortable. 
 
@@ -53,7 +53,7 @@ Un plan de 16 semaines pourrait inclure :
 
 - 1 sortie longue, augmentant progressivement la distance jusqu'à 30 km.
 
-- 4-5 séances de course plus courtes par semaine (2-3 EF, 1 seuil, 1-2 fractionnés).
+- 4-5 séances de course plus courtes par semaine (2-3 EF, 1 spécifique, 1 fractionné).
 
 - 1 séance de renforcement musculaire.
 
