@@ -174,4 +174,4 @@ Pour aller plus loin sur le renforcement musculaire et la préparation physique,
 - Prévenir les blessures par un travail musculaire ciblé.
 
 **Exemple** :
-Séance de 30 minutes avec des squats, fentes, sauts, planches, et gainage. Comme dans [cette vidéo](https://www.youtube.com/watch?v=pWpXNzz07H4).
+Séance de 30 minutes avec des squats, fentes, sauts, planches, et gainage. Comme dans [cette vidéo](https://www.youtube.com/watch?v=pWpXNzz07H4). Aussi d'autres exercices dans [cette vidéo](https://www.youtube.com/watch?v=Jh4LVAThdE0).
