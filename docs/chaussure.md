@@ -6,6 +6,7 @@ Bien choisir ses chaussures de running est essentiel pour améliorer ses perform
 prévenir les blessures et optimiser son confort. Voici les principaux critères à prendre en compte pour
 sélectionner une paire adaptée à vos besoins et à votre morphologie.
 Si des douleurs se manifestent, il peut être aussi bénéfique d'aller voir un podologue pour faire des semelles orthopédiques.
+Et pour savoir quand changer vos chaussures, regardez [cette vidéo](https://www.youtube.com/watch?v=euicUJ2FpDY).
 
 ## Déterminer son type de foulée {-}
 
