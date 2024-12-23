@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan"
 author: "Par Florian et les entraîneurs"
-date: "Mis à jour le 13 d<e9>cembre 2024"
+date: "Mis à jour le 23 d<e9>cembre 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
