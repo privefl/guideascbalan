@@ -12,7 +12,7 @@ Vous retrouverez dans ce calendrier le programme des entraînements du mardi et 
 
 Vous pouvez ajouter ce calendrier à votre calendrier Google en cliquant sur le bouton en bas à droite.
 
-Si vous n'utilisez pas Google Agenda, il vous faudra utiliser ce lien ICS/iCal: https://calendar.google.com/calendar/ical/6c500f8477e391525c62ee82fe0416a3caa043fd8c17eb20da1beebb48f21dbe%40group.calendar.google.com/public/basic.ics pour l'ajouter à votre calendrier.
+Si vous n'utilisez pas Google Agenda, il vous faudra utiliser ce lien ICS/iCal: `https://calendar.google.com/calendar/ical/6c500f8477e391525c62ee82fe0416a3caa043fd8c17eb20da1beebb48f21dbe%40group.calendar.google.com/public/basic.ics` pour l'ajouter à votre calendrier.
 
 Par exemple sur iPhone, suivez cette procédure: 
 
