@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan"
 author: "Par Florian et les entraîneurs"
-date: "Mis à jour le `r { Sys.setlocale('LC_TIME', 'fr_FR'); format(Sys.Date(), format='%d %B %Y') }`"
+date: "Mis à jour le `r { Sys.setlocale('LC_TIME', 'fr_FR'); iconv(format(Sys.Date(), format='%d %B %Y'), from = 'latin1') }`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
