@@ -55,8 +55,41 @@ La FCM est utilisée pour définir des zones de fréquence cardiaque qui guident
 (cf. prochaine partie sur les types d'entraînements).
 
 - **Prévention des blessures** :
-Travailler dans des zones de fréquence cardiaque appropriées aide à éviter le surentraînement
-et réduit le risque de blessures.
+Travailler dans des zones de fréquence cardiaque appropriées aide à éviter le surentraînement et réduit le risque de blessures.
+
+### Les zones de fréquence cardiaque {-}
+
+Pour structurer efficacement vos séances en utilisant votre cœur comme indicateur d'intensité, on parle souvent de **zones de fréquence cardiaque**. On en parle souvent en pourcentage de la FCM par abus de langage, mais en fait il faudrait plutôt parler de pourcentage de la **Fréquence Cardiaque de Réserve (FCR)**, qui tient aussi compte de votre fréquence cardiaque au repos.
+
+La **FCR** se calcule ainsi :
+
+> `FCR = FCM - FC au repos`
+
+Une fois la FCR connue, on peut calculer une fréquence cible pour une intensité donnée :
+
+> `FC cible = FC repos + (pourcentage * FCR)`
+
+Par exemple, pour travailler à 70% de votre capacité :
+
+> `FC cible = FC repos + 0.70 × (FCM - FC repos)`
+
+Mon exemple :
+
+- FC au repos : 51 bpm
+- FCM : 188 bpm
+- FCR = 188 - 51 = 137
+- Zone à 60–70% : 51 + (% × 137) = 140 [133–147] bpm
+
+Zones indicatives :
+
+| Zone   | % FCM (% FCR) | Objectif principal       |
+|:-------|:--------------|:-------------------------|
+| Zone 1 | 50–60%        | Récupération active      |
+| Zone 2 | 60–70%        | Endurance fondamentale   |
+| Zone 3 | 70–80%        | Endurance active         |
+| Zone 4 | 80–90%        | Résistance douce         |
+| Zone 5 | 90–100%       | Résistance dure / VMA    |
+
 
 ## Comment les utiliser dans votre entraînement ? {-}
 

@@ -49,6 +49,7 @@ Incorporez des semaines de récupération et variez les intensités d'entraînem
 Le repos est tout aussi important que l'entraînement.
 Il permet au corps de se réparer et de s'adapter aux efforts fournis.
 Assurez-vous d'inclure des jours de repos actifs et des séances légères dans votre programme.
+**Bien récupérer passe avant tout par un bon sommeil.**
 
 Après un effort intense, le corps subit une phase de fatigue. 
 Mais, avec une récupération appropriée, il se renforce et s'adapte, menant à une amélioration des performances ; ce processus s'appelle la surcompensation.
