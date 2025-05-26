@@ -100,13 +100,41 @@ Améliorer la capacité à maintenir une allure soutenue sur de longues distance
 **Exemple** :
 Courir 3 x 15 minutes à 85% FCM avec 3 minutes de récupération entre chaque série.
 
-La séance du jeudi s'y prête bien. Si on ne prépare aucune compétition, on pourra courir "au seuil", qui correspond généralement à 5-10 secondes plus rapide que l'allure semi-marathon. Ou bien, en EF.
+La séance du jeudi s'y prête bien. En préparation générale (non spécifique), on pourra courir "au seuil". Ou bien, en EF.
+
+## Seuil {-}
+
+L'entraînement au seuil correspond à une intensité située autour de votre seuil lactique,
+c'est-à-dire le point où l'accumulation de lactate dans le sang commence à devenir plus rapide que son élimination.
+C'est une zone-clé pour améliorer votre capacité à maintenir un effort soutenu plus longtemps.
+
+On distingue souvent deux types de seuils :
+
+- Seuil aérobie : seuil en dessous duquel le corps utilise principalement l'oxygène pour produire de l'énergie.
+- Seuil anaérobie (souvent appelé simplement "seuil") : intensité maximale à laquelle on peut courir longtemps
+sans accumuler de lactates de manière incontrôlable.
+
+L'allure de seuil correspond à environ :
+
+- 85–90 % de la FCM
+- L'allure qu'on peut tenir pendant 60 minutes, donc souvent entre l'allure semi et 10 km (89 et 40 min pour moi), soit 5-10 s/km plus lente que l'allure 10 km ou 5-10 s/km plus rapide que l'allure semi.
+
+**Objectifs** :
+
+- Améliorer la tolérance à l'effort prolongé à intensité élevée.
+- Repousser le seuil lactique, permettant de courir plus vite avant d'entrer en dette d'oxygène.
+- Développer la puissance aérobie sans trop fatiguer le corps.
+
+**Exemples** :
+
+- 10 x 3 min avec 1 min de récupération active
+- 2 à 4 x 8–10 min avec 2 min de récupération active
+- 3 x 2000 m à allure semi-marathon avec 1'30 de récupération active
 
 
-## Fractionné / VMA {-}
+## Fractionné court / VMA {-}
 
-Le fractionné alterne des phases de course rapide à haute intensité (90-105% VMA)
-avec des périodes de récupération active ou de repos.
+Le fractionné court alterne des phases de course rapide à haute intensité (90-105% VMA) avec des périodes de récupération active ou de repos.
 On pourra courir des 200m à 105% de la VMA, des 400 à 100%, et des 1000 à 90-95%.
 Ce type d'entraînement permet de travailler à des intensités élevées sans accumuler trop de fatigue.
 
@@ -131,9 +159,8 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
 
 L'endurance active est un entraînement à intensité modérée, légèrement en-dessous du seuil lactique (un point critique au delà duquel le corps commence à produire de l'acide lactique à un rythme supérieur à celui auquel il peut l'éliminer),
 autour de 80-85% FCM.
-C'est une allure que vous pouvez maintenir pendant une durée prolongée,
-mais qui nécessite plus de concentration que l'endurance fondamentale.
-C'est un type de séance que je ne pratique pas personnellement ; j'ai un entraînement dit "polarisé" où j'essaie désormais de courir beaucoup à (très) faible intensité, un peu à (très) haute intensité, et très peu à moyenne intensité (en dehors des blocs d'allure spécifique).
+C'est une allure que vous pouvez maintenir pendant une durée prolongée, mais qui nécessite plus de concentration que l'endurance fondamentale.
+C'est un type de séance que je ne pratique pas personnellement ; j'ai un entraînement dit "polarisé" où j'essaie désormais de courir beaucoup à faible intensité (EF), un peu à haute intensité (seuil et VMA), et très peu à moyenne intensité (en dehors des blocs d'allure spécifique).
 
 **Objectif** :
 Améliorer l'endurance et la capacité à maintenir un effort prolongé.
