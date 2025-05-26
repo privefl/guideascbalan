@@ -102,6 +102,7 @@ Courir 3 x 15 minutes à 85% FCM avec 3 minutes de récupération entre chaque s
 
 La séance du jeudi s'y prête bien. En préparation générale (non spécifique), on pourra courir "au seuil". Ou bien, en EF.
 
+
 ## Seuil {-}
 
 L'entraînement au seuil correspond à une intensité située autour de votre seuil lactique,
