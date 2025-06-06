@@ -130,7 +130,7 @@ const courses = {
   "5 km":          { a: -0.3275719, distance: 5 },
   "10 km":         { a: -0.3830789, distance: 10 },
   "Semi-marathon": { a: -0.4427105, distance: 21.097 },
-  "Marathon":      { a: -0.5709523, distance: 42.195 }
+  "Marathon":      { a: -0.53,      distance: 42.195 }
 };
 
 const exponent = 1.08;
@@ -196,6 +196,7 @@ function updateTable(vma) {
 
 
 Ce sont des estimations moyennes données sur [Campus](https://www.campus.coach/calculateur/vma), donc avec une marge d'erreur, mais ça devrait déjà donner une bonne idée.
+J'ai juste changé l'estimation du temps au marathon qui était vraiment pessimiste.
 Inversement, on pourrait utiliser certaines performances en course pour estimer sa VMA.
 
 
