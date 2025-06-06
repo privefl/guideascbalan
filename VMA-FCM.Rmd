@@ -4,7 +4,7 @@ editor_options:
   chunk_output_type: console
 ---
 ```{r setup, include=FALSE}
-WORDS_TO_IGNORE <- c("testvma", "text", "left", "right", "vitesseVMA")
+WORDS_TO_IGNORE <- c("testvma", "text", "left", "right")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -39,88 +39,6 @@ Ce test utilise une bande son comme [celle-ci](https://www.irbms.com/wp-content/
 Ce test est facile à mettre en place, il ne nécessite pas d'échauffement, et donne une estimation fiable de la VMA même pour des coureurs qui n'ont aucune idée de leur niveau actuel.
 
 Pour calculer la VMA en fonction de la durée du test, il suffit d'appliquer la formule suivante : `VMA = (min + sec / 60) / 2 + 7.5` \(\left(\text{VMA} = \frac{\text{min} + \frac{\text{sec}}{60}}{2} + 7.5\right)\). Par exemple, lors du test VMA du 08/10/24, j'ai tenu 19 minutes et 32 secondes, ce qui me donne une VMA de 17.27.
-
-
-### Estimation des vitesses et temps de course {-#vitesseVMA}
-
-<label for="masInput">Entrez la VMA (km/h) : </label>
-<input type="number" id="masInput" value="15" step="0.1" oninput="updateTable()">
-
-<table style="margin-top: 10px; border-collapse: collapse; width: 80%; text-align: center; font-family: sans-serif;">
-  <thead>
-    <tr style="background-color: #f0f0f0;">
-      <th style="border: 1px solid #ccc; padding: 6px;">Course</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Vitesse estimée<br>(km/h)</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Allure estimée<br>(min/km)</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Temps estimé total</th>
-    </tr>
-  </thead>
-  <tbody id="resultsBody">
-    <!-- Lignes générées dynamiquement -->
-  </tbody>
-</table>
-
-<script>
-const courses = {
-  "5 km":          { a: -0.3275719, distance: 5 },
-  "10 km":         { a: -0.3830789, distance: 10 },
-  "Semi-marathon": { a: -0.4427105, distance: 21.097 },
-  "Marathon":      { a: -0.5709523, distance: 42.195 }
-};
-
-const exponent = 1.08;
-
-function computeSpeed(vma, a) {
-  return Math.exp(a + exponent * Math.log(vma));
-}
-
-function speedToPace(speed) {
-  const pace = 60 / speed;
-  const min = Math.floor(pace);
-  const sec = Math.round((pace - min) * 60);
-  return `${min}:${sec.toString().padStart(2, '0')}`;
-}
-
-function timeFromSpeed(distance, speed) {
-  const totalMinutes = (distance / speed) * 60;
-  let h = Math.floor(totalMinutes / 60);
-  let m = Math.floor(totalMinutes % 60);
-  let s = Math.round((totalMinutes - h * 60 - m) * 60);
-  if (s === 60) {
-    s = 0;
-    m += 1;
-    if (m === 60) {
-      m = 0;
-      h += 1;
-    }
-  }
-  return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-}
-
-function updateTable() {
-  const vma = parseFloat(document.getElementById("masInput").value);
-  const tbody = document.getElementById("resultsBody");
-  tbody.innerHTML = "";
-
-  for (const [course, { a, distance }] of Object.entries(courses)) {
-    const vitesse = computeSpeed(vma, a);
-    const allure = speedToPace(vitesse);
-    const tempsTotal = timeFromSpeed(distance, vitesse);
-
-    const row = `<tr>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${course}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${vitesse.toFixed(2)}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${allure}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${tempsTotal}</td>
-                 </tr>`;
-    tbody.insertAdjacentHTML("beforeend", row);
-  }
-}
-
-updateTable();
-</script>
-
-Ce sont des estimations moyennes données sur [Campus](https://www.campus.coach/calculateur/vma), donc avec une marge d'erreur, mais ça devrait déjà donner une bonne idée.
 
 
 ## Qu'est-ce que la FCM ? {-}

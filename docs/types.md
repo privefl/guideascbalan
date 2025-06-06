@@ -102,6 +102,98 @@ Courir 3 x 15 minutes à 85% FCM avec 3 minutes de récupération entre chaque s
 
 La séance du jeudi s'y prête bien. En préparation générale (non spécifique), on pourra courir "au seuil". Ou bien, en EF.
 
+### Estimation des vitesses et temps de course {-#allureCourse}
+
+<label for="vmaInput1">Entrez votre VMA (km/h) :</label>
+<input type="number" id="vmaInput1" value="15" step="0.1">
+
+<table style="margin-top: 10px; border-collapse: collapse; width: 80%; text-align: center; font-family: sans-serif;">
+  <thead>
+    <tr style="background-color: #f0f0f0;">
+      <th style="border: 1px solid #ccc; padding: 6px;">Course</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Vitesse estimée<br>(km/h)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Allure estimée<br>(min/km)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Temps estimé total</th>
+    </tr>
+  </thead>
+  <tbody id="resultsBody">
+    <!-- Lignes générées dynamiquement -->
+  </tbody>
+</table>
+
+<script>
+const courses = {
+  "5 km":          { a: -0.3275719, distance: 5 },
+  "10 km":         { a: -0.3830789, distance: 10 },
+  "Semi-marathon": { a: -0.4427105, distance: 21.097 },
+  "Marathon":      { a: -0.5709523, distance: 42.195 }
+};
+
+const exponent = 1.08;
+
+function computeSpeed(vma, a) {
+  return Math.exp(a + exponent * Math.log(vma));
+}
+
+function speedToPace(speed) {
+  const pace = 60 / speed;
+  let min = Math.floor(pace);
+  let sec = Math.round((pace - min) * 60);
+  if (sec === 60) {
+    sec = 0;
+    min += 1;
+  }
+  return `${min}:${sec.toString().padStart(2, '0')}`;
+}
+
+function timeFromSpeed(distance, speed) {
+  const totalMinutes = (distance / speed) * 60;
+  let h = Math.floor(totalMinutes / 60);
+  let m = Math.floor(totalMinutes % 60);
+  let s = Math.round((totalMinutes - h * 60 - m) * 60);
+  if (s === 60) {
+    s = 0;
+    m += 1;
+    if (m === 60) {
+      m = 0;
+      h += 1;
+    }
+  }
+  
+  const mm = m.toString().padStart(2, '0');
+  const ss = s.toString().padStart(2, '0');
+
+  if (h === 0) {
+    return `${mm}:${ss}`;
+  } else {
+    return `${h}:${mm}:${ss}`;
+  }
+}
+
+function updateTable(vma) {
+  const tbody = document.getElementById("resultsBody");
+  tbody.innerHTML = "";
+
+  for (const [course, { a, distance }] of Object.entries(courses)) {
+    const vitesse = computeSpeed(vma, a);
+    const allure = speedToPace(vitesse);
+    const tempsTotal = timeFromSpeed(distance, vitesse);
+
+    const row = `<tr>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${course}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${vitesse.toFixed(2)}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${allure}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${tempsTotal}</td>
+                 </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  }
+}
+</script>
+
+
+Ce sont des estimations moyennes données sur [Campus](https://www.campus.coach/calculateur/vma), donc avec une marge d'erreur, mais ça devrait déjà donner une bonne idée.
+Inversement, on pourrait utiliser certaines performances en course pour estimer sa VMA.
+
 
 ## Seuil {-}
 
@@ -154,6 +246,105 @@ Pour les fractionnés, deux types de récupération sont possibles:
 - Récupérations longues (comme 2-3 minutes) : Travaillent la puissance aérobie pure ; prendre plus de pause permet de maintenir une vitesse plus élevée sur chaque répétition.
 
 Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://youtu.be/RasKAZiq5AA) et [cette vidéo](https://youtu.be/ex0XDbNMXhU).
+
+### Temps et allures par répétition {-#allureVMA}
+
+<label for="vmaInput2">Entrez votre VMA (km/h) :</label>
+<input type="number" id="vmaInput2" value="15" step="0.1">
+
+<table style="margin-top: 10px; border-collapse: collapse; width: 80%; text-align: center; font-family: sans-serif;">
+  <thead>
+    <tr style="background-color: #f0f0f0;">
+      <th style="border: 1px solid #ccc; padding: 6px;">Distance</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">% de la VMA</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Chrono</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Allure (min/km)</th>
+    </tr>
+  </thead>
+  <tbody id="vmaResultsBody">
+    <!-- Rempli dynamiquement -->
+  </tbody>
+</table>
+
+<script>
+const vmaEfforts = [
+  { distance: 0.200, pourcent: 105 },
+  { distance: 0.300, pourcent: 102 },
+  { distance: 0.400, pourcent: 100 },
+  { distance: 0.500, pourcent: 98 },
+  { distance: 1.000, pourcent: 92 }
+];
+
+<!-- function speedToPace(speed) { -->
+<!--   const pace = 60 / speed; -->
+<!--   let min = Math.floor(pace); -->
+<!--   let sec = Math.round((pace - min) * 60); -->
+<!--   if (sec === 60) { -->
+<!--     sec = 0; -->
+<!--     min += 1; -->
+<!--   } -->
+<!--   return `${min}:${sec.toString().padStart(2, '0')}`; -->
+<!-- } -->
+
+function timeFromSpeedVMA(distance, speed) {
+  const totalMinutes = (distance / speed) * 60;
+  let m = Math.floor(totalMinutes % 60);
+  let s = Math.round((totalMinutes - m) * 60);
+
+  if (s === 60) {
+    s = 0;
+    m += 1;
+  }
+
+  if (m === 0) {
+    return `${s} sec`;
+  } else {
+    return `${m} min ${s} sec`;
+  }
+}
+
+function updateVmaTable(vma) {
+  const tbody = document.getElementById("vmaResultsBody");
+  tbody.innerHTML = "";
+
+  vmaEfforts.forEach(({ distance, pourcent }) => {
+    const speed = vma * (pourcent / 100);
+    const pace = speedToPace(speed);
+    const time = timeFromSpeedVMA(distance, speed);
+
+    const row = `<tr>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${(distance * 1000).toFixed(0)} m</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${pourcent}%</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${pace}</td>
+                 </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+</script>
+
+
+<script>
+const input1 = document.getElementById('vmaInput1');
+const input2 = document.getElementById('vmaInput2');
+
+function syncInputs(source, target) {
+  if (target.value !== source.value) {
+    target.value = source.value;
+  }
+  const vmaValue = parseFloat(source.value);
+  if (!isNaN(vmaValue)) {
+    updateTable(vmaValue);
+    updateVmaTable(vmaValue);
+  }
+}
+
+input1.addEventListener('input', () => syncInputs(input1, input2));
+input2.addEventListener('input', () => syncInputs(input2, input1));
+
+// Initialisation au chargement
+syncInputs(input1, input2);
+</script>
 
 
 ## Endurance active (ou tempo) {-}
