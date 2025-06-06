@@ -58,14 +58,16 @@ Pour calculer la VMA en fonction de la durée du test, il suffit d'appliquer la 
 
 <script>
 const courses = {
-  "5 km":          { coeffs: [-3.338833, 1.087887], distance: 5 },
-  "10 km":         { coeffs: [-5.466186, 1.152099], distance: 10 },
-  "Semi-marathon": { coeffs: [-5.698478, 1.132304], distance: 21.097 },
-  "Marathon":      { coeffs: [-8.488501, 1.220164], distance: 42.195 }
+  "5 km":          { a: -0.3275719, distance: 5 },
+  "10 km":         { a: -0.3830789, distance: 10 },
+  "Semi-marathon": { a: -0.4427105, distance: 21.097 },
+  "Marathon":      { a: -0.5709523, distance: 42.195 }
 };
 
-function computeSpeed(vma, beta0, beta1) {
-  return beta0 + beta1 * vma;
+const exponent = 1.08;
+
+function computeSpeed(vma, a) {
+  return Math.exp(a + exponent * Math.log(vma));
 }
 
 function speedToPace(speed) {
@@ -77,9 +79,17 @@ function speedToPace(speed) {
 
 function timeFromSpeed(distance, speed) {
   const totalMinutes = (distance / speed) * 60;
-  const h = Math.floor(totalMinutes / 60);
-  const m = Math.floor(totalMinutes % 60);
-  const s = Math.round((totalMinutes - h * 60 - m) * 60);
+  let h = Math.floor(totalMinutes / 60);
+  let m = Math.floor(totalMinutes % 60);
+  let s = Math.round((totalMinutes - h * 60 - m) * 60);
+  if (s === 60) {
+    s = 0;
+    m += 1;
+    if (m === 60) {
+      m = 0;
+      h += 1;
+    }
+  }
   return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
@@ -88,9 +98,8 @@ function updateTable() {
   const tbody = document.getElementById("resultsBody");
   tbody.innerHTML = "";
 
-  for (const [course, { coeffs, distance }] of Object.entries(courses)) {
-    const [beta0, beta1] = coeffs;
-    const vitesse = computeSpeed(vma, beta0, beta1);
+  for (const [course, { a, distance }] of Object.entries(courses)) {
+    const vitesse = computeSpeed(vma, a);
     const allure = speedToPace(vitesse);
     const tempsTotal = timeFromSpeed(distance, vitesse);
 
@@ -107,7 +116,7 @@ function updateTable() {
 updateTable();
 </script>
 
-Ce sont des estimations moyennes, donc avec une marge d'erreur, mais ça devrait déjà donner une bonne idée.
+Ce sont des estimations moyennes données sur [Campus](https://www.campus.coach/calculateur/vma), donc avec une marge d'erreur, mais ça devrait déjà donner une bonne idée.
 
 
 ## Qu'est-ce que la FCM ? {-}
