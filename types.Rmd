@@ -191,6 +191,17 @@ function updateTable(vma) {
                  </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);
   }
+  
+  // ajout seuil
+  const v_seuil = 0.83186 * vma;
+  const allure_seuil = speedToPace(v_seuil);
+  const seuilRow = `<tr>
+                      <td style="border: 1px solid #ccc; padding: 6px;">Seuil (60 min)</td>
+                      <td style="border: 1px solid #ccc; padding: 6px;">${v_seuil.toFixed(2)}</td>
+                      <td style="border: 1px solid #ccc; padding: 6px;">${allure_seuil}</td>
+                      <td style="border: 1px solid #ccc; padding: 6px;">1:00:00</td>
+                    </tr>`;
+  tbody.insertAdjacentHTML("beforeend", seuilRow);
 }
 </script>
 
