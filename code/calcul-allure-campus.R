@@ -65,3 +65,115 @@ vma_table %>%
   pull(res)
 
 # -0.3275719 -0.3830789 -0.4427105 -0.5709523
+
+
+## Comprendre comment ça marche et faire une nouvelle estimation
+
+library(ggplot2)
+ggplot(vma_table, aes(temps_h * 60, vitesse / VMA_kmh, color = distance, group = distance)) +
+  theme_bw() +
+  scale_x_log10() +
+  scale_y_log10() +
+  # scale_x_continuous(trans = "log1p") +
+  # scale_y_continuous(trans = "log1p") +
+  geom_point(size = 3) +
+  geom_line() +
+  stat_smooth(
+    method = "nls",
+    formula = y ~ a + b * x,
+    method.args = list(start = list(a = 0, b = 1)),
+    se = FALSE,
+    color = "black"
+  ) +
+  labs(x = "Temps de course (min)", y = "Pourcentage de VMA tenu")
+# %VMA au marathon est clairement pessimiste
+
+mylm <- vma_table %>%
+  filter(distance != "marathon") %>%
+  lm(I(log(vitesse / VMA_kmh)) ~ log(temps_h), data = .)
+
+summary(mylm)
+exp(predict(mylm, data.frame(temps_h = 1)))       # 83.2% VMA sur 60 min
+exp(predict(mylm, data.frame(temps_h = 5 / 60)))  # 100% VMA sur 5 min
+
+VMA <- 13
+t_VMA <- 4 / 60
+p_60 <- 80 / 100
+alpha <- log(p_60)
+beta <- -alpha / log(t_VMA)
+sapply(c(5, 10, 42.195 / 2, 42.195), function(d)
+  exp((alpha + beta * log(d) + log(VMA)) / (1 + beta)))
+round(100 * .Last.value / VMA, 1)
+
+tbl <- tribble(
+  ~VMA,  ~t_VMA,  ~p_60,
+  13,      4,     78,
+  16,    5.5,     82,
+  19,      7,     85,
+  24,      8,     88.5)
+d <- 10
+# d <- 21.1
+# d <- 42.195
+purrr::pmap_dbl(tbl, function(VMA, t_VMA, p_60) {
+  alpha <- log(p_60 / 100)
+  beta <- -alpha / log(t_VMA / 60)
+  print(c(alpha, beta))
+  exp((alpha + beta * log(d) + log(VMA)) / (1 + beta)) / VMA
+})
+# Pour 10: 78 - 84 - 88 - 92
+# Pour semi: 72.4 - 78.5 - 83.2 - 88.5
+# Pour 42: 67.5 - 73.8 - 78.6  - 84.7
+
+
+# Verif
+endur <- tribble(
+ ~niv,  ~t_VMA, ~p_60,
+  1,     4,      78.5,
+  2,     5,      81,
+  3,     6,      83.5,
+  4,     7,      86,
+  5,     8,      88.5)
+
+all_comb <- tidyr::expand_grid(endur, VMA = 12:24, d = c(5, 10, 41.195 / 2, 41.195))
+all_comb$v <- purrr::pmap_dbl(all_comb[c("VMA", "t_VMA", "p_60", "d")], function(VMA, t_VMA, p_60, d) {
+  alpha <- log(p_60 / 100)
+  beta <- -alpha / log(t_VMA / 60)
+  exp((alpha + beta * log(d) + log(VMA)) / (1 + beta))
+})
+
+ggplot(all_comb, aes(d / v * 60, v / VMA, color = as.factor(d), group = d)) +
+  theme_bw() +
+  scale_x_log10() + scale_y_log10() +
+  geom_point(size = 3) +
+  geom_line() +
+  facet_wrap(~niv) +
+  labs(x = "Temps de course (min)", y = "Pourcentage de VMA tenu")
+
+ggplot(all_comb, aes(d / v * 60, v / VMA, color = as.factor(niv), shape = as.factor(d))) +
+  theme_bw() +
+  scale_x_log10(breaks = c(10, 20, 30, 60, 90, 120, 180, 240)) + scale_y_log10() +
+  geom_point(size = 3) +
+  # geom_line() +
+  facet_wrap(~VMA) +
+  labs(x = "Temps de course (min)", y = "Pourcentage de VMA tenu")
+
+
+tbl <- tribble(
+  ~VMA,  ~t_VMA,  ~p_60,
+  13,      4,     78,
+  16,    5.5,     82,
+  19,      7,     85,
+  24,      8,     88.5)
+d <- 10
+# d <- 21.1
+# d <- 42.195
+purrr::pmap_dbl(tbl, function(VMA, t_VMA, p_60) {
+  alpha <- log(p_60 / 100)
+  beta <- -alpha / log(t_VMA / 60)
+  print(c(alpha, beta))
+  exp((alpha + beta * log(d) + log(VMA)) / (1 + beta)) / VMA
+})
+# Pour 10: 78 - 84 - 88 - 92
+# Pour semi: 72.4 - 78.5 - 83.2 - 88.5
+# Pour 42: 67.5 - 73.8 - 78.6  - 84.7
+
