@@ -117,7 +117,7 @@ La séance du jeudi s'y prête bien. En préparation générale (non spécifique
       <th style="border: 1px solid #ccc; padding: 6px;">Course</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Vitesse estimée<br>(km/h)</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Allure estimée<br>(min/km)</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Temps estimé total</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Chrono estimé</th>
     </tr>
   </thead>
   <tbody id="resultsBody">
@@ -272,8 +272,8 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
   <thead>
     <tr style="background-color: #f0f0f0;">
       <th style="border: 1px solid #ccc; padding: 6px;">Distance</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">% de la VMA</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Allure (min/km)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">%VMA</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Allure</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Chrono</th>
       <th style="border: 1px solid #ccc; padding: 6px;">#reps (=16 min)</th>
     </tr>
