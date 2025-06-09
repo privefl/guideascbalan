@@ -249,7 +249,7 @@ Améliorer la VMA, la VO2max, et la puissance aérobie (la capacité à produire
 **Exemple** :
 10 x 400 m à 100% VMA avec 1 minute de récupération entre chaque série.
 
-C'est la séance du mardi. Généralement, elle totalise au maximum 5 km d'intensité. On peut s'arrêter à 4 km si on a déjà beaucoup forcé. Mais, si on finit les 5 km sans être vraiment fatigué, il faudra aller plus vite sur la prochaine séance.
+C'est la séance du mardi. Généralement, elle totalise environ 16 minutes et au maximum 5 km d'intensité. On peut s'arrêter à 4 km si on a déjà beaucoup forcé. Mais, si on finit les 5 km sans être vraiment fatigué, il faudra aller plus vite sur la prochaine séance.
 
 Pour les fractionnés, deux types de récupération sont possibles:
 
@@ -271,6 +271,7 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
       <th style="border: 1px solid #ccc; padding: 6px;">% de la VMA</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Chrono</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Allure (min/km)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Total (16 min)</th>
     </tr>
   </thead>
   <tbody id="vmaResultsBody">
@@ -287,48 +288,31 @@ const vmaEfforts = [
   { distance: 1.000, pourcent: 92 }
 ];
 
-<!-- function speedToPace(speed) { -->
-<!--   const pace = 60 / speed; -->
-<!--   let min = Math.floor(pace); -->
-<!--   let sec = Math.round((pace - min) * 60); -->
-<!--   if (sec === 60) { -->
-<!--     sec = 0; -->
-<!--     min += 1; -->
-<!--   } -->
-<!--   return `${min}:${sec.toString().padStart(2, '0')}`; -->
-<!-- } -->
-
-function timeFromSpeedVMA(distance, speed) {
-  const totalMinutes = (distance / speed) * 60;
-  let m = Math.floor(totalMinutes % 60);
-  let s = Math.round((totalMinutes - m) * 60);
-
-  if (s === 60) {
-    s = 0;
-    m += 1;
-  }
-
-  if (m === 0) {
-    return `${s} sec`;
-  } else {
-    return `${m} min ${s} sec`;
-  }
-}
-
 function updateVmaTable(vma) {
   const tbody = document.getElementById("vmaResultsBody");
   tbody.innerHTML = "";
 
   vmaEfforts.forEach(({ distance, pourcent }) => {
-    const speed = vma * (pourcent / 100);
+    const speed = vma * (pourcent / 100); // vitesse en km/h
     const pace = speedToPace(speed);
-    const time = timeFromSpeedVMA(distance, speed);
+
+    const timeMin = (distance / speed) * 60;
+    const reps = 16 / timeMin;
+
+    let m = Math.floor(timeMin);
+    let s = Math.round((timeMin - m) * 60);
+    if (s === 60) {
+      s = 0;
+      m += 1;
+    }
+    const time = m === 0 ? `${s} sec` : `${m} min ${s} sec`;
 
     const row = `<tr>
                    <td style="border: 1px solid #ccc; padding: 6px;">${(distance * 1000).toFixed(0)} m</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pourcent}%</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pace}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${reps.toFixed(1)} reps</td>
                  </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);
   });
