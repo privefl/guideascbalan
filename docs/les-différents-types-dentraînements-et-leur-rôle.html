@@ -416,13 +416,13 @@ Distance
 % de la VMA
 </th>
 <th style="border: 1px solid #ccc; padding: 6px;">
-Chrono
-</th>
-<th style="border: 1px solid #ccc; padding: 6px;">
 Allure (min/km)
 </th>
 <th style="border: 1px solid #ccc; padding: 6px;">
-Total (16 min)
+Chrono
+</th>
+<th style="border: 1px solid #ccc; padding: 6px;">
+#reps (=16 min)
 </th>
 </tr>
 </thead>
@@ -461,9 +461,9 @@ function updateVmaTable(vma) {
     const row = `<tr>
                    <td style="border: 1px solid #ccc; padding: 6px;">${(distance * 1000).toFixed(0)} m</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pourcent}%</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pace}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${reps.toFixed(1)} reps</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">x ${reps.toFixed(1)}</td>
                  </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);
   });
