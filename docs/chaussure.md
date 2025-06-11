@@ -8,6 +8,12 @@ sélectionner une paire adaptée à vos besoins et à votre morphologie.
 Si des douleurs se manifestent, il peut être aussi bénéfique d'aller voir un podologue pour faire des semelles orthopédiques.
 Et pour savoir quand changer vos chaussures, regardez [cette vidéo](https://www.youtube.com/watch?v=euicUJ2FpDY).
 
+Pour vous faire conseiller au mieux, vous pouvez aller à Terre de Running Ambérieu, où ils analysent votre foulée sur tapis avec des caméras. 
+De plus, être membre de l'ASC Balan y offre une réduction de 10%.
+J'y ai aussi appris une technique intéressante pour mieux maintenir son pied dans la chaussure, le [laçage dit marathonien](https://www.tiktok.com/@florian_running/video/7483558095696694550), qui fait une grosse différence pour moi.
+Si vous connaissez déjà un modèle qui vous convient, [i-run.fr](https://www.i-run.fr/) propose régulièrement des promotions et une livraison rapide.
+
+
 ## Déterminer son type de foulée {-}
 
 Il existe trois types de foulée principaux, chacun influençant l'usure et le type de soutien nécessaire :
@@ -25,6 +31,7 @@ Pour déterminer votre type de foulée, vous pouvez observer l'usure de vos anci
 ou consulter un spécialiste en magasin.
 Opter pour des semelles orthopédiques peut aussi s'avérer utile.
 
+
 ## Choisir le drop en fonction de sa foulée et de son expérience {-}
 
 Le **drop** correspond à la différence de hauteur entre le talon et l'avant-pied.
@@ -39,6 +46,7 @@ cherchant un équilibre entre attaque talon et médio-pied.
 - **Faible drop (0-4 mm)** : favorise une foulée avant-pied et convient surtout aux coureurs expérimentés
 habitués aux faibles drops. À utiliser progressivement pour éviter les blessures.
 
+
 ## Choisir le bon amorti en fonction de la distance et du terrain {-}
 
 Les besoins en amorti dépendent de la distance parcourue, de la fréquence d'entraînement, et des surfaces courues :
@@ -50,6 +58,7 @@ l'impact répétitif peut être éprouvant pour les articulations.
 
 - **Trail** : un amorti adapté et une semelle crantée pour assurer l'adhérence sur terrain accidenté
 et absorber les impacts sur les descentes et montées techniques.
+
 
 ## La taille et le confort de la chaussure {-}
 
