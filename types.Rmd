@@ -273,9 +273,10 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
     <tr style="background-color: #f0f0f0;">
       <th style="border: 1px solid #ccc; padding: 6px;">Distance</th>
       <th style="border: 1px solid #ccc; padding: 6px;">%VMA</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Travail</th>
       <th style="border: 1px solid #ccc; padding: 6px;">Allure</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">Chrono</th>
-      <th style="border: 1px solid #ccc; padding: 6px;">#reps (=16 min)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Chrono (par rep)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">#reps</th>
     </tr>
   </thead>
   <tbody id="vmaResultsBody">
@@ -285,23 +286,25 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
 
 <script>
 const vmaEfforts = [
-  { distance: 0.200, pourcent: 105 },
-  { distance: 0.300, pourcent: 102 },
-  { distance: 0.400, pourcent: 100 },
-  { distance: 0.500, pourcent: 98 },
-  { distance: 1.000, pourcent: 92 }
+  { distance: 0.200, pourcent: 105, totalMinutes: 12 },
+  { distance: 0.300, pourcent: 102, totalMinutes: 14 },
+  { distance: 0.400, pourcent: 100, totalMinutes: 16 },
+  { distance: 0.500, pourcent: 98,  totalMinutes: 18 },
+  { distance: 1.000, pourcent: 92,  totalMinutes: 24 }
 ];
 
 function updateVmaTable(vma) {
+
   const tbody = document.getElementById("vmaResultsBody");
   tbody.innerHTML = "";
 
-  vmaEfforts.forEach(({ distance, pourcent }) => {
+  vmaEfforts.forEach(({ distance, pourcent, totalMinutes }) => {
+  
     const speed = vma * (pourcent / 100); // vitesse en km/h
     const pace = speedToPace(speed);
 
     const timeMin = (distance / speed) * 60;
-    const reps = 16 / timeMin;
+    const reps = totalMinutes / timeMin;
 
     let m = Math.floor(timeMin);
     let s = Math.round((timeMin - m) * 60);
@@ -314,6 +317,7 @@ function updateVmaTable(vma) {
     const row = `<tr>
                    <td style="border: 1px solid #ccc; padding: 6px;">${(distance * 1000).toFixed(0)} m</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pourcent}%</td>
+                   <td style="border: 1px solid #ccc; padding: 6px;">${totalMinutes} min</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${pace}</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
                    <td style="border: 1px solid #ccc; padding: 6px;">x ${reps.toFixed(1)}</td>
