@@ -107,6 +107,7 @@ La séance du jeudi s'y prête bien. En préparation générale (non spécifique
 <label for="vmaInput1">Entrez votre VMA (km/h) :</label>
 <input type="number" id="vmaInput1" value="15" step="0.1">
 
+<div style="overflow-x: auto; max-width: 100%;">
 <table style="margin-top: 10px; border-collapse: collapse; width: 100%; text-align: center; font-family: sans-serif;">
   <thead>
     <tr style="background-color: #f0f0f0;">
@@ -120,6 +121,7 @@ La séance du jeudi s'y prête bien. En préparation générale (non spécifique
     <!-- Lignes générées dynamiquement -->
   </tbody>
 </table>
+</div>
 
 <script>
 const courses = {
@@ -264,6 +266,7 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
 <label for="vmaInput2">Entrez votre VMA (km/h) :</label>
 <input type="number" id="vmaInput2" value="15" step="0.1">
 
+<div style="overflow-x: auto; max-width: 100%;">
 <table style="margin-top: 10px; border-collapse: collapse; width: 100%; text-align: center; font-family: sans-serif;">
   <thead>
     <tr style="background-color: #f0f0f0;">
@@ -279,6 +282,7 @@ Mais est-ce que la VMA n'est pas surcotée ? Regardez [cette vidéo](https://you
     <!-- Rempli dynamiquement -->
   </tbody>
 </table>
+</div>
 
 <script>
 const vmaEfforts = [
