@@ -1,3 +1,3 @@
-rmd_files: ["index.Rmd", "calendrier.Rmd", "gestion.Rmd", "VMA-FCM.Rmd", "types.Rmd", "plans.Rmd", "prevention.Rmd", "chaussure.Rmd", "cadence.Rmd", "nutrition.Rmd", "conclu.Rmd"]
+rmd_files: ["index.Rmd", "trombi.Rmd", "calendrier.Rmd", "gestion.Rmd", "VMA-FCM.Rmd", "types.Rmd", "plans.Rmd", "prevention.Rmd", "chaussure.Rmd", "cadence.Rmd", "nutrition.Rmd", "conclu.Rmd"]
 output_dir: docs
 new_session: yes

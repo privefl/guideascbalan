@@ -1,0 +1,34 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Trombinoscope {-}
+
+[EN CONSTRUCTION]
+
+C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, alors voici la tête de nos licenciés :
+
+```{r echo=FALSE, results='asis', message=FALSE, warning=FALSE}
+photos <- list.files("trombi", pattern = "\\.png$", 
+                     full.names = TRUE, recursive = FALSE)
+bigassertr::assert_dir("docs/trombi")
+osef <- file.copy(photos, file.path("docs", photos), overwrite = TRUE)
+
+html_code <- sapply(photos[order(file.info(photos)$mtime)], function(path) {
+  
+  prenom <- sub("(.+)_(.+)\\.png", "\\1", basename(path))
+  nom    <- sub("(.+)_(.+)\\.png", "\\2", basename(path))
+  
+  paste0(
+    "<div style='display:inline-block; width:90px; height:200px; margin:10px; text-align:center; vertical-align:top;'>",
+    "<img src='", path, "' style='width:90px; border-radius:8px;'><br>",
+    "<div style='height:80px; overflow:hidden; line-height:1.2em;'>",
+    "<strong>", tools::toTitleCase(prenom), " ", tools::toTitleCase(nom), "</strong>",
+    "</div></div>"
+  )
+})
+
+cat(paste(html_code, collapse = "\n"))
+```
