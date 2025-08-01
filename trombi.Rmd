@@ -16,19 +16,27 @@ photos <- list.files("trombi", pattern = "\\.png$",
 bigassertr::assert_dir("docs/trombi")
 osef <- file.copy(photos, file.path("docs", photos), overwrite = TRUE)
 
-html_code <- sapply(photos[order(file.info(photos)$mtime)], function(path) {
+photos_ordered <- photos[order(file.info(photos)$mtime, decreasing = TRUE)]
+
+html_code <- sapply(photos_ordered, function(path) {
   
   prenom <- sub("(.+)_(.+)\\.png", "\\1", basename(path))
   nom    <- sub("(.+)_(.+)\\.png", "\\2", basename(path))
   
   paste0(
-    "<div style='display:inline-block; width:90px; height:200px; margin:10px; text-align:center; vertical-align:top;'>",
-    "<img src='", path, "' style='width:90px; border-radius:8px;'><br>",
-    "<div style='height:80px; overflow:hidden; line-height:1.2em;'>",
+    "<div style='
+      flex: 1 1 90px;
+      height: 190px;
+      margin: 10px;
+      text-align: center;
+      vertical-align: top;
+    '>",
+    "<img src='", path, "' style='width:100%; max-width:100px; border-radius:8px;'><br>",
+    "<div style='height:70px; overflow:hidden; line-height:1em;'>",
     "<strong>", tools::toTitleCase(prenom), " ", tools::toTitleCase(nom), "</strong>",
     "</div></div>"
   )
 })
 
-cat(paste(html_code, collapse = "\n"))
+cat("<div style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>\n"); cat(paste(html_code, collapse = "\n")); cat("\n</div>")
 ```
