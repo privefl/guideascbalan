@@ -25,15 +25,15 @@ html_code <- sapply(photos_ordered, function(path) {
   
   paste0(
     "<div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
     '>",
-    "<img src='", path, "' style='width:100%; max-width:100px; border-radius:8px;'><br>",
+    "<img src='", path, "' style='width:100%; max-width:95px; border-radius:8px;'><br>",
     "<div style='height:70px; overflow:hidden; line-height:1em;'>",
-    "<strong>", tools::toTitleCase(prenom), " ", tools::toTitleCase(nom), "</strong>",
+    "<strong>", tools::toTitleCase(prenom), "</strong> ", tools::toTitleCase(nom),
     "</div></div>"
   )
 })

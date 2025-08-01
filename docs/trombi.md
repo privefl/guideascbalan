@@ -12,45 +12,45 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
 
 <div style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/florian_privé.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Florian Privé</strong></div></div>
+    '><img src='trombi/vincent_richaud.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Vincent</strong> Richaud</div></div>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/frédéric_berlioz.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Frédéric Berlioz</strong></div></div>
+    '><img src='trombi/florian_privé.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Florian</strong> Privé</div></div>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/jean-jacques_berrard.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Jean-Jacques Berrard</strong></div></div>
+    '><img src='trombi/frédéric_berlioz.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Frédéric</strong> Berlioz</div></div>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/lionel_salmon.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Lionel Salmon</strong></div></div>
+    '><img src='trombi/jean-jacques_berrard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Jean-Jacques</strong> Berrard</div></div>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/laurent_rognard.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Laurent Rognard</strong></div></div>
+    '><img src='trombi/lionel_salmon.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Lionel</strong> Salmon</div></div>
 <div style='
-      flex: 1 1 90px;
+      flex: 1 1 85px;
       height: 190px;
-      margin: 10px;
+      margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/vincent_richaud.png' style='width:100%; max-width:100px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Vincent Richaud</strong></div></div>
+    '><img src='trombi/laurent_rognard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1em;'><strong>Laurent</strong> Rognard</div></div>
 </div>
