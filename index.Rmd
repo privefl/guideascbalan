@@ -120,5 +120,5 @@ Nous avons quatre entraîneurs au club :
 
 Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](photos/jean-jacques_berrard.png) | ![](photos/lionel_salmon.png) | ![](photos/laurent_rognard.png) | ![](photos/frederic_berlioz.png)
+![](trombi/jean-jacques_berrard.png) | ![](trombi/lionel_salmon.png) | ![](trombi/laurent_rognard.png) | ![](trombi/frédéric_berlioz.png)
 

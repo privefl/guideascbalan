@@ -33,7 +33,7 @@ html_code <- sapply(photos_ordered, function(path) {
     '>",
     "<img src='", path, "' style='width:100%; max-width:95px; border-radius:8px;'><br>",
     "<div style='height:70px; overflow:hidden; line-height:1em;'>",
-    "<strong>", tools::toTitleCase(prenom), "</strong> ", tools::toTitleCase(nom),
+    "<strong>", tools::toTitleCase(prenom), "</strong><br>", tools::toTitleCase(nom),
     "</div></div>"
   )
 })
