@@ -4,7 +4,7 @@ editor_options:
   chunk_output_type: console
 ---
 ```{r setup, include=FALSE}
-WORDS_TO_IGNORE <- c("testvma", "text", "left", "right")
+WORDS_TO_IGNORE <- c("testvma", "text", "left", "right", "RPE", "of", "Perceived", "Exertion")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -96,11 +96,12 @@ Zones indicatives :
 Pour maximiser vos performances, il est essentiel de comprendre comment utiliser la VMA et la FCM dans votre programme d'entraînement :
 
 - **Séances basées sur la VMA** :
-Utilisez votre VMA pour planifier vos entraînements en définissant des allures spécifiques pour le fractionné.
+Utilisez votre VMA pour planifier vos entraînements en définissant des allures spécifiques pour le fractionné (cf. prochaine partie).
 
 - **Contrôle de l'intensité avec la FCM** :
-Surveillez votre fréquence cardiaque pendant les séances pour vous assurer que vous travaillez dans
-la zone d'intensité souhaitée, permettant ainsi une meilleure gestion de l'effort.
+Surveillez votre fréquence cardiaque (pendant les séances ou après coup) pour vous assurer que vous travaillez dans la zone d'intensité souhaitée, permettant ainsi une meilleure gestion de l'effort.
 
 En intégrant ces deux mesures dans votre entraînement,
 vous serez en mesure d'améliorer vos performances de manière plus ciblée et efficace.
+
+Une troisième mesure utile à surveiller est le ressenti d'effort, ou RPE (Rate of Perceived Exertion), noté de 1 (effort très facile) à 10 (effort maximal). Personnellement, je dépasse rarement 7,5. Le but n'est pas de finir chaque séance vidé, les jambes en feu, et de devoir récupérer pendant 10 jours, mais plutôt de pouvoir enchaîner les entraînements régulièrement et progresser sans s'épuiser.

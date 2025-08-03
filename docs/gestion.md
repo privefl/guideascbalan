@@ -7,19 +7,22 @@ Voici quelques concepts clés à prendre en compte :
 
 ## L'échauffement et les étirements {-}
 
-L'échauffement est essentiel pour préparer les muscles à l'effort et réduire les risques de blessures.
+L'échauffement est essentiel pour préparer les muscles à l'effort et réduire les risques de blessures. Pour cela, rien de mieux que de trottiner 15-20 minutes lentement. 
 
 Les étirements dynamiques (comme les montées de genoux et talons-fesses) permettent d'échauffer les muscles et les articulations avant une activité physique. Ils augmentent la circulation sanguine, activent le système nerveux, et préparent le corps à l'effort en améliorant l'amplitude de mouvement.
 
-Les étirements passifs sont généralement effectués après l'entraînement, pendant la phase de récupération, pour détendre les muscles fatigués et améliorer la souplesse à long terme. À noter qu'ils ne sont pas recommandés avant une activité physique intense, car ils peuvent temporairement diminuer la force musculaire.
+Les étirements passifs sont souvent pratiqués dans une optique de détente et d'amélioration de la souplesse. Cependant, ils ne sont pas recommandés juste avant une activité physique intense, car ils peuvent temporairement réduire la force musculaire et la réactivité.
+De même, ils sont à éviter immédiatement après une séance éprouvante (type fractionné, musculation ou course longue), moment où les muscles sont encore fragilisés par l'effort : cela pourrait accroître le risque de lésions musculaires.
+Il est donc préférable de réserver les étirements passifs à distance des séances, par exemple lors de journées de repos ou à l'issue d'un échauffement léger, pour travailler la mobilité et la souplesse sans interférer avec la récupération.
+
 
 ## Le principe de surcharge progressive {-}
 
-Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge d'entraînement.
-Cette charge peut être augmentée de trois façons principales : en jouant sur la fréquence (le nombre de séances par semaine),
-le volume (la durée ou la distance parcourue), ou l'intensité (la vitesse ou l'effort consenti).
+Pour améliorer vos performances, il est nécessaire d'augmenter progressivement la charge d'entraînement. Cette progression ne doit pas être continue : on alterne généralement trois semaines d'augmentation avec une semaine allégée, dite semaine d'assimilation, pour permettre à l'organisme de récupérer et bénéficier de l'effet de surcompensation.
 
-**Cependant, il est important de ne pas augmenter ces trois facteurs en même temps**, et cette augmentation doit rester raisonnable (10% par semaine en général).
+Cette charge peut être augmentée de trois façons principales : en jouant sur la fréquence (le nombre de séances par semaine), le volume (la durée ou la distance parcourue), ou l'intensité (la vitesse ou l'effort consenti).
+
+**Cependant, il est important de ne pas augmenter ces trois facteurs en même temps**, et **cette augmentation doit rester raisonnable** (comme 10% par semaine et 50% sur une année).
 Sinon, cela augmenterait considérablement le risque de surentraînement et de blessure.
 
 L'augmentation progressive de la charge d'entraînement doit être raisonnée.
@@ -31,32 +34,43 @@ avant d'augmenter la durée ou l'intensité. Ajouter une séance supplémentaire
 
 2. **Volume** : Une fois que vous avez stabilisé votre fréquence hebdomadaire, vous pouvez progressivement augmenter
 la durée ou la distance totale de vos séances. Cela aide à développer l'endurance. Respectez la règle des 10 %,
-c'est-à-dire n'augmentez pas le volume total de plus de 10 % par semaine.
+c'est-à-dire n'augmentez pas le volume total de plus de 10 % par semaine (et 50% sur un an).
 
 3. **Intensité** : Enfin, une fois que vous êtes à l'aise avec la fréquence et le volume, vous pouvez commencer
 à ajouter ou augmenter des séances plus intenses (comme du fractionné ou des courses à allure spécifique).
 Cependant, veillez à ce que les séances intensives restent bien espacées et que la récupération soit suffisante.
+
+Ce principe de progressivité vaut aussi pour d'autres aspects :
+
+- Dénivelé : trop de montées ou descentes techniques sans y être préparé.
+
+- Changement brusque : nouveau type de terrain, nouvelles chaussures, changement de posture, etc.
+
+Le corps s'adapte, mais a besoin de temps !
+Un stress trop brutal crée des micro-lésions, puis des douleurs, et enfin des blessures.
 
 
 ## Gestion de la fatigue et prévention du surentraînement {-}
 
 Il est crucial d'écouter son corps et de reconnaître les signes de fatigue.
 Le surentraînement accroît drastiquement les risques de blessures, et peut aussi entraîner une diminution des performances.
-Incorporez des semaines de récupération et variez les intensités d'entraînement.
+Incorporez des semaines de récupération (par exemple, une semaine allégée après trois semaines intenses) et variez les intensités d'entraînement.
 
 ## Repos et récupération {-}
 
-Le repos est tout aussi important que l'entraînement.
+Le repos est tout aussi voire plus important que l'entraînement.
 Il permet au corps de se réparer et de s'adapter aux efforts fournis.
 Assurez-vous d'inclure des jours de repos actifs et des séances légères dans votre programme.
-**Bien récupérer passe avant tout par un bon sommeil.**
 
 Après un effort intense, le corps subit une phase de fatigue. 
 Mais, avec une récupération appropriée, il se renforce et s'adapte, menant à une amélioration des performances ; ce processus s'appelle la surcompensation.
 Si le temps de récupération est trop court, le risque de blessures et de stagnation des performances augmente.
+Les montres actuelles donnent une information sur le temps de récupération suggéré avant la prochaine séance intense.
 Pour aller plus loin sur les temps de récupération, regardez [cette vidéo](https://www.youtube.com/watch?v=NTKeLwErKvQ).
 
 Il existe plusieurs types de récupération :
+
+- Sommeil : **Un bon sommeil est la base de toute bonne récupération !**
 
 - Récupération passive : C'est le repos complet, sans activité physique.
 Elle est essentielle après des séances d'entraînement intense ou des compétitions.

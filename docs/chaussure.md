@@ -38,7 +38,7 @@ Le **drop** correspond à la différence de hauteur entre le talon et l'avant-pi
 Voici quelques repères pour bien choisir :
 
 - **Drop élevé (8-12 mm)** : recommandé pour les coureurs débutants ou ceux qui attaquent le sol par le talon.
-Ce type de drop aide à réduire l'impact au niveau des mollets et du tendon d'Achille.
+Ce type de drop aide à réduire l'impact au niveau des mollets et du tendon d'Achille. C'est ce que j'utilise encore, n'ayant pas encore trouvé de chaussures à drop plus faible qui me conviennent bien.
 
 - **Drop moyen (4-8 mm)** : convient aux coureurs intermédiaires ou aux coureurs polyvalents,
 cherchant un équilibre entre attaque talon et médio-pied.

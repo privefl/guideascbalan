@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan"
 author: "Par Florian et les entraîneurs"
-date: "Mis à jour le 02 août 2025"
+date: "Mis à jour le 03 août 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -42,11 +42,16 @@ Pour donner un exemple concret, voici mes progrès depuis que je suis au club :
 
 ## Les entraîneurs {-}
 
-**N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
-
 Nous avons quatre entraîneurs au club :
 
 Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](trombi/jean-jacques_berrard.png) | ![](trombi/lionel_salmon.png) | ![](trombi/laurent_rognard.png) | ![](trombi/frédéric_berlioz.png)
 
+**N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
+
+
+## Remerciements {-}
+
+Merci aux entraîneurs pour leurs réponses à mes questions et leurs retours.
+Merci aussi à Vincent, Sylvie, Sébastien, Mélanie et Cécile. 

@@ -8,15 +8,17 @@ source("spelling-check.R")
 La prévention des blessures est essentielle pour maintenir une pratique régulière et performante.
 Voici quelques conseils :
 
+
 ## Principales blessures en course à pied {-}
 
 Les blessures les plus courantes incluent :
 
 - La tendinite (d'Achille, rotulienne, etc.).
 
-- Les douleurs au genou (syndrome de la bandelette ilio-tibiale).
+- Les douleurs au genou (syndrome de la bandelette ilio-tibiale, dit "de l'essuie-glace").
 
 - Les fractures de stress.
+
 
 ## Stratégies de prévention {-}
 
@@ -24,7 +26,38 @@ Adoptez une bonne technique de course, portez des chaussures appropriées,
 et n'oubliez pas de renforcer les muscles stabilisateurs.
 Écoutez votre corps et n'ignorez pas les douleurs persistantes.
 
+
 ## Importance du renforcement musculaire {-}
 
 Le renforcement musculaire aide à prévenir les blessures en améliorant la stabilité et la force des muscles.
 Intégrez des exercices spécifiques pour les jambes, le tronc et les hanches dans votre programme d'entraînement.
+
+
+## Signaux d'alerte à ne pas ignorer {-}
+
+Certains signaux du corps doivent alerter. Ce ne sont pas de simples douleurs normales, mais des signes d'alerte :
+
+- Douleur qui apparaît toujours au même moment (durée, allure, terrain)
+
+- Douleur persistante après l'effort
+
+- Sensation de raideur inhabituelle, perte de mobilité
+
+- Fatigue durable, troubles du sommeil, irritabilité
+
+Ces manifestations indiquent un déséquilibre ou une surcharge. Il ne faut pas les banaliser.
+
+
+## Bons réflexes en cas de douleur {-}
+
+En cas de douleur, il est essentiel d'adapter l'entraînement :
+
+- Réduire le volume, l'intensité et la fréquence
+
+- Supprimer temporairement les séances à impact (VMA, côtes, sortie longue)
+
+- Ne pas forcer pour suivre un plan à tout prix
+
+Si la douleur persiste plus d'une semaine, il faudra consulter un professionnel de santé (médecin du sport, kinésithérapeute, podologue).
+
+Continuer malgré la douleur peut transformer un déséquilibre temporaire en blessure chronique, voire compromettre durablement la pratique de la course à pied.

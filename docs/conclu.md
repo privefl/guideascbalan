@@ -6,5 +6,5 @@ Ce guide vise à vous fournir les outils et les connaissances nécessaires pour 
 N'oubliez pas que chaque coureur est unique et que l'adaptation de ces conseils à votre situation personnelle est essentielle.
 Restez à l'écoute de votre corps, continuez à apprendre, et surtout, profitez de chaque pas sur le chemin de vos objectifs !
 
-Si vous avez des questions, demandez aux entraîneurs. 
+Si vous avez des questions, demandez aux entraîneurs, voire à moi-même ou à Vincent. 
 N'hésitez pas à me faire des retours et des suggestions pour améliorer ce guide.

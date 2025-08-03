@@ -114,11 +114,16 @@ ggplot(all, aes(date, vitesse, color = course, label = ville)) +
 
 ## Les entraîneurs {-}
 
-**N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
-
 Nous avons quatre entraîneurs au club :
 
 Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](trombi/jean-jacques_berrard.png) | ![](trombi/lionel_salmon.png) | ![](trombi/laurent_rognard.png) | ![](trombi/frédéric_berlioz.png)
 
+**N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
+
+
+## Remerciements {-}
+
+Merci aux entraîneurs pour leurs réponses à mes questions et leurs retours.
+Merci aussi à Vincent, Sylvie, Sébastien, Mélanie et Cécile. 
