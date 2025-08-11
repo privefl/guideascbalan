@@ -63,28 +63,90 @@ La **FCR** se calcule ainsi :
 
 Une fois la FCR connue, on peut calculer une fréquence cible pour une intensité donnée :
 
-> `FC cible = FC repos + (pourcentage * FCR)`
+> `FC cible = FC repos + pourcentage * FCR`
 
-Par exemple, pour travailler à 70% de votre capacité :
+<label for="fcMaxInput">FC maximale :</label>
+<input type="number" id="fcMaxInput" value="185" step="1" size="3">
 
-> `FC cible = FC repos + 0.70 × (FCM - FC repos)`
+<label for="fcRestInput">FC au repos :</label>
+<input type="number" id="fcRestInput" value="51" step="1" size="2">
 
-Mon exemple :
+<div style="overflow-x: auto; max-width: 100%; margin-top: 10px;">
+<table style="border-collapse: collapse; width: 100%; text-align: center; font-family: sans-serif;">
+  <thead>
+    <tr style="background-color: #f0f0f0;">
+      <th style="border: 1px solid #ccc; padding: 6px;">Zone</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">% FCM (% FCR)</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Objectif</th>
+      <th style="border: 1px solid #ccc; padding: 6px;">Intervalle FC (bpm)</th>
+    </tr>
+  </thead>
+  <tbody id="fcResultsBody"></tbody>
+</table>
+</div>
 
-- FC au repos : 51 bpm
-- FCM : 188 bpm
-- FCR = 188 - 51 = 137
-- Zone à 60–70% : 51 + (% × 137) = 140 [133–147] bpm
+<script>
+const zones = [
+  { nom: "Zone 1", minPct: 0.50, maxPct: 0.60, objectif: "Récupération active" },
+  { nom: "Zone 2", minPct: 0.60, maxPct: 0.70, objectif: "Endurance fondamentale" },
+  { nom: "Zone 3", minPct: 0.70, maxPct: 0.80, objectif: "Endurance active" },
+  { nom: "Zone 4", minPct: 0.80, maxPct: 0.90, objectif: "Résistance douce" },
+  { nom: "Zone 5", minPct: 0.90, maxPct: 1.00, objectif: "Résistance dure / VMA" }
+];
 
-Zones indicatives :
+function updateFCTable(fcMax, fcRest) {
+  const tbody = document.getElementById("fcResultsBody");
+  tbody.innerHTML = "";
 
-| Zone   | % FCM (% FCR) | Objectif principal       |
-|:-------|:--------------|:-------------------------|
-| Zone 1 | 50–60%        | Récupération active      |
-| Zone 2 | 60–70%        | Endurance fondamentale   |
-| Zone 3 | 70–80%        | Endurance active         |
-| Zone 4 | 80–90%        | Résistance douce         |
-| Zone 5 | 90–100%       | Résistance dure / VMA    |
+  const fcr = fcMax - fcRest; // Fréquence cardiaque de réserve
+
+  zones.forEach(zone => {
+    const minFC = Math.ceil(fcRest + zone.minPct * fcr);
+    const maxFC = Math.floor(fcRest + zone.maxPct * fcr);
+
+    const row = `<tr>
+      <td style="border: 1px solid #ccc; padding: 6px;">${zone.nom}</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${Math.round(zone.minPct*100)}–${Math.round(zone.maxPct*100)}%</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${zone.objectif}</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${minFC}–${maxFC}</td>
+    </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+
+// Initialisation
+updateFCTable(
+  parseInt(document.getElementById("fcMaxInput").value),
+  parseInt(document.getElementById("fcRestInput").value)
+);
+
+// Mise à jour en temps réel
+document.getElementById("fcMaxInput").addEventListener("input", () => {
+  updateFCTable(
+    parseInt(document.getElementById("fcMaxInput").value),
+    parseInt(document.getElementById("fcRestInput").value)
+  );
+});
+document.getElementById("fcRestInput").addEventListener("input", () => {
+  updateFCTable(
+    parseInt(document.getElementById("fcMaxInput").value),
+    parseInt(document.getElementById("fcRestInput").value)
+  );
+});
+</script>
+
+
+### Modifier ses zones de FC dans Garmin Connect {-}
+
+Pour ajuster vos calculs de zones cardiaques à partir de la fréquence cardiaque de réserve (FCR) plutôt que de la fréquence cardiaque maximale (FCM), il est important que votre montre Garmin connaisse vos valeurs réelles de FC max et FC au repos.
+
+1. Ouvrez Garmin Connect sur votre smartphone
+
+2. Dans le menu Plus (☰), sélectionnez Appareils Garmin → Votre montre → Paramètres utilisateur → Zones de fréquence cardiaque
+
+3. Sélectionnez "à partir de réserve de FC en pourcentage"
+
+4. Renseignez la FC au repos, la FC max, et les différents pourcentages (50, 60, 70, 80, 90)
 
 
 ## Comment les utiliser dans votre entraînement ? {-}
