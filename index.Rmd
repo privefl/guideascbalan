@@ -70,7 +70,7 @@ DHL5K <- tibble::tribble(
   ~date,      ~chrono,
   "24/08/23", "21:44",
   "22/08/24", "20:40",
-  # "21/08/25", "19:00"
+  "21/08/25", "19:06"
 ) %>% 
   mutate(course = "5K DHL Aarhus", dist = 5) %>% 
   print()
