@@ -1,7 +1,7 @@
 --- 
-title: "Le Guide du Coureur de l'ASC Balan"
-author: "Par Florian et les entraîneurs"
-date: "Mis à jour le 05 septembre 2025"
+title: "Le Guide du Coureur de l'ASC Balan (bit.ly/guideascbalan)"
+author: "Florian et les entraîneurs"
+date: "07 septembre 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -22,6 +22,8 @@ editor_options:
 
 Bienvenue sur ce **guide du coureur**, un site conçu pour les membres de notre club de course, quel que soit leur niveau ou leur expérience.
 Ce guide vous aidera à comprendre les différents types d'entraînements, et comment progresser efficacement tout en minimisant les risques de blessures.
+
+Le site de notre club est [ici](http://ascbalan.athle.com/).
 
 Que vous vous entraîniez pour un 5 km, un 10 km, un semi-marathon ou un marathon, ou même un trail, 
 vous trouverez ici les principes fondamentaux et des conseils pratiques pour atteindre vos objectifs.
@@ -44,9 +46,9 @@ Pour donner un exemple concret, voici mes progrès depuis que je suis au club :
 
 Nous avons quatre entraîneurs au club :
 
-Jean-Jacques            |  Lionel                   | Laurent     |  Frédéric
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](trombi/jean-jacques_berrard.png) | ![](trombi/lionel_salmon.png) | ![](trombi/laurent_rognard.png) | ![](trombi/frédéric_berlioz.png)
+Jean-Jacques | Lionel | Laurent | Frédéric
+:-----------:|:------:|:-------:|:-------:
+<img src="trombi/jean-jacques_berrard.png" width="150"/> | <img src="trombi/lionel_salmon.png" width="150"/> | <img src="trombi/laurent_rognard.png" width="150"/> | <img src="trombi/frédéric_berlioz.png" width="150"/>
 
 **N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
 

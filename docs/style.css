@@ -1,3 +1,10 @@
+.book .table img {
+  max-width: 100px; /* pick size that looks good */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centers images in table cells */
+}
+
 p.caption {
   color: #777;
   margin-top: 10px;

@@ -1,11 +1,2 @@
-bookdown::gitbook:
-  toc_depth: 2
+bookdown::bs4_book:
   css: style.css
-  config:
-    toc:
-      collapse: section
-      scroll_highlight: yes
-      before: |
-        <li><a href="./index.html">Le Guide du Coureur<br>(bit.ly/guideascbalan)</a></li>
-      after: |
-        <li><a href="http://ascbalan.athle.com/" target="blank">ASC Balan</a></li>
