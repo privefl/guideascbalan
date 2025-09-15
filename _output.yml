@@ -1,2 +1,4 @@
 bookdown::bs4_book:
   css: style.css
+  mathjax: default
+  md_extensions: +tex_math_dollars

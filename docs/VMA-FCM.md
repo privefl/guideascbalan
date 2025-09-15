@@ -34,7 +34,7 @@ On utilise le test VAMEVAL. C'est un test qui fonctionne par paliers de vitesse 
 Ce test utilise une bande son comme [celle-ci](https://www.irbms.com/wp-content/uploads/2023/06/bande-son-1979-test-luc-leger.mp3) ; il suffit d'être au niveau du prochain plot (espacés de 20 mètres) à chaque bip sonore ; quand le coureur se retrouve à plus de 2 mètres d'un plot car il est à bout de forces, il doit s'arrêter.
 Ce test est facile à mettre en place, il ne nécessite pas d'échauffement, et donne une estimation fiable de la VMA même pour des coureurs qui n'ont aucune idée de leur niveau actuel.
 
-Pour calculer la VMA en fonction de la durée du test, il suffit d'appliquer la formule suivante : `VMA = (min + sec / 60) / 2 + 7.5` \(\left(\text{VMA} = \frac{\text{min} + \frac{\text{sec}}{60}}{2} + 7.5\right)\). Par exemple, lors du test VMA du 08/10/24, j'ai tenu 19 minutes et 32 secondes, ce qui me donne une VMA de 17.27.
+Pour calculer la VMA en fonction de la durée du test, il suffit d'appliquer la formule suivante : `VMA = (min + sec / 60) / 2 + 7.5` $\left(\text{VMA} = \frac{\text{min} + \frac{\text{sec}}{60}}{2} + 7.5\right)$. Par exemple, lors du test VMA du 08/10/24, j'ai tenu 19 minutes et 32 secondes, ce qui me donne une VMA de 17.27.
 
 
 ## Qu'est-ce que la FCM ? {-}
