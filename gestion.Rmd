@@ -1,4 +1,8 @@
 ```{r setup, include=FALSE}
+WORDS_TO_IGNORE <- c(
+  "And", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
+  "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
+  "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -14,9 +18,46 @@ L'échauffement est essentiel pour préparer les muscles à l'effort et réduire
 
 Les étirements dynamiques (comme les montées de genoux et talons-fesses) permettent d'échauffer les muscles et les articulations avant une activité physique. Ils augmentent la circulation sanguine, activent le système nerveux, et préparent le corps à l'effort en améliorant l'amplitude de mouvement.
 
+**Améliorer sa mobilité par des étirements réduit les contraintes mécaniques qui freinent la foulée, tout en diminuant le risque de blessures et en optimisant l'efficacité de la course.**
 Les étirements passifs sont souvent pratiqués dans une optique de détente et d'amélioration de la souplesse. Cependant, ils ne sont pas recommandés juste avant une activité physique intense, car ils peuvent temporairement réduire la force musculaire et la réactivité.
 De même, ils sont à éviter immédiatement après une séance éprouvante (type fractionné, musculation ou course longue), moment où les muscles sont encore fragilisés par l'effort : cela pourrait accroître le risque de lésions musculaires.
 Il est donc préférable de réserver les étirements passifs à distance des séances, par exemple lors de journées de repos ou à l'issue d'un échauffement léger, pour travailler la mobilité et la souplesse sans interférer avec la récupération.
+Je les pratique le midi, sachant que je cours plutôt le soir.
+
+### L'application GOWOD {-}
+
+J'ai découvert une application vraiment bien faite pour améliorer sa mobilité : GOWOD. Dans sa version gratuite, GOWOD offre plus de 300 exercices illustrés par des vidéos et des explications, ainsi qu'un premier test de mobilité avec résultats personnalisés à son sport (ou plusieurs) pour guider l'amélioration de la souplesse et de la performance.
+
+Ce que je vous propose :
+
+- Installer l'application GOWOD et faire le premier test de mobilité gratuit, en précisant que votre sport principal est la course à pied, pour prendre conscience des parties du corps à travailler en priorité. J'ai l'impression que pour la plupart des coureurs, c'est la mobilité de toute la chaîne postérieure qui fait le plus défaut.
+
+- Dans la bibliothèque de plus de 300 exercices, cherchez et essayer ceux que je pratique actuellement :
+
+    - Butterfly
+    - Hamstring Rack Stretch
+    - Hamstrings Stretch
+    - Pigeon
+    - Prayer Lat Stretch
+    - Supine Piriformis Stretch
+    - The Breakdancer
+    - The Sagittarius
+    - The Turtle
+    - V Sit
+    - Cobra To Prayer
+    - Downward Facing Dog To Cobra
+    - Standing Quad Stretch
+    - Standing Forward Bend
+    - Standing Hip Rotations
+    - Calf Stretch On Wall
+    - Squat To Stand
+    - Cat And Cow
+
+- Ajouter ceux que vous préférez à un protocole personnel
+
+- Quand vous avez un peu de temps, même 5 minutes (et un peu éloigné des entraînements), lancez votre protocole en mode aléatoire, et faîtes autant d'exercices que votre emploi du temps le permet
+
+- N'hésitez pas à me suggérer d'autres exercices
 
 
 ## Le principe de surcharge progressive {-}
