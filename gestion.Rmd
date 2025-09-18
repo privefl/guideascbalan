@@ -1,6 +1,6 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c(
-  "And", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
+  "and", "to", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
   "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall")
 source("knitr-options.R")
