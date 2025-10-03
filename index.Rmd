@@ -44,6 +44,7 @@ Pour donner un exemple concret, voici mes progrès depuis que je suis au club :
 library(dplyr)
 tests_VMA <- tibble::tribble(
   ~date,      ~vitesse, 
+  "02/10/25", 17.77,
   "07/12/24", 17.5,
   "08/10/24", 17.27,
   "18/10/22", 16.0
