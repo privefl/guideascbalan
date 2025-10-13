@@ -55,9 +55,10 @@ tests_VMA <- tibble::tribble(
 semis <- tibble::tribble(
   ~ville,  ~date,      ~chrono,
   "Annecy", "15/04/23", "1:43:53",
-  "Dole",   "13/10/24", "1:31:58",
-  "Bourg-en-Bresse",  "03/03/24", "1:37:45",
-  "Bourg-en-Bresse",  "02/03/25", "1:29:10"
+  "Dole", "13/10/24", "1:31:58",
+  "Dole", "12/10/25", "1:27:36",
+  "Bourg-en-Bresse", "03/03/24", "1:37:45",
+  "Bourg-en-Bresse", "02/03/25", "1:29:10"
 ) %>% 
   mutate(course = "Semi-marathon", dist = 21.1) %>% 
   print()
