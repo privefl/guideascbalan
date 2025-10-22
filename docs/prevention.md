@@ -29,6 +29,10 @@ et n'oubliez pas de renforcer les muscles stabilisateurs.
 Le renforcement musculaire aide à prévenir les blessures en améliorant la stabilité et la force des muscles.
 Intégrez des exercices spécifiques pour les jambes, le tronc et les hanches dans votre programme d'entraînement.
 
+Un exemple d'exercices que Martin pratique :
+
+<iframe style="width: 100%; aspect-ratio: 1.5;" src="https://www.youtube.com/embed/O-DGqqRCWYc?si=glmQsJNP-X823xTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Signaux d'alerte à ne pas ignorer {-}
 
