@@ -26,8 +26,8 @@ Sur intervals.icu, vous trouverez beaucoup d'information, mais notamment :
 
 - Dans "Activités", résumé des semaines (temps total, charge, progrès, type d'entraînement).
 
-- Dans "Condition physique", résumé de la condition physique et de la fatigue. Il faut idéalement viser la zone verte (ou au moins la grise), la bleue le matin d'une course (arriver avec un peu de fraîcheur physique), et éviter la rouge (signe de sur-entraînement, qui est contre-productif et qui amène aux blessures). Si le graphe ne vous paraît pas cohérent par rapport à votre ressenti, c'est peut-être que la fréquence cardiaque max renseignée est incorrect.
+- Dans "Condition physique", résumé de la condition physique et de la fatigue. Il faut idéalement viser la zone verte (ou au moins la grise), la bleue le matin d'une course (arriver avec un peu de fraîcheur physique), et éviter la rouge (signe de sur-entraînement, qui est contre-productif et qui amène aux blessures). Si le graphe ne vous paraît pas cohérent par rapport à votre ressenti, c'est peut-être que la FCmax renseignée est incorrecte, ou la FCseuil.
 
-- Dans "Totaux", on peut voir les temps passés dans les zones d'effort (en gros Z1+Z2=endurance, Z3=allure marathon, Z4=semi, Z5=10K, Z6=5K, Z7=VMA) pour une plage de temps donnée. Globalement, il faudrait environ Z1+Z2 à 80%, Z3+Z4 à 15%, et Z5+ à 5%. Je ne citerai pas la personne qui est à 15.6% / 32.8% / 51.6% sur le dernier mois ;).
+- Dans "Totaux", on peut voir les temps passés dans les zones d'effort (en gros Z1+Z2=endurance, Z3=allure marathon, Z4=semi, Z5=10K, Z6=5K, Z7=VMA) pour une plage de temps donnée. Globalement, il faudrait environ Z1+Z2 à 80%, Z3+Z4 à 15%, et Z5+ à 5%. Je ne citerai pas la personne qui est à 31%, 36%, et 33% sur le dernier mois ;).
 
 Nous aurons également accès à ces informations.
