@@ -19,6 +19,62 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
+    '><img src='trombi/Héloïse_Blanc.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Héloïse</strong><br>Blanc</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Grégoire_Sage.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Grégoire</strong><br>Sage</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Cécile_Gréa.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Cécile</strong><br>Gréa</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Rémi_Pasquet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Rémi</strong><br>Pasquet</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Frédéric_RICHIR.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Frédéric</strong><br>Richir</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Jean-Michel_Halet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Jean-Michel</strong><br>Halet</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Cécile_Chassy.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Cécile</strong><br>Chassy</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Jean-Louis_PERDRIX.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Jean-Louis</strong><br>Perdrix</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
     '><img src='trombi/Nathalie_MECHREGUI.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Nathalie</strong><br>Mechregui</div></div>
 <div style='
       flex: 1 1 85px;
