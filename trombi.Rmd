@@ -6,8 +6,6 @@ editor_options:
 
 # Trombinoscope {-}
 
-[EN CONSTRUCTION]
-
 C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, alors voici la tête de nos licenciés :
 
 <br>
