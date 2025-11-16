@@ -19,6 +19,13 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
+    '><img src='trombi/Dominique_Noca.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Dominique</strong><br>Noca</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
     '><img src='trombi/David_Levent.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>David</strong><br>Levent</div></div>
 <div style='
       flex: 1 1 85px;
