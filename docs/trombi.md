@@ -17,6 +17,27 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
+    '><img src='trombi/Christine_Perdrix.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Christine</strong><br>Perdrix</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Benoit_Falelavaki.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Benoit</strong><br>Falelavaki</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Christelle_Frezza.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Christelle</strong><br>Frezza</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
     '><img src='trombi/Julien_Gondin.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Julien</strong><br>Gondin</div></div>
 <div style='
       flex: 1 1 85px;
@@ -137,13 +158,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       text-align: center;
       vertical-align: top;
     '><img src='trombi/Tamimount_Le Mée.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Tamimount</strong><br>Le Mée</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/Christelle_Frezza.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em;'><strong>Christelle</strong><br>Frezza</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
