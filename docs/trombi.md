@@ -17,7 +17,77 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
+    '><img src='trombi/Stéphane_Faure.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Stéphane</strong><br>Faure</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/patrick_bruno.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Patrick</strong><br>Bruno</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Chalore_Teepakorn.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Chalore</strong><br>Teepakorn</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
     '><img src='trombi/Maxime_Herbay.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Maxime</strong><br>Herbay</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/thierry_clechet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Thierry</strong><br>Clechet</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Jean-Michel_Halet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Jean-Michel</strong><br>Halet</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Didier_Salmon.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Didier</strong><br>Salmon</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/David_Levent.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>David</strong><br>Levent</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Christelle_Frezza.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Christelle</strong><br>Frezza</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Adrien_Gaillard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Adrien</strong><br>Gaillard</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/Véronique_Trouillet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Véronique</strong><br>Trouillet</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
@@ -38,13 +108,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/Stéphane_Faure.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Stéphane</strong><br>Faure</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/Christine_Perdrix.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Christine</strong><br>Perdrix</div></div>
 <div style='
       flex: 1 1 85px;
@@ -53,13 +116,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       text-align: center;
       vertical-align: top;
     '><img src='trombi/Benoit_Falelavaki.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Benoit</strong><br>Falelavaki</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/Christelle_Frezza.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Christelle</strong><br>Frezza</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
@@ -80,13 +136,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/Didier_Salmon.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Didier</strong><br>Salmon</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/Dominique_Noca.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Dominique</strong><br>Noca</div></div>
 <div style='
       flex: 1 1 85px;
@@ -94,21 +143,7 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/David_Levent.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>David</strong><br>Levent</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/hélène_ansel.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Hélène</strong><br>Ansel</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/Chalore_Teepakorn.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Chalore</strong><br>Teepakorn</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
@@ -144,13 +179,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       text-align: center;
       vertical-align: top;
     '><img src='trombi/Frédéric_RICHIR.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Frédéric</strong><br>Richir</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/Jean-Michel_Halet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Jean-Michel</strong><br>Halet</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
@@ -213,13 +241,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/Adrien_Gaillard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Adrien</strong><br>Gaillard</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/line_philippon.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Line</strong><br>Philippon</div></div>
 <div style='
       flex: 1 1 85px;
@@ -228,13 +249,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       text-align: center;
       vertical-align: top;
     '><img src='trombi/Cyrille_Dumont.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Cyrille</strong><br>Dumont</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/thierry_clechet.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Thierry</strong><br>Clechet</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
@@ -291,13 +305,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       text-align: center;
       vertical-align: top;
     '><img src='trombi/sébastien_deville.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Sébastien</strong><br>Deville</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/patrick_bruno.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Patrick</strong><br>Bruno</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;
