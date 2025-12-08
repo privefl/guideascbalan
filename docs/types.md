@@ -86,6 +86,8 @@ de renforcer le cœur et les muscles sans stress excessif, et de préparer le co
 Bien qu'elle puisse sembler moins stimulante que les séances rapides, **elle est absolument cruciale** pour la progression globale du coureur à moyen et long termes,
 que ce soit pour la performance ou pour éviter les blessures.
 
+Pour savoir si vous êtes dans la bonne zone de travail, regardez [cette vidéo](https://www.youtube.com/watch?v=J5mu0fkRays).
+
 
 ## Séances d'allure spécifique {-}
 
