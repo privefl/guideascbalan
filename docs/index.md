@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan (bit.ly/guideascbalan)"
 author: "Florian et les entraîneurs"
-date: "16 décembre 2025"
+date: "19 décembre 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]

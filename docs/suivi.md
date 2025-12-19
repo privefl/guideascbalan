@@ -31,3 +31,5 @@ Sur intervals.icu, vous trouverez beaucoup d'information, mais notamment :
 - Dans "Totaux", on peut voir les temps passés dans les zones d'effort (en gros Z1+Z2=endurance, Z3=allure marathon, Z4=semi, Z5=10K, Z6=5K, Z7=VMA) pour une plage de temps donnée. Globalement, il faudrait environ Z1+Z2 à 80%, Z3+Z4 à 15%, et Z5+ à 5%. Je ne citerai pas la personne qui est à 31%, 36%, et 33% sur le dernier mois ;).
 
 Nous aurons également accès à ces informations.
+
+A noter que, pour obtenir des données plus précises, il est utile d'activer l'enregistrement toutes les secondes plutôt que l'enregistrement "intelligent" (par défaut sur une Garmin). Pour cela, il faut aller dans le menu des paramètres (en maintenant le bouton Up, milieu-gauche), puis en descendant dans le menu "Système", puis dans le sous-menu "Enregistrement des données".
