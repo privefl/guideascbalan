@@ -1,0 +1,84 @@
+
+
+# Blessures : retours d'expérience {-}
+
+La prévention des blessures est essentielle pour maintenir une pratique régulière et performante.
+Partager son expérience personnelle permet aux autres d'apprendre des expériences de chacun et de mieux anticiper et prévenir les risques de blessures.
+
+Pour ceux et celles qui ont malheureusement déjà connu la mauvaise expérience de se blesser, ça serait vraiment utile pour tous si vous pouviez partager votre expérience avec le club. 
+Pour cela, il suffit de remplir ce formulaire avec quelques sections guidées : https://forms.gle/nL992HBWYwSpSe38A
+
+Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez remplir le formulaire plusieurs fois pour partager plus d'une expérience 😉
+
+<style type="text/css">
+.injury-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-left: 5px solid #e63946; /* Rouge pour le côté "médical/alerte" */
+}
+
+.card-title {
+  color: #1d3557;
+  margin-top: 0;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 10px;
+}
+
+.card-badge {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 2px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lesson-box {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  font-style: italic;
+  border-left: 3px solid #457b9d;
+}
+</style>
+
+<div class="injury-card">
+<div class="card-badge">Témoignage : Sébastien</div>
+<h3 class="card-title">Déchirure de l'ischio-jambier</h3>
+
+<p><strong>Contexte :</strong> Préparation marathon (médecin : Dr S. Bulle, Décines).</p>
+
+<p><strong>L'alerte :</strong> Une pointe douloureuse ressentie une semaine avant l'arrêt total.</p>
+
+<p><strong>L'erreur :</strong> Le "combo gagnant" : surentraînement, absence de repos et de récupération, et cumul de dossards trop rapprochés.</p>
+
+<p><strong>Le chemin :</strong> 3 mois d'arrêt total. Rééducation avec kiné (renforcement) et reprise suivant un protocole strict.</p>
+
+<div class="lesson-box">
+<b>La leçon de Seb :</b> "L’échauffement et les gammes sont hyper importants, même à l'entraînement, pour solliciter progressivement la chaîne postérieure."
+</div>
+</div>
+
+
+<div class="injury-card">
+<div class="card-badge">Témoignage : Gilles</div>
+<h3 class="card-title">Contracture et claquage de l'ischio-jambier</h3>
+
+<p><strong>Contexte :</strong> Blessure survenue lors du 10km de Bourg-en-Bresse, en pleine période d'entraînements hivernaux avec le club.</p>
+
+<p><strong>L'alerte :</strong> Une contracture brutale à l'arrière de la cuisse droite entraînant un abandon immédiat. Le diagnostic a été confirmé par IRM.</p>
+
+<p><strong>L'erreur :</strong> Un cumul de facteurs : une intensité trop élevée, l'utilisation de chaussures neuves le jour J et une pratique intensive du tapis de course en salle (à proscrire selon son expérience).</p>
+
+<p><strong>Le chemin :</strong> Un long processus marqué par 2 ans d'arrêt total. La guérison est passée par beaucoup de repos, des étirements adaptés et une reprise très lente alternant marche et footing progressif.</p>
+
+<div class="lesson-box">
+<b>La leçon de Gilles :</b> "La pratique du running doit rester un loisir. Il ne faut surtout pas aller au-delà de ses possibilités et rester extrêmement vigilant à la moindre alerte en écoutant son corps."
+</div>
+</div>
