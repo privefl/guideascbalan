@@ -26,6 +26,7 @@ Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez rem
   margin-top: 0;
   border-bottom: 2px solid #f1f1f1;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .card-badge {
@@ -47,6 +48,24 @@ Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez rem
   border-left: 3px solid #457b9d;
 }
 </style>
+
+<div class="injury-card">
+<div class="card-badge">Témoignage : Thierry C.</div>
+<h3 class="card-title">Douleur au psoas (conflit de hanche)</h3>
+
+<p><strong>Contexte :</strong> En pleine préparation intensive pour la SaintéLyon (version complète), avec un volume d'entraînement poussé.</p>
+
+<p><strong>L'alerte :</strong> Une douleur profonde à l'aine irradiant jusque dans le bas du dos. Thierry a d'abord tenté de maintenir ses séances en réduisant simplement les distances ou en s'arrêtant dès que la douleur devenait trop intense.</p>
+
+<p><strong>L'erreur :</strong> Un probable surentraînement combiné au changement de saison (passage de l'été à l'automne), sollicitant l'organisme de manière inhabituelle.</p>
+
+<p><strong>Le chemin :</strong> Contrairement à d'autres blessures, Thierry n'a pas observé d'arrêt total. Sa guérison a reposé sur des séances de kinésithérapie et, surtout, sur la mise en place d'exercices quotidiens d'étirements des psoas. Il a pu conserver sa fréquence d'entraînement en augmentant très progressivement le dénivelé et les distances.</p>
+
+<div class="lesson-box">
+<b>La leçon de Thierry :</b> "Soyez rigoureux sur les étirements ciblés, à adapter avant ou après l'effort selon votre ressenti. Le plus important est de les maintenir au quotidien, même une fois que la douleur a disparu."
+</div>
+</div>
+
 
 <div class="injury-card">
 <div class="card-badge">Témoignage : Sébastien</div>
