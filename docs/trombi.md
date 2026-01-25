@@ -10,7 +10,7 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
 
 <!-- <br> -->
 
-<div style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>
+<div id='photos' style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>
 <div style='
       flex: 1 1 85px;
       height: 190px;

@@ -38,5 +38,5 @@ html_code <- sapply(photos_ordered, function(path) {
   )
 })
 
-cat("<div style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>\n"); cat(paste(html_code, collapse = "\n")); cat("\n</div>")
+cat("<div id='photos' style='display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;'>\n"); cat(paste(html_code, collapse = "\n")); cat("\n</div>")
 ```
