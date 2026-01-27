@@ -17,6 +17,34 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
+    '><img src='trombi/laurent_rognard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Laurent</strong><br>Rognard</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/jean-jacques_berrard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Jean-Jacques</strong><br>Berrard</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/frédéric_berlioz.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Frédéric</strong><br>Berlioz</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
+    '><img src='trombi/florian_privé.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Florian</strong><br>Privé</div></div>
+<div style='
+      flex: 1 1 85px;
+      height: 190px;
+      margin: 5px;
+      text-align: center;
+      vertical-align: top;
     '><img src='trombi/delphine_courtois.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Delphine</strong><br>Courtois</div></div>
 <div style='
       flex: 1 1 85px;
@@ -381,13 +409,6 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/laurent_rognard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Laurent</strong><br>Rognard</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/lionel_salmon.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Lionel</strong><br>Salmon</div></div>
 <div style='
       flex: 1 1 85px;
@@ -395,28 +416,7 @@ C'est plus sympa de savoir qui est qui, et d'appeler les gens par leur prénom, 
       margin: 5px;
       text-align: center;
       vertical-align: top;
-    '><img src='trombi/jean-jacques_berrard.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Jean-Jacques</strong><br>Berrard</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
     '><img src='trombi/gilles_serrano.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Gilles</strong><br>Serrano</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/florian_privé.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Florian</strong><br>Privé</div></div>
-<div style='
-      flex: 1 1 85px;
-      height: 190px;
-      margin: 5px;
-      text-align: center;
-      vertical-align: top;
-    '><img src='trombi/frédéric_berlioz.png' style='width:100%; max-width:95px; border-radius:8px;'><br><div style='height:70px; overflow:hidden; line-height:1.3em; font-size: 0.9em;'><strong>Frédéric</strong><br>Berlioz</div></div>
 <div style='
       flex: 1 1 85px;
       height: 190px;

@@ -1,7 +1,7 @@
 --- 
 title: "Le Guide du Coureur de l'ASC Balan (bit.ly/guideascbalan)"
 author: "Florian et les entraîneurs"
-date: "25 janvier 2026"
+date: "27 janvier 2026"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -46,9 +46,32 @@ Pour donner un exemple concret, voici mes progrès depuis que je suis au club :
 
 Nous avons quatre entraîneurs au club :
 
-Jean-Jacques | Lionel | Laurent | Frédéric
-:-----------:|:------:|:-------:|:-------:
-<img src="trombi/jean-jacques_berrard.png" width="150"/> | <img src="trombi/lionel_salmon.png" width="150"/> | <img src="trombi/laurent_rognard.png" width="150"/> | <img src="trombi/frédéric_berlioz.png" width="150"/>
+<table style="table-layout: fixed; width: 100%;">
+<thead>
+<tr>
+<th style="text-align: center; width: 25%;">Jean-Jacques</th>
+<th style="text-align: center; width: 25%;">Lionel</th>
+<th style="text-align: center; width: 25%;">Laurent</th>
+<th style="text-align: center; width: 25%;">Frédéric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align: top; padding: 5px;">
+<img src="trombi/jean-jacques_berrard.png" style="width: 100%; height: auto; border-radius: 8px;">
+</td>
+<td style="vertical-align: top; padding: 5px;">
+<img src="trombi/lionel_salmon.png" style="width: 100%; height: auto; border-radius: 8px;">
+</td>
+<td style="vertical-align: top; padding: 5px;">
+<img src="trombi/laurent_rognard.png" style="width: 100%; height: auto; border-radius: 8px;">
+</td>
+<td style="vertical-align: top; padding: 5px;">
+<img src="trombi/frédéric_berlioz.png" style="width: 100%; height: auto; border-radius: 8px;">
+</td>
+</tr>
+</tbody>
+</table>
 
 **N'hésitez pas à demander des conseils et des plans d'entraînement personnalisés aux entraîneurs.**
 
