@@ -1,7 +1,7 @@
 --- 
-title: "Le Guide du Coureur de l'ASC Balan (bit.ly/guideascbalan)"
+title: "Le Guide du Coureur de l'ASC Balan"
 author: "Florian et les entraîneurs"
-date: "29 janvier 2026"
+date: "01 février 2026"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -10,7 +10,9 @@ link-citations: yes
 # description: ""
 # twitter-handle: ""
 # github-repo: ""
-url: 'https\://privefl.github.io/guideascbalan/'
+# url: 'https\://privefl.github.io/guideascbalan/'
+url: "https://guide.balan-running.fr"
+baseurl: ""
 # cover-image: "images/hexsticker.png"
 editor_options: 
   chunk_output_type: console

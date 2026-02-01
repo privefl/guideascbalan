@@ -1,5 +1,5 @@
 --- 
-title: "Le Guide du Coureur de l'ASC Balan (bit.ly/guideascbalan)"
+title: "Le Guide du Coureur de l'ASC Balan"
 author: "Florian et les entraîneurs"
 date: "`r { Sys.setlocale('LC_TIME', 'fr_FR'); iconv(format(Sys.Date(), format='%d %B %Y'), from = 'latin1') }`"
 site: bookdown::bookdown_site
@@ -10,7 +10,9 @@ link-citations: yes
 # description: ""
 # twitter-handle: ""
 # github-repo: ""
-url: 'https\://privefl.github.io/guideascbalan/'
+# url: 'https\://privefl.github.io/guideascbalan/'
+url: "https://guide.balan-running.fr"
+baseurl: ""
 # cover-image: "images/hexsticker.png"
 editor_options: 
   chunk_output_type: console
