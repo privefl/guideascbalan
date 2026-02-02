@@ -6,3 +6,6 @@ _main.rds
 spelling.errors
 _bookdown_files
 render*.rds
+
+/.quarto/
+**/*.quarto_ipynb

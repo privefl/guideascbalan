@@ -1,3 +1,0 @@
-rmd_files: ["index.Rmd", "suivi.Rmd", "trombi.Rmd", "calendrier.Rmd", "gestion.Rmd", "VMA-FCM.Rmd", "types.Rmd", "plans.Rmd", "prevention.Rmd", "retours-blessures.Rmd", "chaussure.Rmd", "cadence.Rmd", "nutrition.Rmd", "conclu.Rmd"]
-output_dir: docs
-new_session: yes

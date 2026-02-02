@@ -1,0 +1,51 @@
+project:
+  type: book
+  output-dir: docs
+
+lang: fr
+language:
+  title-block-author-single: "Auteurs"
+  title-block-published: "Date de mise à jour"
+
+book:
+  title: "Le Guide du Coureur de l'ASC Balan"
+  author: "Florian et les entraîneurs"
+  date: today
+  date-format: "DD MMMM YYYY"
+  site-url: https://guide.balan-running.fr
+  sidebar:
+    logo: "https://balan-running.fr/assets/images/logo-balan.jpg"
+
+  chapters:
+    - index.Rmd
+    - suivi.Rmd
+    - trombi.Rmd
+    - calendrier.Rmd
+    - gestion.Rmd
+    - VMA-FCM.Rmd
+    - types.Rmd
+    - plans.Rmd
+    - prevention.Rmd
+    - retours-blessures.Rmd
+    - chaussure.Rmd
+    - cadence.Rmd
+    - nutrition.Rmd
+    - conclu.Rmd
+
+bibliography: [book.bib]
+
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true
+    toc-depth: 2
+    code-copy: true
+    html-math-method: mathjax
+    other-links:
+      - text: Site web du club
+        href: https://balan-running.fr
+    grid:
+      sidebar-width: 250px
+      body-width: 900px   # On augmente ici pour réduire l'impression de vide
+      margin-width: 160px # On réduit la TOC au minimum

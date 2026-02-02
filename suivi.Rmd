@@ -5,7 +5,7 @@ source("knitr-options.R")
 
 # Suivi des licenciés {-}
 
-N'hésitez pas, au jour le jour, à demander des conseils sur les bonnes pratiques d'entraînement à Vincent et moi (Florian), ou aux entraîneurs. Commencez par consulter les sections de ce site : elles contiennent déjà de nombreuses informations.
+N'hésitez pas, au jour le jour, à demander des conseils sur les bonnes pratiques d'entraînement à Vincent et moi (Florian), ou aux entraîneurs. Commencez par consulter les sections de ce site, elles contiennent déjà de nombreuses informations.
 
 On peut également proposer des programmes d'entraînement pour préparer une course en particulier.
 
@@ -15,9 +15,9 @@ Pour un suivi au jour le jour, et notamment pour se rendre compte de possibles m
 
 Procédure à suivre :
 
-- aller sur [intervals.icu]
+- allez sur [intervals.icu]
 
-- "signup for free" -> renseigner la fréquence cardique max à ce moment-là. Pour estimer votre fréquence cardiaque maximale avec une montre, relevez la valeur la plus élevée observée lors d'efforts très intenses. Comme la plupart des personnes ne parviennent pas à se donner à 100 % en dehors d'un test spécifique, ajoutez environ 2 bpm pour obtenir une estimation plus proche de votre valeur réelle.
+- "signup for free" -> renseignez la fréquence cardiaque max à ce moment-là. Pour estimer votre fréquence cardiaque maximale avec une montre, relevez la valeur la plus élevée observée lors d'efforts très intenses. Comme la plupart des personnes ne parviennent pas à se donner à 100 % en dehors d'un test spécifique, ajoutez environ 2 bpm pour obtenir une estimation plus proche de votre FCmax réelle.
 
 - connectez les activités avec votre montre et/ou Strava (dans Paramètres, en bas), puis cliquez sur "Téléchargez d'anciennes données".
 

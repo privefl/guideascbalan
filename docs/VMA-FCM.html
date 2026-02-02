@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Florian et les entraîneurs">
 
-<title>Le Guide du Coureur de l’ASC Balan</title>
+<title>VMA et FCM : Comprendre les fondamentaux – Le Guide du Coureur de l’ASC Balan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./suivi.html" rel="next">
+<link href="./types.html" rel="next">
+<link href="./gestion.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./VMA-FCM.html">VMA et FCM : Comprendre les fondamentaux</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
@@ -115,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -145,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./VMA-FCM.html" class="sidebar-item-text sidebar-link">
+  <a href="./VMA-FCM.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">VMA et FCM : Comprendre les fondamentaux</span></a>
   </div>
 </li>
@@ -207,12 +236,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table des matières</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#mes-performances" id="toc-mes-performances" class="nav-link" data-scroll-target="#mes-performances">Mes performances</a></li>
-  <li><a href="#les-entraîneurs" id="toc-les-entraîneurs" class="nav-link" data-scroll-target="#les-entraîneurs">Les entraîneurs</a></li>
-  <li><a href="#remerciements" id="toc-remerciements" class="nav-link" data-scroll-target="#remerciements">Remerciements</a></li>
-  </ul></li>
+  <li><a href="#quest-ce-que-la-vma" id="toc-quest-ce-que-la-vma" class="nav-link active" data-scroll-target="#quest-ce-que-la-vma">Qu’est-ce que la VMA ?</a></li>
+  <li><a href="#quest-ce-que-la-fcm" id="toc-quest-ce-que-la-fcm" class="nav-link" data-scroll-target="#quest-ce-que-la-fcm">Qu’est-ce que la FCM ?</a></li>
+  <li><a href="#comment-les-utiliser-dans-votre-entraînement" id="toc-comment-les-utiliser-dans-votre-entraînement" class="nav-link" data-scroll-target="#comment-les-utiliser-dans-votre-entraînement">Comment les utiliser dans votre entraînement ?</a></li>
   </ul>
 <div class="quarto-other-links"><h2>Autres liens</h2><ul><li><a href="https://balan-running.fr"><i class="bi bi-link-45deg"></i>Site web du club</a></li></ul></div></nav>
     </div>
@@ -221,26 +247,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Le Guide du Coureur de l’ASC Balan</h1>
+<h1 class="title">VMA et FCM : Comprendre les fondamentaux</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Auteurs</div>
-    <div class="quarto-title-meta-contents">
-             <p>Florian et les entraîneurs </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Date de mise à jour</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">02 février 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -250,70 +264,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
-<p>Bienvenue sur ce <strong>guide du coureur</strong>, un site conçu pour les membres de notre club de course, l’ASC Balan, quel que soit leur niveau ou leur expérience. Ce guide vous aidera à comprendre les différents types d’entraînements, et comment progresser efficacement tout en minimisant les risques de blessures.</p>
-<p>Que vous vous entraîniez pour un 5 km, un 10 km, un semi-marathon, un marathon, un 24 heures, ou un trail, vous trouverez ici les principes fondamentaux et des conseils pratiques pour atteindre vos objectifs.</p>
-<p>L’objectif est d’apprendre à structurer vos séances de manière intelligente, en fonction de vos capacités et de vos ambitions, afin d’améliorer vos performances en course à pied.</p>
-<section id="mes-performances" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="mes-performances">Mes performances</h2>
-<p>Pour donner un exemple concret, voici mes progrès depuis que je suis au club :</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>Dans le cadre de l’entraînement en course à pied, deux concepts clés sont souvent évoqués : la Vitesse Maximale Aérobie (VMA) et la Fréquence Cardiaque Maximale (FCM). Comprendre ces notions est essentiel pour structurer vos séances d’entraînement efficacement.</p>
+<section id="quest-ce-que-la-vma" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="quest-ce-que-la-vma">Qu’est-ce que la VMA ?</h2>
+<p>La VMA est la vitesse à laquelle un coureur utilise le maximum d’oxygène que son corps peut consommer pendant l’effort (VO2max en mL/min/kg). Pour en savoir plus sur la VO2max, regardez <a href="https://www.youtube.com/watch?v=MIVSIIvEhj0">cette vidéo</a>. Elle est souvent considérée comme un bon indicateur de la performance aérobie d’un coureur (sa capacité à utiliser efficacement l’oxygène pendant un effort prolongé). La VMA est généralement mesurée en km/h et peut être déterminée par des tests spécifiques (cf.&nbsp;la section <a href="#testvma">Test VMA du club</a>).</p>
+<section id="pourquoi-est-elle-importante" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="pourquoi-est-elle-importante">Pourquoi est-elle importante ?</h3>
+<ul>
+<li><p><strong>Détermination des allures d’entraînement</strong> : La VMA permet de définir des intensités d’entraînement précises, notamment pour les séances de fractionnés (cf.&nbsp;prochaine partie sur les types d’entraînements).</p></li>
+<li><p><strong>Suivi des progrès</strong> : En mesurant la VMA régulièrement, vous pouvez évaluer votre progression au fil du temps et ajuster votre programme d’entraînement en conséquence.</p></li>
+</ul>
 </section>
-<section id="les-entraîneurs" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="les-entraîneurs">Les entraîneurs</h2>
-<p>Nous avons quatre entraîneurs au club :</p>
-<table style="table-layout: fixed; width: 100%;">
+<section id="testvma" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="testvma">Test VMA du club</h3>
+<p>Les entraîneurs organisent en moyenne deux tests VMA par an. On utilise le test VAMEVAL. C’est un test qui fonctionne par paliers de vitesse croissante. Ce test utilise une bande son comme <a href="https://www.irbms.com/wp-content/uploads/2023/06/bande-son-1979-test-luc-leger.mp3">celle-ci</a> ; il suffit d’être au niveau du prochain plot (espacés de 20 mètres) à chaque bip sonore ; quand le coureur se retrouve à plus de 2 mètres d’un plot car il est à bout de forces, il doit s’arrêter. Ce test est facile à mettre en place, il ne nécessite pas d’échauffement, et donne une estimation fiable de la VMA même pour des coureurs qui n’ont aucune idée de leur niveau actuel.</p>
+<p>Pour calculer la VMA en fonction de la durée du test, il suffit d’appliquer la formule suivante : <code>VMA = (min + sec / 60) / 2 + 7.5</code> <span class="math inline">\(\left(\text{VMA} = \frac{\text{min} + \frac{\text{sec}}{60}}{2} + 7.5\right)\)</span>. Par exemple, lors du test VMA du 08/10/24, j’ai tenu 19 minutes et 32 secondes, ce qui me donne une VMA de 17.27. Quand au test du 02/10/25, 20 min et 32 sec, pour une VMA de 17.77.</p>
+</section>
+</section>
+<section id="quest-ce-que-la-fcm" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="quest-ce-que-la-fcm">Qu’est-ce que la FCM ?</h2>
+<p>La Fréquence Cardiaque Maximale (FCM) est le nombre maximum de battements par minute (bpm) que votre cœur peut atteindre lors d’un effort maximal. La FCM diminue avec l’âge, mais les formules comme <code>FCM = 220 - âge</code> sont trop générales ; c’est très variable d’un coureur à l’autre. Les montres de course modernes arrivent à l’estimer lors des efforts intenses. Pour aller plus loin sur la fréquence cardiaque, regardez <a href="https://www.youtube.com/watch?v=c7f2gWekBXE">cette vidéo</a>.</p>
+<section id="pourquoi-est-elle-importante-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="pourquoi-est-elle-importante-1">Pourquoi est-elle importante ?</h3>
+<ul>
+<li><p><strong>Évaluation de l’intensité</strong> : La FCM est utilisée pour définir des zones de fréquence cardiaque qui guident les coureurs dans l’intensité de leurs entraînements (cf.&nbsp;prochaine partie sur les types d’entraînements).</p></li>
+<li><p><strong>Prévention des blessures</strong> : Travailler dans des zones de fréquence cardiaque appropriées aide à éviter le surentraînement et réduit le risque de blessures.</p></li>
+</ul>
+</section>
+<section id="les-zones-de-fréquence-cardiaque" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="les-zones-de-fréquence-cardiaque">Les zones de fréquence cardiaque</h3>
+<p>Pour structurer efficacement vos séances en utilisant votre cœur comme indicateur d’intensité, on parle souvent de <strong>zones de fréquence cardiaque</strong>. On en parle souvent en pourcentage de la FCM par abus de langage, mais en fait il faudrait plutôt parler de pourcentage de la <strong>Fréquence Cardiaque de Réserve (FCR)</strong>, qui tient aussi compte de votre fréquence cardiaque au repos.</p>
+<p>La <strong>FCR</strong> se calcule ainsi :</p>
+<blockquote class="blockquote">
+<p><code>FCR = FCM - FC au repos</code></p>
+</blockquote>
+<p>Une fois la FCR connue, on peut calculer une fréquence cible pour une intensité donnée :</p>
+<blockquote class="blockquote">
+<p><code>FC cible = FC repos + pourcentage * FCR</code></p>
+</blockquote>
+<p><label for="fcMaxInput">FC maximale :</label> <input type="number" id="fcMaxInput" value="185" step="1" size="3"></p>
+<p><label for="fcRestInput">FC au repos :</label> <input type="number" id="fcRestInput" value="51" step="1" size="2"></p>
+<div style="overflow-x: auto; max-width: 100%; margin-top: 10px;">
+<table style="border-collapse: collapse; width: 100%; text-align: center; font-family: sans-serif;">
 <thead>
-<tr>
-<th style="text-align: center; width: 25%;">
-Jean-Jacques
+<tr style="background-color: #f0f0f0;">
+<th style="border: 1px solid #ccc; padding: 6px;">
+Zone
 </th>
-<th style="text-align: center; width: 25%;">
-Lionel
+<th style="border: 1px solid #ccc; padding: 6px;">
+% FCM (% FCR)
 </th>
-<th style="text-align: center; width: 25%;">
-Laurent
+<th style="border: 1px solid #ccc; padding: 6px;">
+Objectif
 </th>
-<th style="text-align: center; width: 25%;">
-Frédéric
+<th style="border: 1px solid #ccc; padding: 6px;">
+Intervalle FC (bpm)
 </th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="vertical-align: top; padding: 5px;">
-<img src="trombi/jean-jacques_berrard.png" style="width: 100%; height: auto; border-radius: 8px;">
-</td>
-<td style="vertical-align: top; padding: 5px;">
-<img src="trombi/lionel_salmon.png" style="width: 100%; height: auto; border-radius: 8px;">
-</td>
-<td style="vertical-align: top; padding: 5px;">
-<img src="trombi/laurent_rognard.png" style="width: 100%; height: auto; border-radius: 8px;">
-</td>
-<td style="vertical-align: top; padding: 5px;">
-<img src="trombi/frédéric_berlioz.png" style="width: 100%; height: auto; border-radius: 8px;">
-</td>
-</tr>
+<tbody id="fcResultsBody">
 </tbody>
 </table>
-<p><strong>N’hésitez pas à demander des conseils et des plans d’entraînement personnalisés aux entraîneurs.</strong></p>
-<p>Vincent et moi (Florian) sommes en cours de formation.</p>
+</div>
+<script>
+const zones = [
+  { nom: "Zone 1", minPct: 0.50, maxPct: 0.60, objectif: "Récupération active" },
+  { nom: "Zone 2", minPct: 0.60, maxPct: 0.70, objectif: "Endurance fondamentale" },
+  { nom: "Zone 3", minPct: 0.70, maxPct: 0.80, objectif: "Endurance active" },
+  { nom: "Zone 4", minPct: 0.80, maxPct: 0.90, objectif: "Résistance douce" },
+  { nom: "Zone 5", minPct: 0.90, maxPct: 1.00, objectif: "Résistance dure / VMA" }
+];
+
+function updateFCTable(fcMax, fcRest) {
+  const tbody = document.getElementById("fcResultsBody");
+  tbody.innerHTML = "";
+
+  const fcr = fcMax - fcRest; // Fréquence cardiaque de réserve
+
+  zones.forEach(zone => {
+    const minFC = Math.ceil(fcRest + zone.minPct * fcr);
+    const maxFC = Math.floor(fcRest + zone.maxPct * fcr);
+
+    const row = `<tr>
+      <td style="border: 1px solid #ccc; padding: 6px;">${zone.nom}</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${Math.round(zone.minPct*100)}–${Math.round(zone.maxPct*100)}%</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${zone.objectif}</td>
+      <td style="border: 1px solid #ccc; padding: 6px;">${minFC}–${maxFC}</td>
+    </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+
+// Initialisation
+updateFCTable(
+  parseInt(document.getElementById("fcMaxInput").value),
+  parseInt(document.getElementById("fcRestInput").value)
+);
+
+// Mise à jour en temps réel
+document.getElementById("fcMaxInput").addEventListener("input", () => {
+  updateFCTable(
+    parseInt(document.getElementById("fcMaxInput").value),
+    parseInt(document.getElementById("fcRestInput").value)
+  );
+});
+document.getElementById("fcRestInput").addEventListener("input", () => {
+  updateFCTable(
+    parseInt(document.getElementById("fcMaxInput").value),
+    parseInt(document.getElementById("fcRestInput").value)
+  );
+});
+</script>
 </section>
-<section id="remerciements" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="remerciements">Remerciements</h2>
-<p>Merci aux entraîneurs pour leurs réponses à mes questions et leurs retours sur ce guide. Merci aussi à Vincent, Sylvie, Sébastien, Mélanie et Cécile.</p>
+<section id="modifier-ses-zones-de-fc-dans-garmin-connect" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="modifier-ses-zones-de-fc-dans-garmin-connect">Modifier ses zones de FC dans Garmin Connect</h3>
+<p>Pour ajuster vos calculs de zones cardiaques à partir de la fréquence cardiaque de réserve (FCR) plutôt que de la fréquence cardiaque maximale (FCM), il est important que votre montre Garmin connaisse vos valeurs réelles de FC max et FC au repos.</p>
+<ol type="1">
+<li><p>Ouvrez Garmin Connect sur votre smartphone</p></li>
+<li><p>Dans le menu Plus (☰), sélectionnez Appareils Garmin → Votre montre → Paramètres utilisateur → Zones de fréquence cardiaque</p></li>
+<li><p>Sélectionnez “à partir de réserve de FC en pourcentage”</p></li>
+<li><p>Renseignez la FC au repos, la FC max, et les différents pourcentages (50, 60, 70, 80, 90)</p></li>
+</ol>
+</section>
+</section>
+<section id="comment-les-utiliser-dans-votre-entraînement" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="comment-les-utiliser-dans-votre-entraînement">Comment les utiliser dans votre entraînement ?</h2>
+<p>Pour maximiser vos performances, il est essentiel de comprendre comment utiliser la VMA et la FCM dans votre programme d’entraînement :</p>
+<ul>
+<li><p><strong>Séances basées sur la VMA</strong> : Utilisez votre VMA pour planifier vos entraînements en définissant des allures spécifiques pour le fractionné (cf.&nbsp;prochaine partie).</p></li>
+<li><p><strong>Contrôle de l’intensité avec la FCM</strong> : Surveillez votre fréquence cardiaque (pendant les séances ou après coup) pour vous assurer que vous travaillez dans la zone d’intensité souhaitée, permettant ainsi une meilleure gestion de l’effort.</p></li>
+</ul>
+<p>En intégrant ces deux mesures dans votre entraînement, vous serez en mesure d’améliorer vos performances de manière plus ciblée et efficace.</p>
+<p>Une troisième mesure utile à surveiller est le ressenti d’effort, ou RPE (Rate of Perceived Exertion), noté de 1 (effort très facile) à 10 (effort maximal). Personnellement, je dépasse rarement 7,5. Le but n’est pas de finir chaque séance vidé, les jambes en feu, et de devoir récupérer pendant 10 jours, mais plutôt de pouvoir enchaîner les entraînements régulièrement et progresser sans s’épuiser.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -719,10 +803,13 @@ Frédéric
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./gestion.html" class="pagination-link" aria-label="La gestion de l'entraînement">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">La gestion de l’entraînement</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./suivi.html" class="pagination-link" aria-label="Suivi des licenciés">
-        <span class="nav-page-text">Suivi des licenciés</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./types.html" class="pagination-link" aria-label="Les différents types d'entraînements et leur rôle">
+        <span class="nav-page-text">Les différents types d’entraînements et leur rôle</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
