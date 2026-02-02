@@ -9,6 +9,8 @@ source("spelling-check.R")
 Bienvenue sur ce **guide du coureur**, un site conçu pour les membres de notre club de course, l'ASC Balan, quel que soit leur niveau ou leur expérience.
 Ce guide vous aidera à comprendre les différents types d'entraînements, et comment progresser efficacement tout en minimisant les risques de blessures.
 
+Le nouveau site de notre club se trouve [ici](https://balan-running.fr/).
+
 Que vous vous entraîniez pour un 5 km, un 10 km, un semi-marathon, un marathon, un 24 heures, ou un trail, 
 vous trouverez ici les principes fondamentaux et des conseils pratiques pour atteindre vos objectifs.
 
