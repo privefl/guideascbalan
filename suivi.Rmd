@@ -15,7 +15,7 @@ Pour un suivi au jour le jour, et notamment pour se rendre compte de possibles m
 
 Procédure à suivre :
 
-- allez sur [intervals.icu]
+- allez sur [intervals.icu](https://intervals.icu/?invite=2qf82y07p0bm6w0t)
 
 - "signup for free" -> renseignez la fréquence cardiaque max à ce moment-là. Pour estimer votre fréquence cardiaque maximale avec une montre, relevez la valeur la plus élevée observée lors d'efforts très intenses. Comme la plupart des personnes ne parviennent pas à se donner à 100 % en dehors d'un test spécifique, ajoutez environ 2 bpm pour obtenir une estimation plus proche de votre FCmax réelle.
 
