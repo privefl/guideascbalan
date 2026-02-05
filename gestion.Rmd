@@ -2,7 +2,8 @@
 WORDS_TO_IGNORE <- c(
   "and", "to", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
-  "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall")
+  "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall",
+  "External", "Lunges")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -51,6 +52,8 @@ Ce que je vous propose :
     - Downward Facing Dog to Cobra  
     - Cobra to Prayer  
     - Prayer Lat Stretch  
+    - Spider Lunges
+    - 90 To 90 Hip External Rotations
 
 - Quand vous avez un peu de temps (même 5 minutes), faîtes quelques-uns de ces exercices de manière aléatoire
 
