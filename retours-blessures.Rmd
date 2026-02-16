@@ -54,6 +54,26 @@ Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez rem
 ```
 
 <div class="injury-card">
+<div class="card-badge">Témoignage : Pauline</div>
+<h3 class="card-title">Périostite tibiale</h3>
+
+<p><strong>Contexte :</strong> Passage d'une pratique aléatoire à une préparation semi-marathon structurée (3 séances/semaine avec fractionné). Changement simultané de chaussures et ajout de semelles orthopédiques.</p>
+
+<p><strong>L'alerte :</strong> Gêne au tibia droit apparaissant d'abord après 8-9 km, puis de plus en plus tôt dans la séance. La douleur passait au repos mais revenait systématiquement à l'effort.</p>
+
+<p><strong>L'erreur :</strong> Un "cocktail" explosif pour le corps : trop de changements sans transition (nouvelle marque de chaussures + semelles) et une augmentation brutale de l'intensité. Le refus d'écouter les premiers signaux par excès de motivation.</p>
+
+<p><strong>Le chemin :</strong> Kinésithérapie et renforcement musculaire très ciblé. Travail spécifique sur la stabilité, la mobilité et étirements matinaux. Apprentissage de la patience et de la résilience.</p>
+
+<p><strong>Temps d'arrêt :</strong> Arrêt total de 1,5 mois, mais une période de "galère" de 6 mois avant une reprise vraiment sereine.</p>
+
+<div class="lesson-box">
+<b>La leçon de Pauline :</b> "Ne négligez jamais les signaux de votre corps. Faites les changements de manière progressive et non explosive. On tire toujours un enseignement d'une blessure, même si on ne le voit pas sur le moment !"
+</div>
+</div>
+
+
+<div class="injury-card">
 <div class="card-badge">Témoignage : Florian</div>
 <h3 class="card-title">Blocage dorsal et gêne à la hanche</h3>
 
