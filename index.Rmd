@@ -24,6 +24,8 @@ Pour donner un exemple concret, voici mes progrès depuis que je suis au club :
 
 ```{r, include=FALSE}
 library(dplyr)
+library(lubridate)
+
 tests_VMA <- tibble::tribble(
   ~date,      ~vitesse, 
   "02/10/25", 17.77,
@@ -64,38 +66,43 @@ DHL5K <- tibble::tribble(
 
 parse_chrono <- function(x) {
   x2 <- ifelse(grepl("^\\d{1,2}:\\d{2}$", x), paste0("00:", x), x)
-  lubridate::hms(x2) / lubridate::hours(1)
+  hms(x2) / hours(1)
 }
 
 all <- bind_rows(tests_VMA, semis, `10K`, DHL5K) %>% 
-  mutate(date = lubridate::dmy(date),
-         vitesse = ifelse(!is.na(vitesse), vitesse, 
-                          dist / parse_chrono(chrono))) %>% 
+  mutate(
+    date    = dmy(date),
+    course  = factor(course, c("Test VMA", "5K DHL Aarhus", "10 km", "Semi-marathon")),
+    vitesse = ifelse(!is.na(vitesse), vitesse, dist / parse_chrono(chrono))
+  ) %>% 
   print()
 ```
 
 
-```{r, echo=FALSE, out.width="90%"}
+```{r, echo=FALSE, out.width="95%"}
 library(ggplot2)
 ggplot(all, aes(date, vitesse, color = course, label = ville)) +
-  theme_bw(14) + 
+  theme_bw(13) + 
   geom_point(size = 3) + 
   geom_line(linewidth = 1) +
   # geom_smooth() +
   scale_y_continuous(breaks = 1:25, minor_breaks = seq(1, 25, by = 0.2)) +
-  scale_x_date(breaks = lubridate::dmy(paste0("01/09/", 22:30)),
-               limits = c(lubridate::dmy("01/09/22"), lubridate::today()),
-               sec.axis = dup_axis(
-                 breaks = as.Date("1993-03-21") + lubridate::years(30:100),
-                 labels = 30:100,
-                 name = "age"
-               )) +
-  theme(legend.position = "bottom",
+  scale_x_date(
+    breaks = dmy(paste0("01/09/", 22:(year(today()) - 2000))),
+    date_labels = "%d/%m/%y", 
+    date_minor_breaks = "1 month",
+    limits = c(dmy("01/09/22"), today()),
+    expand = expansion(mult = c(0.02, 0.02)),  # no expansion on left, small on right
+    sec.axis = dup_axis(breaks = as.Date("1993-03-21") + years(30:100),
+                        labels = paste(30:100, "ans"), name = NULL)
+  ) +
+  theme(legend.position = "top",
         legend.text = element_text(margin = margin(l = 3, r = 6, unit = "pt")),
         panel.grid.major = element_line(color = "grey50", size = 0.6),
         panel.grid.minor = element_line(color = "gray70", size = 0.2),
-        plot.margin = margin(t = 5, r = 30, b = 5, l = 5),
-        legend.key.width = unit(1, "cm"))
+        plot.margin = margin(t = 5, r = 15, b = 5, l = 5),
+        legend.key.width = unit(1, "cm")) +
+  labs(x = NULL, y = "Vitesse (km/h)", color = NULL)
 ```
 
 
