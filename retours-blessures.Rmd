@@ -54,6 +54,26 @@ Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez rem
 ```
 
 <div class="injury-card">
+<div class="card-badge">Témoignage : Vincent</div>
+<h3 class="card-title">Syndrome de l'essuie-glace (TFL)</h3>
+
+<p><strong>Contexte :</strong> En 2020, pratique quotidienne durant le confinement (utilisation systématique de l'heure de sortie autorisée).</p>
+
+<p><strong>L'alerte :</strong> Douleur caractéristique sur la face externe du genou, apparaissant systématiquement après 25 minutes de course.</p>
+
+<p><strong>L'erreur :</strong> Augmentation trop brutale du volume kilométrique hebdomadaire et manque de variété dans les allures (uniquement de l'endurance fondamentale, sans fractionné ni variations).</p>
+
+<p><strong>Le chemin :</strong> Stratégie de "repos relatif" sans arrêt total. Utilisation de la méthode marche/course en veillant à rester sous le seuil de déclenchement de la douleur (moins de 25 min consécutives au début).</p>
+
+<p><strong>Temps d'arrêt :</strong> Aucun arrêt complet, mais 8 semaines d'entraînement adapté et léger pour laisser le tendon s'adapter.</p>
+
+<div class="lesson-box">
+<b>La leçon de Vincent :</b> "Attention à rester progressif quand on souhaite augmenter, que ce soit le volume, l'intensité ou le dénivelé."
+</div>
+</div>
+
+
+<div class="injury-card">
 <div class="card-badge">Témoignage : Pauline</div>
 <h3 class="card-title">Périostite tibiale</h3>
 
