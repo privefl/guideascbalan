@@ -26,6 +26,19 @@ Adoptez une bonne technique de course, portez des chaussures appropriées,
 et n'oubliez pas de renforcer les muscles stabilisateurs.
 Écoutez votre corps et n'ignorez pas les douleurs persistantes.
 
+<div style="text-align: center; margin: 40px 0;">
+<iframe 
+width="279" 
+height="496" 
+src="https://www.youtube.com/embed/hFEn1o4TrRY" 
+title="YouTube Short" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen
+style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+</iframe>
+</div>
+
 
 ## Importance du renforcement musculaire {-}
 
