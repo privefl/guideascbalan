@@ -225,3 +225,17 @@ Pour les vraiment malheureux qui se sont blessé plusieurs fois, vous pouvez rem
 <b>La leçon de Gilles :</b> "La pratique du running doit rester un loisir. Il ne faut surtout pas aller au-delà de ses possibilités et rester extrêmement vigilant à la moindre alerte en écoutant son corps."
 </div>
 </div>
+
+<br>
+
+<div style="text-align: center; margin: 40px 0;">
+<iframe 
+style="width: 100%; max-width: 800px; aspect-ratio: 16 / 9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+src="https://www.youtube.com/embed/FXI_mEeskNk?si=EZ-FRgLPC19UuFOj" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen>
+</iframe>
+</div>
