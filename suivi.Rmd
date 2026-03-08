@@ -24,7 +24,7 @@ Procédure à suivre :
     ![](images/intervals-garmin.png){fig-align="center" width="80%"}
 
 
-- sur [intervals.icu/athletes](intervals.icu/athletes) (en cliquant en haut à gauche sur votre nom), cliquez sur "Ajouter un entraîneur" et ajoutez Vincent Richaud et Florian Privé.
+- sur [intervals.icu/athletes](https://intervals.icu/athletes) (en cliquant en haut à gauche sur votre nom), cliquez sur "Ajouter un entraîneur" et ajoutez Vincent Richaud et Florian Privé.
 
 <br>
 
