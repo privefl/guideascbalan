@@ -1,4 +1,5 @@
 ```{r setup, include=FALSE}
+WORDS_TO_IGNORE <- c("capillarisation", "désentraîner", "post-compétition", "fév", "icu", "intervals", "mar", "prépa", "Fréq", "tbl-colwidths")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -7,11 +8,33 @@ source("spelling-check.R")
 
 Préparer une course nécessite un plan structuré adapté à votre niveau et à votre objectif.
 **Demandez aux entraîneurs pour obtenir un plan d'entraînement personnalisé.**
-Voici des exemples de plans d'entraînement pour différentes distances :
 
-## Préparer un 10 km {-}
 
-Un plan typique de 8 semaines pourrait inclure :
+## Les quatre phases d'une préparation {-}
+
+Une préparation bien structurée suit quatre phases distinctes, chacune avec un objectif précis.
+
+**1. Phase générale (volume)**
+C'est la fondation de tout le reste. L'objectif est d'accumuler un grand volume en endurance fondamentale pour développer la base aérobie : capillarisation, économie de course, renforcement des tendons et articulations. Sans cette base solide, la phase spécifique sera moins efficace et le risque de blessure plus élevé. C'est souvent la phase la moins glamour — on court beaucoup, lentement, sans chercher la performance — mais c'est elle qui conditionne tout ce qui suit. Ne la négligez pas en voulant aller trop vite vers les séances d'allure spécifique. Typiquement 4 à 8 semaines selon la distance préparée.
+
+**2. Phase spécifique (allure)**
+Une fois la base construite, on introduit progressivement les séances à allure cible : blocs d'allure semi, 10K, etc. Le volume global baisse légèrement au profit de l'intensité spécifique. C'est ici que le corps apprend à tenir l'allure de course sur des durées croissantes.
+
+**3. Affûtage**
+Dans les 1 à 3 semaines avant la course, on réduit progressivement le volume tout en maintenant la fréquence (même nombre d'entraînements, mais plus courts) et quelques séances courtes à allure cible (maintenir l'intensité, mais à volume réduit). L'objectif est d'arriver frais le jour J sans perdre les adaptations acquises. C'est souvent frustrant car on a l'impression de se désentraîner — c'est normal, faites confiance au processus. Pour un semi, je fais ma séance test le jeudi 10 jours avant la course, puis je commence l'affûtage. Pour un 10 km, je pense faire ma dernière grosse séance d'allure le dimanche ou lundi une semaine avant la course.
+
+**4. Récupération post-compétition**
+Souvent oubliée, cette phase est pourtant indispensable. Après une course importante, le corps a besoin de temps pour récupérer pleinement. Comme repère : environ 1 semaine de récupération légère après un semi-marathon, et 2 semaines après un marathon, avant de reprendre un entraînement normal en démarrant un nouveau cycle (de préparation générale). Pendant cette période, maintenez une fréquence de sorties légères en EF mais évitez toute séance de qualité. Reprendre trop tôt est l'une des causes les plus fréquentes de blessure post-compétition.
+
+
+## Exemples de plans {-}
+
+Les exemples ci-dessous sont des repères généraux. Ils correspondent à la phase spécifique d'une préparation — ils supposent donc qu'une phase générale de volume a déjà été réalisée en amont.
+
+
+### Préparer un 10 km {-}
+
+Un plan typique de 4 à 6 semaines (de spécifique) pourrait inclure :
 
 - 1 sortie longue par semaine.
 
@@ -28,9 +51,9 @@ Un plan plus léger :
 - Sortie longue : 45 min à 1 heure à une allure confortable.  
 
 
-## Préparer un semi-marathon {-}
+### Préparer un semi-marathon {-}
 
-Un plan de 12 semaines pourrait inclure :
+Un plan de 6 à 8 semaines (de spécifique) pourrait inclure :
 
 - 1 sortie longue en augmentant progressivement la distance.
 
@@ -47,9 +70,9 @@ Un plan plus léger :
 - Sortie longue : 1h15 à 1h45 à une allure confortable. 
 
 
-## Préparer un marathon {-}
+### Préparer un marathon {-}
 
-Un plan de 16 semaines pourrait inclure :
+Un plan de 10 à 12 semaines (de spécifique) pourrait inclure :
 
 - 1 sortie longue, augmentant progressivement la distance jusqu'à 30 km.
 
@@ -66,7 +89,7 @@ Un plan plus léger :
 - Sortie longue : 1h45 à 2h15 à une allure confortable.
 
 
-## Préparation pour le trail {-}
+### Préparation pour le trail {-}
 
 Pour des conseils pour ceux qui commencent le trail, regardez [cette vidéo](https://www.youtube.com/watch?v=25rCngWCRj4).
 
@@ -78,3 +101,65 @@ Les plans de trail incluront des éléments spécifiques comme :
 
 - Un travail sur la technique de descente et de montée. 
 Pour des conseils pratiques pour s'améliorer en descente, regardez [cette vidéo](https://www.youtube.com/watch?v=_dujtx5qPnQ). Et pour la montée, c'est [celle-ci](https://youtu.be/Z42hb_OxWcg?si=gukUz6GbOaNUcj84).
+
+
+
+## Exemple concret : ma prépa semi-marathon {-}
+
+Voici comment j'ai structuré mes 13 semaines de préparation pour le semi de Bourg-en-Bresse 2026 (1:23:48, PR de 4 minutes).
+
+### Phase générale — volume (S1 à S4) {-}
+
+| Semaine | Volume (Fréq.) | Notes |
+|---|---|---|
+| S1 (01–07 déc) | 90 km (5) | Démarrage gros volume, motivation à fond |
+| S2 (08–14 déc) | 80 km (6) | Maintien volume, VMA arrêtée |
+| S3 (15–21 déc) | 94 km (6) | Semaine record, toujours EF dominant |
+| S4 (22–28 déc) | 46 km (4) | Décharge volontaire à Noël |
+: Phase générale {tbl-colwidths="[28,28,44]"}
+
+L'objectif de ces 3 premières semaines était de construire une base aérobie solide avant d'introduire de l'allure spécifique. À noter que j'avais déjà réalisé 3 semaines (non consécutives) à plus de 80 km en 2025. Lors de ces trois semaines à 80–95 km, j'ai surveillé de près sur intervals.icu pour rester dans la zone verte sans virer dans le rouge (et risquer fortement la blessure). J'avais prévu ensuite une semaine de décharge pour laisser le temps au corps de créer des adaptations, et passer les fêtes tranquille.
+
+### Phase spécifique — allure (S5 à S12) {-}
+
+| Semaine | Volume (Fréq.) | Notes |
+|---|---|---|
+| S5 (29 déc–04 jan) | 50 km (4) | Malade 🤮 le samedi d'avant, reprise le jeudi |
+| S6 (05–11 jan) | 82 km (4) | Reprise volume + introduction allure semi (x 1 km) |
+| S7 (12–18 jan) | 64 km (5) | Blocs allure semi, séances club |
+| S8 (19–25 jan) | 73 km (6) | Volume + qualité, semaine chargée |
+| S9 (26 jan–01 fév) | 81 km (6) | Volume + qualité, semaine chargée |
+| S10 (02–08 fév) | 55 km (4) | Fatigue + décharge (ski et vélo) |
+| S11 (09–15 fév) | 53 km (4) | Qualité compliquée à cause du dos |
+| S12 (16–22 fév) | 50 km (5) | Reprise + séance test le jeudi |
+: Phase spécifique {tbl-colwidths="[28,28,44]"}
+
+
+### Affûtage (S12 à S13) {-}
+
+| Semaine | Volume (Fréq.) | Notes |
+|---|---|---|
+| S13 (23 fév–01 mar) | 63 km (5) | Semaine de course (semi 01/03) |
+: Affûtage {tbl-colwidths="[28,28,44]"}
+
+Je ne tenais plus en place cette dernière semaine, je suis sorti marcher pour me forcer à ne pas courir. Au final, si on compte les 3 semaines précédentes, ça fait un affûtage de 4 semaines 🤯.
+
+### Récupération post-compétition (S14) {-}
+
+| Semaine | Volume (Fréq.) | Notes |
+|---|---|---|
+| S14 (02–07 mar) | 68 km (6) | Marche + EF très léger, pas de qualité |
+: Récupération {tbl-colwidths="[28,28,44]"}
+
+Pas de séance intense pendant toute cette semaine — uniquement de la marche le lendemain, puis des footings légers à FC basse pour favoriser la récupération musculaire et tendineuse. Un peu trop de volume quand même.
+
+J'ai enchaîné directement sur une prépa spécifique de 4 semaines pour un 10K, en considérant que la prépa semi était une bonne prépa générale pour un 10K. Ensuite je repartirai sur une prépa générale.
+
+### Bilan {-}
+
+Cette préparation était loin d'être parfaite : du froid et de la pluie, une maladie après la décharge de Noël, un dos qui bloque en février, et seulement 3 mois de préparation.
+Malgré tout, elle a très bien fonctionné — la base de volume de décembre a clairement fait la différence, et la phase spécifique de janvier-février a suffi à mettre le corps en condition pour tenir 4:00/km sur 21 km.
+
+Pour l'année prochaine, l'objectif sera d'allonger la phase générale d'un mois supplémentaire, soit 4 semaines de plus à haut volume en EF avant d'introduire l'allure spécifique.
+Avec une base plus solide, la phase spécifique devrait être encore plus efficace et le risque de petits pépins en fin de prépa plus faible.
+Direction les 1h20.
