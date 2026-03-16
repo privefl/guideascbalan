@@ -1,5 +1,5 @@
 ```{r setup, include=FALSE}
-WORDS_TO_IGNORE <- c("médio-pied", "running", "supinatrice", "Ambérieu", "i-run")
+WORDS_TO_IGNORE <- c("médio-pied", "running", "supinatrice", "Ambérieu", "i-run", "achilléenne", "tendinopathie")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -23,7 +23,8 @@ Si vous connaissez déjà un modèle qui vous convient, [i-run.fr](https://www.i
 Il existe trois types de foulée principaux, chacun influençant l'usure et le type de soutien nécessaire :
 
 - **Pronatrice** : lorsque le pied roule vers l'intérieur à l'impact.
-Il est alors recommandé de prendre une chaussure avec un soutien accru sur le côté intérieur et avec un talon ferme et stable.
+Il peut être alors recommandé de prendre une chaussure avec un soutien accru sur le côté intérieur et avec un talon ferme et stable.
+À noter : les études scientifiques n'ont pas démontré formellement de réduction des blessures avec les chaussures de soutien vs neutres pour les pronateurs. Le confort ressenti reste le meilleur guide — une chaussure confortable est généralement une bonne chaussure, quelle que soit votre catégorie biomécanique.
 
 - **Supinatrice** : lorsque le pied roule vers l'extérieur.
 Les supinateurs devraient rechercher des chaussures offrant une meilleure absorption des chocs.
@@ -36,19 +37,14 @@ ou consulter un spécialiste en magasin.
 Opter pour des semelles orthopédiques peut aussi s'avérer utile.
 
 
-## Choisir le drop en fonction de sa foulée et de son expérience {-}
+## Choisir le drop {-}
 
 Le **drop** correspond à la différence de hauteur entre le talon et l'avant-pied.
-Voici quelques repères pour bien choisir :
+Un drop élevé (8-12 mm) sollicite davantage les genoux et les hanches ; un drop faible (0-4 mm) transfère les contraintes vers les mollets et le tendon d'Achille.
 
-- **Drop élevé (8-12 mm)** : recommandé pour les coureurs débutants ou ceux qui attaquent le sol par le talon.
-Ce type de drop aide à réduire l'impact au niveau des mollets et du tendon d'Achille. C'est ce que j'utilise encore, n'ayant pas encore trouvé de chaussures à drop plus faible qui me conviennent bien.
+Le drop n'est pas un critère de niveau : un débutant n'a pas besoin d'un drop élevé, et un coureur expérimenté n'a pas à viser un drop faible. Ce qui compte, c'est **votre habitude** — changer de drop expose à des blessures (tendinopathie achilléenne, fractures de stress) si la transition est trop rapide, quel que soit votre niveau.
 
-- **Drop moyen (4-8 mm)** : convient aux coureurs intermédiaires ou aux coureurs polyvalents,
-cherchant un équilibre entre attaque talon et médio-pied.
-
-- **Faible drop (0-4 mm)** : favorise une foulée avant-pied et convient surtout aux coureurs expérimentés
-habitués aux faibles drops. À utiliser avec précaution et très progressivement pour éviter les blessures.
+**Règle principale : ne changez pas de drop sans transition très progressive sur plusieurs semaines, et seulement si vous avez une raison concrète de le faire.** Si vos chaussures actuelles vous conviennent, conservez le même drop.
 
 
 ## Choisir le bon amorti en fonction de la distance et du terrain {-}
