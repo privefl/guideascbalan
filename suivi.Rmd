@@ -19,7 +19,7 @@ Procédure à suivre :
 
 - "signup for free" -> renseignez la fréquence cardiaque max à ce moment-là. Sur Garmin, vous pouvez voir les valeurs de FCmax [ici](https://connect.garmin.com/app/report/13/all/last_six_months). Dans [les paramètres](https://intervals.icu/settings/Run), il faudra aussi régler la FC au seuil à 93% de la FCmax.
 
-- connectez les activités avec votre montre et/ou Strava (dans le menu Paramètres, onglet connexion), puis cliquez sur "Téléchargez d'anciennes données". A noter que j'ai récemment déconnecté Strava car les laps communiqués à intervals ne correspondaient pas toujours aux laps réels.
+- connectez les activités avec votre montre et/ou Strava (dans le menu Paramètres, onglet connexion), puis cliquez sur "Téléchargez d'anciennes données". À noter que j'ai récemment déconnecté Strava car les laps communiqués à intervals ne correspondaient pas toujours aux laps réels.
 
     ![](images/intervals-garmin.png){fig-align="center" width="80%"}
 
@@ -34,8 +34,8 @@ Sur intervals.icu, vous trouverez beaucoup d'information, mais notamment :
 
 - Dans "Condition physique", **ce que je regarde le plus**, résumé de la condition physique et de la fatigue. Il faut idéalement viser la zone verte (ou au moins la grise), la bleue le matin d'une course (arriver avec un peu de fraîcheur physique), et éviter la rouge (signe de sur-entraînement, qui est contre-productif et qui amène aux blessures). Si le graphe ne vous paraît pas cohérent par rapport à votre ressenti, c'est peut-être que la FCmax renseignée est incorrecte, ou la FCseuil.
 
-- Dans "Totaux", on peut voir les temps passés dans les zones d'effort (en gros Z1+Z2=endurance, Z3=allure marathon, Z4=semi, Z5=10K, Z6=5K, Z7=VMA) pour une plage de temps donnée. Globalement, il faudrait environ Z1+Z2 à 80%, Z3+Z4 à 15%, et Z5+ à 5%. Je ne citerai pas la personne qui est à 31%, 36%, et 33% sur le dernier mois ;).
+- Dans "Totaux", on peut voir les temps passés dans les zones d'effort (en gros Z1+Z2=endurance, Z3=allure marathon, Z4=semi, Z5=10K, Z6=5K, Z7=VMA) pour une plage de temps donnée. Globalement, il faudrait environ Z1+Z2 à 80%, Z3+Z4 à 15%, et Z5+ à 5%. Je ne citerai pas la personne qui est à 31%, 36%, et 33% sur le dernier mois ;). À noter que ces zones Z1 à Z7 correspondent au système utilisé sur intervals.icu, qui découpe plus finement que les 5 zones classiques présentées dans la section VMA et FCM.
 
 Nous aurons également accès à ces informations.
 
-A noter que, pour obtenir des données plus précises, il est utile d'activer l'enregistrement toutes les secondes plutôt que l'enregistrement "intelligent" (par défaut sur une Garmin). Pour cela, il faut aller dans le menu des paramètres (en maintenant le bouton Up, milieu-gauche), puis en descendant dans le menu "Système", puis dans le sous-menu "Enregistrement des données".
+À noter que, pour obtenir des données plus précises, il est utile d'activer l'enregistrement toutes les secondes plutôt que l'enregistrement "intelligent" (par défaut sur une Garmin). Pour cela, il faut aller dans le menu des paramètres (en maintenant le bouton Up, milieu-gauche), puis en descendant dans le menu "Système", puis dans le sous-menu "Enregistrement des données".

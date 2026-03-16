@@ -357,7 +357,7 @@ syncInputs(input1, input2);
 </script>
 
 
-## Endurance active (ou tempo) {-}
+## Endurance active {-}
 
 L'endurance active est un entraînement à intensité modérée, légèrement en-dessous du seuil lactique (un point critique au delà duquel le corps commence à produire de l'acide lactique à un rythme supérieur à celui auquel il peut l'éliminer),
 autour de 80–85% FCM.
