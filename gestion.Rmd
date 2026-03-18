@@ -3,7 +3,7 @@ WORDS_TO_IGNORE <- c(
   "and", "to", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
   "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall",
-  "External", "Lunges")
+  "External", "Lunges", "Thread", "Needle")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -52,6 +52,7 @@ Ce que je vous propose :
     - Downward Facing Dog to Cobra  
     - Cobra to Prayer  
     - Prayer Lat Stretch  
+    - Thread The Needle
     - Spider Lunges
     - 90 To 90 Hip External Rotations
 
