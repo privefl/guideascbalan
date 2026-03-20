@@ -1,9 +1,9 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c(
-  "and", "to", "Bend", "Breakdancer", "Butterfly", "Cat", "Cow", "Dog", "Downward", 
+  "and", "to", "Bend", "Breakdancer", "Cat", "Cow", "Dog", "Downward", 
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
   "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall",
-  "External", "Lunges", "Thread", "Needle")
+  "External", "Lunges", "Thread", "Needle", "Rainbow")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -48,11 +48,11 @@ Ce que je vous propose :
     - The Breakdancer  
     - The Sagittarius  
     - The Turtle  
-    - V Sit  
-    - Downward Facing Dog to Cobra  
+    - V Sit   
     - Cobra to Prayer  
     - Prayer Lat Stretch  
     - Thread The Needle
+    - Rainbow Stretch
     - Spider Lunges
     - 90 To 90 Hip External Rotations
 
