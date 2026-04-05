@@ -51,7 +51,8 @@ semis <- tibble::tribble(
 `10K` <- tibble::tribble(
   ~ville,      ~date,      ~chrono,
   "Troyes",     "11/05/25", "40:54",
-  "Bletterans", "23/03/25", "40:44"
+  "Bletterans", "23/03/25", "40:44",
+  "Bettant",    "05/04/26", "39:54"
 ) %>% 
   mutate(course = "10 km", dist = 10) %>% 
   print()
