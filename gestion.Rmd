@@ -2,8 +2,9 @@
 WORDS_TO_IGNORE <- c(
   "and", "to", "Bend", "Breakdancer", "Cat", "Cow", "Dog", "Downward", 
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
-  "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", "Wall",
-  "External", "Lunges", "Thread", "Needle", "Rainbow")
+  "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", 
+  "Wall", "External", "Lunges", "Thread", "Needle", "Rainbow", "Ballerina", 
+  "Opener", "Side", "Through")
 source("knitr-options.R")
 source("spelling-check.R")
 ```
@@ -55,6 +56,9 @@ Ce que je vous propose :
     - Rainbow Stretch
     - Spider Lunges
     - 90 To 90 Hip External Rotations
+    - Side Kick Through
+    - The Ballerina
+    - Hip Opener
 
 - Quand vous avez un peu de temps (même 5 minutes), faîtes quelques-uns de ces exercices de manière aléatoire
 
