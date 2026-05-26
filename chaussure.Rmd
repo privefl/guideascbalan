@@ -15,7 +15,7 @@ Et pour savoir quand changer vos chaussures, regardez [cette vidéo](https://www
 Pour vous faire conseiller au mieux, vous pouvez aller à Terre de Running Ambérieu, où ils analysent votre foulée sur tapis avec des caméras. 
 De plus, être membre de l'ASC Balan y offre une réduction de 10%.
 J'y ai aussi appris une technique intéressante pour mieux maintenir son pied dans la chaussure, le [laçage dit marathonien](https://www.tiktok.com/@florian_running/video/7483558095696694550), qui fait une grosse différence pour moi.
-Si vous connaissez déjà un modèle qui vous convient, [i-run.fr](https://www.i-run.fr/) propose régulièrement des promotions et une livraison rapide. Vous pouvez aussi comparer les prix chez plusieurs vendeurs avec [ce comparateur](https://app.therunningcollective.com/fr).
+Si vous connaissez déjà un modèle qui vous convient, [i-run.fr](https://www.i-run.fr/) propose régulièrement des promotions et une livraison rapide. Vous pouvez aussi comparer les prix (et promos !) chez plusieurs vendeurs avec [ce comparateur](https://app.therunningcollective.com/fr), pour acheter sans se ruiner. 
 
 
 ## Déterminer son type de foulée {-}
@@ -46,6 +46,8 @@ Le drop n'est pas un critère de niveau : un débutant n'a pas besoin d'un drop 
 
 **Règle principale : ne changez pas de drop sans transition très progressive sur plusieurs semaines, et seulement si vous avez une raison concrète de le faire.** Si vos chaussures actuelles vous conviennent, conservez le même drop.
 Le même principe s'applique si vous modifiez votre attaque de pied ou augmentez votre cadence (cf. chapitre correspondant).
+
+Attention, le drop renseigné par le vendeur peut être différent de celui mesuré par [ce site (en anglais) qui coupe les chaussures en deux](runrepeat.com).
 
 
 ## Choisir le bon amorti en fonction de la distance et du terrain {-}
