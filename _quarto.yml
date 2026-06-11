@@ -28,6 +28,7 @@ book:
     - prevention.Rmd
     - retours-blessures.Rmd
     - chaussure.Rmd
+    - montre.Rmd
     - cadence.Rmd
     - nutrition.Rmd
     - conclu.Rmd
