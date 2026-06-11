@@ -71,3 +71,5 @@ Pour configurer ces écrans, il suffit de
 - aller dans "Activités et applications"
 - Course à pied -> Paramètres -> Écrans de données
 - Modifier la Disposition (pour avoir 4 champs par écran) puis les Champs de données un par un pour chacun des écrans
+
+Pour plus de configuration sur la montre, regardez [cette vidéo](https://www.youtube.com/watch?v=p65qvGSK-qk).
