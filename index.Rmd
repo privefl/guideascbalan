@@ -36,6 +36,13 @@ tests_VMA <- tibble::tribble(
   mutate(course = "Test VMA") %>% 
   print()
 
+marathons <- tibble::tribble(
+  ~ville,  ~date,      ~chrono,
+  # "Vercors", "27/06/26", "3:26:00"
+) %>% 
+  mutate(course = "Marathon", dist = 42.2) %>% 
+  print()
+
 semis <- tibble::tribble(
   ~ville,  ~date,      ~chrono,
   "Annecy", "15/04/23", "1:43:53",
@@ -71,10 +78,10 @@ parse_chrono <- function(x) {
   hms(x2) / hours(1)
 }
 
-all <- bind_rows(tests_VMA, semis, `10K`, DHL5K) %>% 
+all <- bind_rows(tests_VMA, marathons, semis, `10K`, DHL5K) %>% 
   mutate(
     date    = dmy(date),
-    course  = factor(course, c("Test VMA", "5K DHL Aarhus", "10 km", "Semi-marathon")),
+    course  = factor(course, c("Test VMA", "5K DHL Aarhus", "10 km", "Semi-marathon", "Marathon")),
     vitesse = ifelse(!is.na(vitesse), vitesse, dist / parse_chrono(chrono))
   ) %>% 
   print()
