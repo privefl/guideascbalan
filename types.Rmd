@@ -373,17 +373,16 @@ Courir 45 minutes à 80% FCM.
 
 ## Sortie longue {-}
 
-La sortie longue est une séance clé pour ceux qui préparent des courses de longue distance
-(semi-marathon, marathon, trail).
+La sortie longue est une séance clé pour ceux qui préparent des courses de longue distance (semi-marathon, marathon, trail).
 Elle consiste à courir à allure modérée (70–80% FCM) sur une longue durée (1h et plus). 
 C'est globalement une séance d'EF, mais plus longue. 
 On pourra aussi y inclure des blocs d'allure spécifique à la compétition préparée.
-Pour aller plus loin sur la sortie longue, regardez [cette vidéo](https://youtu.be/JFww4nEjej4).
+Pour aller plus loin sur la sortie longue, regardez [cette vidéo](https://youtu.be/JFww4nEjej4) et [cette vidéo](https://youtu.be/dsT1qLCp1P4).
 
 Pour une sortie longue, la distance maximale recommandée dépend du volume hebdomadaire total, car elle doit rester proportionnelle pour éviter le surmenage et les blessures.
-Une règle fréquemment utilisée par les entraîneurs est que la sortie longue ne dépasse pas 30 à 35 % du volume hebdomadaire total (en kilomètres). Cela peut varier selon les objectifs (10 km, semi, marathon) et le niveau du coureur.
+Une règle fréquemment utilisée par les entraîneurs est que la sortie longue ne dépasse pas 30 à 35 % (un tiers) du volume hebdomadaire total (en kilomètres). Il faut aussi ne pas augmenter sa durée de plus de 15 min par semaine (progressivité), et ne pas hésiter à repartir d'une sortie longue plutôt courte (comme 45 minutes) après une coupure pendant laquelle on a beaucoup réduit le volume.
 
-Elle se pratique généralement pendant le week-end. Il y a des groupes du club qui courent régulièrement le week-end ; on va mettre en place des sous-groupes WhatsApp les recensant en ligne.
+Elle se pratique généralement pendant le week-end. Il y a des groupes du club qui courent régulièrement le week-end.
 
 **Objectifs** :
 
@@ -394,7 +393,7 @@ Elle se pratique généralement pendant le week-end. Il y a des groupes du club 
 - Tester sa stratégie de ravitaillement pour longues distances.
 
 **Exemple** :
-Sortie de 1h45 à 70–75% FCM.
+Sortie de 1h30 à 70% FCM.
 
 
 ## Plyométrie et renforcement musculaire {-}
