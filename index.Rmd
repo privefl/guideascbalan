@@ -28,6 +28,7 @@ library(lubridate)
 
 tests_VMA <- tibble::tribble(
   ~date,      ~vitesse, 
+  "24/09/26", 18.5,
   "02/10/25", 17.77,
   "07/12/24", 17.5,
   "08/10/24", 17.27,
