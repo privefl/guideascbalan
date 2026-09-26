@@ -138,6 +138,112 @@ ggplot(all, aes(date, vitesse, color = course, label = ville)) +
   labs(x = NULL, y = "Vitesse (km/h)", color = NULL)
 ```
 
+A mettre en perspective avec mon volume hebdomadaire depuis que j'ai une montre :
+
+```{r, echo=FALSE, out.width="100%", fig.asp = 0.5, warning=FALSE}
+library(dplyr)
+library(lubridate)
+library(httr2)
+
+get_runs <- function(oldest = "2024-08-01", cache = "runs.tsv") {
+  key <- Sys.getenv("INTERVALS_API_KEY")
+  if (key == "") {
+    stop("INTERVALS_API_KEY not found. Set it in ~/.Renviron, then run readRenviron('~/.Renviron').")
+  }
+  old <- if (file.exists(cache)) {
+    # stored in UTC by write_tsv(): convert (not force) back to Paris time
+    readr::read_tsv(cache, col_types = "cTd") %>% mutate(start = with_tz(start, "Europe/Paris"))
+  } else NULL
+  # fetch from last cached day (inclusive, in case of several runs that day)
+  from <- if (is.null(old)) oldest else as.character(as_date(max(old$start, na.rm = TRUE)))
+  if (is.na(from)) stop("Could not determine last cached date: check ", cache)
+  new <- tryCatch(
+    request("https://intervals.icu/api/v1/athlete/0/activities") %>%
+      req_auth_basic("API_KEY", key) %>%
+      req_url_query(oldest = from, newest = as.character(today())) %>%
+      req_perform(),
+    httr2_http_401 = function(e) stop("Invalid intervals.icu API key (HTTP 401). Regenerate it in Settings > Developer Settings.", call. = FALSE),
+    httr2_http_403 = function(e) stop("Access denied by intervals.icu (HTTP 403). Check the key and the athlete ID.", call. = FALSE)
+  ) %>%
+    resp_body_json(simplifyVector = TRUE) %>%
+    as_tibble()
+  if (nrow(new) > 0) {
+    new <- new %>%
+      filter(type %in% c("Run", "TrailRun", "VirtualRun")) %>%
+      transmute(id, start = ymd_hms(start_date_local, tz = "Europe/Paris"),
+                km = round(distance / 1000, 2)) %>%
+      filter(!is.na(km))  # activities without distance (e.g. manual entries)
+  }
+  runs <- bind_rows(new, old) %>%
+    distinct(id, .keep_all = TRUE) %>%  # overlapping day: keep fresh version
+    arrange(desc(start))
+  readr::write_tsv(runs, cache)
+  runs
+}
+
+runs <- get_runs() %>% mutate(date = as_date(start))
+
+daily <- runs %>%
+  count(date, wt = km, name = "km") %>%
+  tidyr::complete(date = seq(min(date), today(), by = "day"), fill = list(km = 0)) %>%
+  # trailing 28-day weighted mean, linearly decreasing weights (lag 0 first),
+  # scaled so that a constant daily volume gives the right km per week
+  mutate(
+    km_sem   = as.numeric(stats::filter(km, 7 * (28:1) / sum(28:1), sides = 1)),
+    # Gaussian smoothing (sd = 1 day, truncated at +/- 2 days) to remove day-to-day jaggedness
+    km_sem_s = as.numeric(stats::filter(km_sem, dnorm(-2:2) / sum(dnorm(-2:2)), sides = 2))
+  )
+
+weekly <- daily %>%
+  count(semaine = floor_date(date, "week", week_start = 1), wt = km, name = "km") %>%
+  filter(semaine + 6 < today())  # drop current incomplete week
+
+extras <- tibble::tribble(
+  ~date,      ~nom,
+  "22/09/24", "Viaduc de Millau",
+  "17/11/24", "Semi Vénissieux",
+  "27/06/26", "Marathon Vercors",
+  "30/08/26", "Dagnarde 20K"
+) %>% 
+  mutate(date = dmy(date))
+
+courses <- all %>% 
+  filter(!prevu, course != "Test VMA", date >= dmy("01/09/24")) %>% 
+  mutate(nom = case_when(
+    course == "Semi-marathon" ~ paste("Semi", ville),
+    course == "10 km"         ~ paste("10K", ville),
+    course == "Marathon"      ~ paste("Marathon", ville),
+    TRUE                      ~ as.character(course)
+  )) %>% 
+  select(date, nom) %>% 
+  bind_rows(extras) %>% 
+  distinct(date, .keep_all = TRUE)  # avoid duplicates if a race is later added to `all`
+
+library(ggplot2)
+ggplot() +
+  theme_bw(13) +
+  geom_vline(aes(xintercept = date), data = courses, linetype = "dotted", color = "chartreuse4") +
+  geom_text(aes(date, Inf, label = nom), data = courses, angle = 35, color = "chartreuse4",
+            hjust = 0, vjust = -0.5, size = 2.5, nudge_y = 1) +
+  geom_line(aes(date, km_sem_s), data = daily, linewidth = 1, color = "#C77CFF", na.rm = TRUE) +
+  geom_smooth(aes(semaine + 3.5, km), data = weekly, 
+              method = "loess", span = 1.5, linetype = "22"
+,              formula = y ~ x, se = FALSE, color = "black", linewidth = 0.8) +
+  scale_y_continuous(breaks = seq(0, 150, by = 10), limits = c(0, NA)) +
+  scale_x_date(
+    breaks = dmy(paste0("01/09/", 24:(year(today()) - 2000))),
+    date_labels = "%d/%m/%y",
+    date_minor_breaks = "1 month",
+    limits = c(dmy("01/09/24"), today()),
+    expand = expansion(mult = c(0.02, 0.02))
+  ) +
+  coord_cartesian(clip = "off") +
+  theme(panel.grid.major = element_line(color = "gray60", linewidth = 0.2),
+        panel.grid.minor = element_line(color = "gray60", linewidth = 0.2),
+        plot.margin = margin(t = 50, r = 30, b = 5, l = 5)) +
+  labs(x = NULL, y = "Volume hebdo (km)")
+```
+
 
 ## Les entraîneurs {-}
 
@@ -178,4 +284,4 @@ Vincent et moi (Florian) sommes en cours de formation.
 ## Remerciements {-}
 
 Merci aux entraîneurs pour leurs réponses à mes questions et leurs retours sur ce guide.
-Merci aussi à Vincent, Sylvie, Sébastien, Mélanie et Cécile. 
+Merci aussi à Vincent R., Sylvie L., Sébastien D., Mélanie D. et Cécile G.. 
