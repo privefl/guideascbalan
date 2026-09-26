@@ -74,42 +74,65 @@ DHL5K <- tibble::tribble(
   mutate(course = "5K DHL Aarhus", dist = 5) %>% 
   print()
 
+objectifs <- tibble::tribble(
+  ~course,         ~date,      ~chrono,   ~dist,
+  "Semi-marathon", "07/03/27", "1:20:00", 21.1,
+  "10 km",         "11/04/27", "36:30",   10
+) %>% 
+  mutate(prevu = TRUE) %>% 
+  print()
+
 parse_chrono <- function(x) {
   x2 <- ifelse(grepl("^\\d{1,2}:\\d{2}$", x), paste0("00:", x), x)
   hms(x2) / hours(1)
 }
 
-all <- bind_rows(tests_VMA, marathons, semis, `10K`, DHL5K) %>% 
+all <- bind_rows(tests_VMA, marathons, semis, `10K`, DHL5K, objectifs) %>% 
   mutate(
     date    = dmy(date),
     course  = factor(course, c("Test VMA", "5K DHL Aarhus", "10 km", "Semi-marathon", "Marathon")),
-    vitesse = ifelse(!is.na(vitesse), vitesse, dist / parse_chrono(chrono))
+    vitesse = ifelse(!is.na(vitesse), vitesse, dist / parse_chrono(chrono)),
+    prevu   = coalesce(prevu, FALSE)
   ) %>% 
   print()
+
+# Last actual result + target, for each course that has a target
+proj <- all %>% 
+  group_by(course) %>% 
+  filter(any(prevu), prevu | date == max(date[!prevu])) %>% 
+  ungroup()
 ```
 
 
-```{r, echo=FALSE, out.width="95%"}
+```{r, echo=FALSE, out.width="100%"}
 library(ggplot2)
 ggplot(all, aes(date, vitesse, color = course, label = ville)) +
   theme_bw(13) + 
-  geom_point(size = 3) + 
-  geom_line(linewidth = 1) +
+  geom_point(data = filter(all, !prevu), size = 3) + 
+  geom_point(data = filter(all, prevu), size = 2.5, shape = 1, stroke = 1.2,
+             show.legend = FALSE) + 
+  geom_line(data = filter(all, !prevu), linewidth = 1) +
+  geom_line(data = proj, aes(linetype = "Objectif"), linewidth = 1,
+            show.legend = c(color = FALSE, linetype = TRUE)) +
+  scale_linetype_manual(values = c(Objectif = "22"), name = NULL) +
+  guides(color    = guide_legend(order = 1),
+         linetype = guide_legend(override.aes = list(color = "black"))) +
   # geom_smooth() +
   scale_y_continuous(breaks = 1:25, minor_breaks = seq(1, 25, by = 0.2)) +
   scale_x_date(
     breaks = dmy(paste0("01/09/", 22:(year(today()) - 2000))),
     date_labels = "%d/%m/%y", 
     date_minor_breaks = "1 month",
-    limits = c(dmy("01/09/22"), today()),
-    expand = expansion(mult = c(0.02, 0.02)),  # no expansion on left, small on right
+    limits = c(dmy("01/09/22"), max(today(), all$date)),
+    expand = expansion(mult = c(0.02, 0.03)),
     sec.axis = dup_axis(breaks = as.Date("1993-03-21") + years(30:100),
                         labels = paste(30:100, "ans"), name = NULL)
   ) +
   theme(legend.position = "top",
-        legend.text = element_text(margin = margin(l = 3, r = 6, unit = "pt")),
-        panel.grid.major = element_line(color = "grey50", size = 0.6),
-        panel.grid.minor = element_line(color = "gray70", size = 0.2),
+        legend.spacing.x = unit(0.6, "cm"),
+        legend.text = element_text(margin = margin(l = 2.5, r = 5, unit = "pt")),
+        panel.grid.major = element_line(color = "grey50", linewidth = 0.6),
+        panel.grid.minor = element_line(color = "gray70", linewidth = 0.2),
         plot.margin = margin(t = 5, r = 15, b = 5, l = 5),
         legend.key.width = unit(1, "cm")) +
   labs(x = NULL, y = "Vitesse (km/h)", color = NULL)
