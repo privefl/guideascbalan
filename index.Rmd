@@ -131,7 +131,7 @@ ggplot(all, aes(date, vitesse, color = course, label = ville)) +
   theme(legend.position = "top",
         legend.spacing.x = unit(0.6, "cm"),
         legend.text = element_text(margin = margin(l = 2.5, r = 5, unit = "pt")),
-        panel.grid.major = element_line(color = "grey50", linewidth = 0.6),
+        panel.grid.major = element_line(color = "grey50", linewidth = 0.35),
         panel.grid.minor = element_line(color = "gray70", linewidth = 0.2),
         plot.margin = margin(t = 5, r = 15, b = 5, l = 5),
         legend.key.width = unit(1, "cm")) +
@@ -222,7 +222,8 @@ courses <- all %>%
 library(ggplot2)
 ggplot() +
   theme_bw(13) +
-  geom_vline(aes(xintercept = date), data = courses, linetype = "dotted", color = "chartreuse4") +
+  geom_vline(aes(xintercept = date), data = courses,
+             linewidth = 0.6, linetype = "22", color = "chartreuse4") +
   geom_text(aes(date, Inf, label = nom), data = courses, angle = 35, color = "chartreuse4",
             hjust = 0, vjust = -0.5, size = 2.5, nudge_y = 1) +
   geom_line(aes(date, km_sem_s), data = daily, linewidth = 1, color = "#C77CFF", na.rm = TRUE) +
@@ -238,8 +239,8 @@ ggplot() +
     expand = expansion(mult = c(0.02, 0.02))
   ) +
   coord_cartesian(clip = "off") +
-  theme(panel.grid.major = element_line(color = "gray60", linewidth = 0.2),
-        panel.grid.minor = element_line(color = "gray60", linewidth = 0.2),
+  theme(panel.grid.major = element_line(color = "gray50", linewidth = 0.35),
+        panel.grid.minor = element_line(color = "gray70", linewidth = 0.2),
         plot.margin = margin(t = 50, r = 30, b = 5, l = 5)) +
   labs(x = NULL, y = "Volume hebdo (km)")
 ```
