@@ -189,7 +189,7 @@ daily <- runs %>%
   # trailing 28-day weighted mean, linearly decreasing weights (lag 0 first),
   # scaled so that a constant daily volume gives the right km per week
   mutate(
-    km_sem   = as.numeric(stats::filter(km, 7 * (28:1) / sum(28:1), sides = 1)),
+    km_sem   = as.numeric(stats::filter(km, 7 * (21:1) / sum(21:1), sides = 1)),
     # Gaussian smoothing (sd = 1 day, truncated at +/- 2 days) to remove day-to-day jaggedness
     km_sem_s = as.numeric(stats::filter(km_sem, dnorm(-2:2) / sum(dnorm(-2:2)), sides = 2))
   )
