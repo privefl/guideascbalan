@@ -133,7 +133,7 @@ ggplot(all, aes(date, vitesse, color = course, label = ville)) +
         legend.text = element_text(margin = margin(l = 2.5, r = 5, unit = "pt")),
         panel.grid.major = element_line(color = "grey50", linewidth = 0.35),
         panel.grid.minor = element_line(color = "gray70", linewidth = 0.2),
-        plot.margin = margin(t = 5, r = 15, b = 5, l = 5),
+        plot.margin = margin(t = 5, r = 20, b = 5, l = 5),
         legend.key.width = unit(1, "cm")) +
   labs(x = NULL, y = "Vitesse (km/h)", color = NULL)
 ```
@@ -145,15 +145,21 @@ library(dplyr)
 library(lubridate)
 library(httr2)
 
-get_runs <- function(oldest = "2024-08-01", cache = "runs.tsv") {
+get_runs <- function(oldest = "2024-08-06", cache = "runs.tsv", max_age = 7, force = FALSE) {
+  old <- if (file.exists(cache)) {
+    # stored as local Paris time (no "Z"): parse as such
+    readr::read_tsv(cache, col_types = readr::cols(id = "c", start = "c", .default = "d")) %>%
+      mutate(start = ymd_hms(start, tz = "Europe/Paris"))
+  } else NULL
+  # skip the API call if the cache was updated recently enough
+  if (!force && !is.null(old) &&
+      difftime(now(), file.mtime(cache), units = "days") < max_age) {
+    return(old)
+  }
   key <- Sys.getenv("INTERVALS_API_KEY")
   if (key == "") {
     stop("INTERVALS_API_KEY not found. Set it in ~/.Renviron, then run readRenviron('~/.Renviron').")
   }
-  old <- if (file.exists(cache)) {
-    # stored in UTC by write_tsv(): convert (not force) back to Paris time
-    readr::read_tsv(cache, col_types = "cTd") %>% mutate(start = with_tz(start, "Europe/Paris"))
-  } else NULL
   # fetch from last cached day (inclusive, in case of several runs that day)
   from <- if (is.null(old)) oldest else as.character(as_date(max(old$start, na.rm = TRUE)))
   if (is.na(from)) stop("Could not determine last cached date: check ", cache)
@@ -170,14 +176,25 @@ get_runs <- function(oldest = "2024-08-01", cache = "runs.tsv") {
   if (nrow(new) > 0) {
     new <- new %>%
       filter(type %in% c("Run", "TrailRun", "VirtualRun")) %>%
-      transmute(id, start = ymd_hms(start_date_local, tz = "Europe/Paris"),
-                km = round(distance / 1000, 2)) %>%
+      transmute(
+        id, start = ymd_hms(start_date_local, tz = "Europe/Paris"),
+        km        = round(distance / 1000, 2),
+        duree_min = round(moving_time / 60, 1),
+        fc_moy    = average_heartrate,
+        fc_max    = max_heartrate,
+        # share of time above HR zone 2 (zones as configured in intervals.icu)
+        frac_z3plus = round(sapply(icu_hr_zone_times, function(z) {
+          if (length(z) < 3 || sum(z) == 0) NA else sum(z[-(1:2)]) / sum(z)
+        }), 3)
+      ) %>%
       filter(!is.na(km))  # activities without distance (e.g. manual entries)
   }
   runs <- bind_rows(new, old) %>%
     distinct(id, .keep_all = TRUE) %>%  # overlapping day: keep fresh version
     arrange(desc(start))
-  readr::write_tsv(runs, cache)
+  runs %>%
+    mutate(start = format(start, "%Y-%m-%d %H:%M:%S")) %>%  # local Paris time, no "Z"
+    readr::write_tsv(cache)
   runs
 }
 
@@ -232,7 +249,7 @@ ggplot() +
 ,              formula = y ~ x, se = FALSE, color = "black", linewidth = 0.8) +
   scale_y_continuous(breaks = seq(0, 150, by = 10), limits = c(0, NA)) +
   scale_x_date(
-    breaks = dmy(paste0("01/09/", 24:(year(today()) - 2000))),
+    breaks = seq(dmy("01/09/24"), today(), by = "6 months"),
     date_labels = "%d/%m/%y",
     date_minor_breaks = "1 month",
     limits = c(dmy("01/09/24"), today()),
