@@ -2,7 +2,7 @@ library(dplyr)
 library(lubridate)
 library(httr2)
 
-get_runs <- function(oldest = "2024-08-06", cache = "runs.tsv", max_age = 7, force = FALSE) {
+get_runs <- function(oldest = "2024-08-06", cache = "runs.tsv", max_age = 0, force = FALSE) {
   old <- if (file.exists(cache)) {
     # stored as local Paris time (no "Z"): parse as such
     readr::read_tsv(cache, col_types = readr::cols(id = "c", start = "c", .default = "d")) %>%
