@@ -8,4 +8,6 @@ _bookdown_files
 render*.rds
 /.quarto/
 **/*.quarto_ipynb
-runs.tsv
+runs*.tsv
+transcripts/*.vtt
+transcripts/todo.txt
