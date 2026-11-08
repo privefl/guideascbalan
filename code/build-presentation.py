@@ -40,6 +40,12 @@ BLOBS = {
     "d8ee2c57f4beb518e9e525db1c80f584": "vincent.png",
     "4652d9ccd662f51dd8278e037628cfdc": "florian.png",
     "2514851456848f45b9ef6c7622ee865c": "qr-guide.png",
+    "22d97f464a4afe6d6c0c3f833bf0054f": "fig-ef.png",
+    "ed3c8608953a78e39a5286f3473d9a4c": "fig-volume.png",
+    "9909670c97a13e53a3a7f5a79170be70": "fig-vma-seuil.png",
+    "4d6144de798ec8c1f5f9f34ae5de7a33": "fig-ef.png",
+    "32488966273a896b30a92c0b45f168c6": "fig-volume.png",
+    "979baf13c754e1c26449c26462e70866": "fig-vma-seuil.png",
     "8fb6e6f69b44a25f4cb38c4d4df3e019": "logo-negatif.png",
 }
 
