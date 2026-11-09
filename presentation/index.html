@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="robots" content="noindex">
 <title>Bonnes pratiques du coureur · ASC Balan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +15,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;background:#120b17;overflow:hidden}
 body{font-family:'Rubik',Arial,sans-serif;color:#22162B}
-#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+#stage{position:fixed;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
 .slide{position:absolute!important;left:0;top:0;width:1920px;height:1080px;overflow:hidden;display:none}
 .slide.current{visibility:visible}
 .slide:not(.current){display:none!important}
@@ -1559,14 +1562,17 @@ body:hover #ui,#ui:focus-within{opacity:1}
 <div id="bar"><span></span></div>
 <span id="count"></span>
 <button id="fs" aria-label="Plein écran">⛶</button>
+<span id="hint" style="display:none">Plein écran : Partager › Sur l’écran d’accueil</span>
 </div>
 <script>
 (function(){
   var slides=[].slice.call(document.querySelectorAll('.slide')), i=0;
   var stage=document.getElementById('stage');
   function fit(){
-    var s=Math.min(innerWidth/1920, innerHeight/1080);
-    stage.style.transform='scale('+s+') translate(-50%,-50%)';
+    // fixed stage scaled and centred in px: an off-screen 1920px box would widen the
+    // layout viewport on phones and break the fit
+    var W=innerWidth, H=innerHeight, s=Math.min(W/1920, H/1080);
+    stage.style.transform='translate('+(W-1920*s)/2+'px,'+(H-1080*s)/2+'px) scale('+s+')';
   }
   function show(n){
     i=Math.max(0,Math.min(slides.length-1,n));
@@ -1576,6 +1582,7 @@ body:hover #ui,#ui:focus-within{opacity:1}
     if(location.hash!=='#'+(i+1)) history.replaceState(null,'','#'+(i+1));
   }
   addEventListener('resize',fit);
+  addEventListener('orientationchange',function(){setTimeout(fit,200)});
   addEventListener('keydown',function(e){
     if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>=0){e.preventDefault();show(i+1)}
     else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>=0){e.preventDefault();show(i-1)}
@@ -1583,9 +1590,26 @@ body:hover #ui,#ui:focus-within{opacity:1}
     else if(e.key==='End') show(slides.length-1);
     else if(e.key==='f'||e.key==='F') toggleFs();
   });
+  // Fullscreen API with the WebKit prefix (older Safari, iPad); iPhone Safari has no
+  // fullscreen for pages, so the button is hidden there and a hint is shown instead.
+  var root=document.documentElement;
+  var reqFs=root.requestFullscreen||root.webkitRequestFullscreen;
+  var exitFs=document.exitFullscreen||document.webkitExitFullscreen;
+  function fsElement(){return document.fullscreenElement||document.webkitFullscreenElement}
   function toggleFs(){
-    if(document.fullscreenElement) document.exitFullscreen();
-    else if(document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    if(fsElement()) exitFs.call(document);
+    else if(reqFs){
+      var p=reqFs.call(root);
+      if(p&&p.then) p.then(function(){
+        if(screen.orientation&&screen.orientation.lock) screen.orientation.lock('landscape').catch(function(){});
+      }).catch(function(){});
+    }
+  }
+  if(!reqFs){
+    var b=document.getElementById('fs'); b.style.display='none';
+    var hint=document.getElementById('hint');
+    var standalone=window.navigator.standalone||matchMedia('(display-mode: standalone)').matches;
+    if(hint&&!standalone) hint.style.display='inline';
   }
   document.getElementById('prev').onclick=function(e){e.stopPropagation();show(i-1)};
   document.getElementById('next').onclick=function(e){e.stopPropagation();show(i+1)};
