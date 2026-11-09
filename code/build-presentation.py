@@ -47,6 +47,9 @@ BLOBS = {
     "32488966273a896b30a92c0b45f168c6": "fig-volume.png",
     "979baf13c754e1c26449c26462e70866": "fig-vma-seuil.png",
     "8fb6e6f69b44a25f4cb38c4d4df3e019": "logo-negatif.png",
+    "2e4b6dd472295d5cf6805f63b37f7ed0": "montre-rond1.png",
+    "2aaa2aa342cbf1922a34937f78c0040c": "montre-rond2.png",
+    "452d41879d8269d69908d0d76bc6225f": "montre-rond3.png",
 }
 
 # Phosphor icons (MIT, bold weight) replacing the Slides <x-icon> set
