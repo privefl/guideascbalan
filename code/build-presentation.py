@@ -26,6 +26,8 @@ OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("presentation")
 
 # artifact asset id (/_blob/<id>) -> image file name
 BLOBS = {
+    "ceea963411974d778208cd04747379b1": "intervals-forme2.png",
+    "747eef17c14218169dd09fab47430cb9": "intervals-forme.png",
     "47878551ffbd6dd6ddb9fbc1c91402d2": "fig-volume.png",
     "254d8dc34a8ff1fb5a84c403e0267422": "fig-ef.png",
     "faf3fe44593c0fb677a6484914f98314": "fig-vma-seuil.png",
