@@ -119,7 +119,7 @@ page = f"""<!doctype html>
 html,body{{height:100%;background:#120b17;overflow:hidden}}
 body{{font-family:'Rubik',Arial,sans-serif;color:#22162B}}
 #stage{{position:fixed;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}}
-.slide{{position:absolute!important;left:0;top:0;width:1920px;height:1080px;overflow:hidden;display:none}}
+.slide{{position:absolute!important;left:0;top:0;width:1920px;height:1080px;overflow:hidden;display:block}}
 .slide.current{{visibility:visible}}
 .slide:not(.current){{display:none!important}}
 .slide>*:not([style*="position:absolute"]):not([style*="position: absolute"]){{flex-shrink:0}}
