@@ -5,8 +5,8 @@ WORDS_TO_IGNORE <- c(
   "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", 
   "Wall", "External", "Lunges", "Thread", "Needle", "Rainbow", "Ballerina", 
   "Opener", "Side", "Through")
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # La gestion de l'entraînement {-}

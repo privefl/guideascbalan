@@ -1,8 +1,8 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("apps", "Connect", "Coros", "Forerunner", "Garmin",
                      "icu", "intervals", "l'EF", "lap", "running")
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # Utiliser une montre running {-}

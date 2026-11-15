@@ -1,9 +1,9 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("d'EF", "allureCourse", "allureVMA", "WhatsApp")
-source("knitr-options.R")
-source("spelling-check.R")
-source("runs.R")
-source("courses.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
+source("code/runs.R")
+source("code/courses.R")
 ```
 
 # Les différents types d'entraînements et leur rôle {-}

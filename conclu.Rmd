@@ -1,6 +1,6 @@
 ```{r setup, include=FALSE}
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # Conclusion {-}

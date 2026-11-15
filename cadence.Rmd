@@ -1,7 +1,7 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("playlist", "tendinopathies")
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # La cadence de course et son importance {-}

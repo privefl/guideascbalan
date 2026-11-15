@@ -1,7 +1,7 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("testvma", "text", "left", "right", "RPE", "of", "Perceived", "Exertion", "Garmin", "Connect")
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # VMA et FCM : Comprendre les fondamentaux {-}

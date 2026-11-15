@@ -54,6 +54,8 @@ extras <- tibble::tribble(
   "01/09/24", "Dagnarde 20K",
   "22/09/24", "Viaduc de Millau",
   "17/11/24", "Semi Vénissieux",
+  "14/09/25", "Bike & Run Annecy",
+  "26/04/26", "20K Blyes",
   "27/06/26", "Marathon Vercors",
   "30/08/26", "Dagnarde 20K",
   "10/10/26", "Marathon relais"

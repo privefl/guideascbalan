@@ -1,7 +1,7 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("médio-pied", "running", "supinatrice", "Ambérieu", "i-run", "achilléenne", "tendinopathie")
-source("knitr-options.R")
-source("spelling-check.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
 ```
 
 # Choisir ses chaussures de running {-}

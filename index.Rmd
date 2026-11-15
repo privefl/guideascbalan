@@ -1,9 +1,9 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c("guideascbalan", "ly")
-source("knitr-options.R")
-source("spelling-check.R")
-source("runs.R")
-source("courses.R")
+source("code/knitr-options.R")
+source("code/spelling-check.R")
+source("code/runs.R")
+source("code/courses.R")
 ```
 
 # Introduction {-}

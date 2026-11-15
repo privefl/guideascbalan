@@ -1,6 +1,6 @@
 ```{r setup, include=FALSE}
 WORDS_TO_IGNORE <- c()
-source("knitr-options.R")
+source("code/knitr-options.R")
 ```
 
 # Suivi des licenciés {-}
