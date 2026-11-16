@@ -1,4 +1,5 @@
 ```{r setup, include=FALSE}
+WORDS_TO_IGNORE <- c("aquajogging", "cardio", "Doliprane", "Efferalgan")
 source("code/knitr-options.R")
 source("code/spelling-check.R")
 ```
@@ -56,27 +57,74 @@ Des exemples concrets d'exercices sont aussi donnés dans la section dédiée au
 
 Certains signaux du corps doivent alerter. Ce ne sont pas de simples douleurs normales, mais des signes d'alerte :
 
-- Douleur qui apparaît toujours au même moment (durée, allure, terrain)
+- Douleur qui apparaît toujours au même moment (même durée, même allure, même terrain)
 
-- Douleur persistante après l'effort
+- Douleur persistante après l'effort, ou le lendemain
 
 - Sensation de raideur inhabituelle, perte de mobilité
 
-- Fatigue durable, troubles du sommeil, irritabilité
+- Fatigue durable, courbatures permanentes, troubles du sommeil, irritabilité, perte de motivation
+
+Avoir des courbatures après une séance inhabituelle est normal ; en avoir tout le temps ne l'est pas.
+Et l'envie d'aller courir qui disparaît est aussi un signe de surmenage.
 
 Ces manifestations indiquent un déséquilibre ou une surcharge. Il ne faut pas les banaliser.
+
+
+## Une gêne ? Une règle décidée à l'avance {-}
+
+L'idée : ne pas décider à l'humeur, le jour où on a très envie de courir, mais suivre une règle fixée à l'avance.
+
+| Niveau | Ce qu'on ressent | Ce qu'on fait |
+|----------|--------------------------------------|----------------------------------------------------|
+| 0 | Rien | On suit le plan |
+| 1 | Une gêne, la foulée ne change pas | Rien de plus intense que le seuil, volume inchangé, et on surveille |
+| 2 | La douleur modifie la foulée | Plus d'intensité : footings seulement |
+| 3 | On boite en marchant | Arrêt de la course, et on consulte si ça ne passe pas en quelques jours |
+
+Et pendant la sortie, trois questions :
+
+- **Quel type de douleur ?** Aiguë, en coup de poignard : drapeau rouge. Une gêne sourde est souvent gérable.
+
+- **Est-ce qu'elle augmente au fil des kilomètres ?** Si oui, on rentre : on est en train d'aggraver.
+
+- **Est-ce qu'elle modifie la foulée ?** Si oui, on rentre.
+
+Ce sont des repères de coachs, pas un avis médical.
 
 
 ## Bons réflexes en cas de douleur {-}
 
 En cas de douleur, il est essentiel d'adapter l'entraînement :
 
-- Réduire le volume, l'intensité et la fréquence
-
-- Supprimer temporairement les séances à impact (VMA, côtes, sortie longue)
+- Réduire l'intensité et le volume, et supprimer temporairement les séances à impact (VMA, côtes, sortie longue)
 
 - Ne pas forcer pour suivre un plan à tout prix
+
+- Garder le cardio sans les chocs : vélo, elliptique, natation, aquajogging. Ça entretient le cœur, pas les tendons ni les os : la reprise de la course doit donc rester progressive, même si le cardio est intact.
 
 Si la douleur persiste plus d'une semaine, il faudra consulter un professionnel de santé (médecin du sport, kinésithérapeute, podologue).
 
 Continuer malgré la douleur peut transformer un déséquilibre temporaire en blessure chronique, voire compromettre durablement la pratique de la course à pied.
+
+**Et l'arthrose ?** Courir n'use pas les genoux. Les coureurs loisir ont moins d'arthrose du genou et de la hanche que les sédentaires (environ 3,5 % contre 10 %), et chez ceux qui en ont déjà, courir ne semble pas l'aggraver.
+On peut donc continuer à courir avec de l'arthrose, en adaptant la charge et avec l'avis de son médecin.
+
+## Anti-inflammatoires : ni pour courir, ni par réflexe {-}
+
+**Pas d'anti-inflammatoires (ibuprofène, aspirine…) dans les 48 h avant une course**, ni pendant, pour « anticiper » la douleur :
+
+- **Reins** : avec la déshydratation de l'effort, ils réduisent fortement la filtration rénale et peuvent provoquer une insuffisance rénale aiguë.
+
+- **Estomac et intestins** : ils agressent la muqueuse, alors que la course provoque déjà des micro-saignements. Nausées, vomissements et diarrhées sont parmi les premières causes d'abandon en course longue.
+
+**Ni par réflexe quand on se blesse** : l'inflammation est la première étape de la réparation.
+La bloquer pourrait ralentir la cicatrisation des os, des tendons et des ligaments (montré surtout chez l'animal, mais c'est la position de La Clinique du Coureur).
+Même logique pour la glace : elle soulage, ce qui est acceptable, mais rien ne montre qu'elle aide à guérir.
+
+**Et le paracétamol (Doliprane, Efferalgan…) ?** Il est plus sûr pour les reins et l'estomac, et ne bloque pas l'inflammation.
+Mais il masque aussi la douleur, qui est le signal qu'il faut écouter.
+
+**Besoin d'un médicament pour pouvoir courir ? C'est le signal d'arrêter, pas de traiter.**
+
+Ce sont des repères, pas un avis médical : en cas de traitement prescrit, on en parle à son médecin.

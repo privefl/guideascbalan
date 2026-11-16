@@ -4,7 +4,7 @@ WORDS_TO_IGNORE <- c(
   "Facing", "Forward", "GOWOD", "Hamstring", "Hamstrings", "Hip", "Piriformis", 
   "Prayer", "Quad", "Rack", "Sagittarius", "Sit", "Supine", "The", "Turtle", 
   "Wall", "External", "Lunges", "Thread", "Needle", "Rainbow", "Ballerina", 
-  "Opener", "Side", "Through")
+  "Opener", "Side", "Through", "intervals", "icu", "médio-pied")
 source("code/knitr-options.R")
 source("code/spelling-check.R")
 ```
@@ -73,13 +73,14 @@ Cette charge peut être augmentée de trois façons principales : en jouant sur 
 
 **Cependant, il est important de ne pas augmenter ces trois facteurs en même temps**, et **cette augmentation doit rester raisonnable** (comme 10% par semaine et 50% sur une année).
 Sinon, cela augmenterait considérablement le risque de surentraînement et de blessure.
+Et surtout, jamais le volume et l'intensité ensemble.
 
 L'augmentation progressive de la charge d'entraînement doit être raisonnée.
 En général, il est conseillé de se concentrer sur **un seul facteur à la fois**.
 L'ordre de priorité recommandé est le suivant :
 
 1. **Fréquence** : Si vous faites moins de trois séances par semaine, commencez par augmenter le nombre de séances
-avant d'augmenter la durée ou l'intensité. Ajouter une séance supplémentaire (comme une séance courte d'endurance fondamentale) permet de mieux répartir le volume et de favoriser la récupération active.
+avant d'augmenter la durée ou l'intensité. Ajouter une séance supplémentaire (comme une séance courte d'endurance fondamentale) permet de mieux répartir le volume et de favoriser la récupération active. Courir un peu plus souvent vaut mieux que courir beaucoup trois fois.
 
 2. **Volume** : Une fois que vous avez stabilisé votre fréquence hebdomadaire, vous pouvez progressivement augmenter
 la durée ou la distance totale de vos séances. Cela aide à développer l'endurance. Respectez la règle des 10 %,
@@ -88,18 +89,59 @@ c'est-à-dire n'augmentez pas le volume total de plus de 10 % par semaine (et 50
 3. **Intensité** : Enfin, une fois que vous êtes à l'aise avec la fréquence et le volume, vous pouvez commencer
 à ajouter ou augmenter des séances plus intenses (comme du fractionné ou des courses à allure spécifique).
 Cependant, veillez à ce que les séances intensives restent bien espacées et que la récupération soit suffisante.
+Exemple de progression : un cycle au seuil à la même allure, 5 × 3 min, puis 5 × 4, 5 × 5, 5 × 6. On augmente la durée, pas la vitesse, par paliers d'au moins 4 semaines.
+
+Pour progresser, le levier n°1 reste le volume (fréquence comprise) : au début, ça peut passer par moins de fractionné, le temps que le corps s'habitue.
 
 Ce principe de progressivité vaut aussi pour d'autres aspects :
 
-- Dénivelé : trop de montées ou descentes techniques sans y être préparé.
+- **Dénivelé** : beaucoup de montées ou de descentes techniques sans y être préparé.
 
-- Changement brusque : nouveau type de terrain, nouvelles chaussures, changement de posture, etc.
+- **Terrain** : passer de la route au trail, à l'herbe ou à la piste.
 
-Le corps s'adapte, mais a besoin de temps !
+- **Chaussures** : nouveau modèle, drop plus bas ou plus haut, semelles, ou chaussures à fort retour d'énergie (mousses très réactives, plaque carbone). Ces dernières font travailler différemment les mollets, les tendons d'Achille et les pieds : on les introduit petit à petit, d'abord sur des séances courtes.
+
+- **Foulée** : changer sa cadence ou son attaque de pied. La changer déplace la contrainte, elle ne la supprime pas : attaquer par le talon fait travailler davantage le genou et la hanche, attaquer par le médio-pied ou l'avant-pied davantage le mollet et le tendon d'Achille.
+
+Le corps s'adapte, mais pas partout à la même vitesse : **le cœur et le souffle progressent en quelques semaines, alors que les tendons, les os et les ligaments mettent des mois.**
 Un stress trop brutal crée des micro-lésions, puis des douleurs, et enfin des blessures.
 
 
 ## Gestion de la fatigue et prévention du surentraînement {-}
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/adaptation.png")
+```
+
+Ce schéma de principe vient de La Clinique du Coureur. Entre deux limites se trouve la **zone d'adaptation** :
+
+- **En rouge, la capacité maximale** : la charge que le corps peut absorber, et surtout les tissus (tendons, os, muscles). Au-dessus, le risque de blessure est bien plus élevé.
+
+- **En vert, le stress minimal** : en dessous, la charge d'entraînement, accumulée sur les semaines, est trop faible pour déclencher des adaptations : on se maintient, sans progresser.
+
+Entre les deux, on progresse, et les deux lignes montent avec le temps, lentement.
+Mais si on dépasse le plafond trop souvent, il ne monte plus : **il baisse**.
+On peut alors se blesser avec des charges qui passaient très bien avant. C'est le surmenage.
+
+Et la charge, ce n'est pas que la course : le stress du travail, le manque de sommeil, la fatigue s'y ajoutent.
+Une séance qui passe sans problème une semaine tranquille peut faire franchir la ligne rouge une semaine chargée.
+**Grosse semaine au travail, nuits courtes ? On allège l'entraînement, sans culpabiliser.**
+
+**Comment savoir où on en est ?** Le site gratuit intervals.icu estime votre forme et votre fatigue à partir de vos séances. Dans l'onglet « Condition physique » :
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/intervals-forme2.png")
+```
+
+- **Vert (« Optimal »)** : c'est là qu'on veut être à l'entraînement.
+
+- **Gris** : acceptable à l'entraînement.
+
+- **Bleu (« Frais »)** : le matin d'une course, pour arriver avec un peu de fraîcheur.
+
+- **Rouge (« Risque élevé »)** : jamais, c'est un signe de surentraînement.
+
+Ça prend 5 minutes à mettre en place, et c'est expliqué dans la section [Suivi des licenciés](suivi.html). Vincent et moi pouvons aussi suivre vos séances.
 
 Il est crucial d'écouter son corps et de reconnaître les signes de fatigue.
 Le surentraînement accroît drastiquement les risques de blessures, et peut aussi entraîner une diminution des performances.
