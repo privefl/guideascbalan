@@ -321,7 +321,35 @@ ul.task-list li input[type="checkbox"] {
 <p>La séance du jeudi s’y prête bien. En préparation générale (non spécifique), on pourra courir “au seuil”. Ou bien, en EF.</p>
 <section id="allureCourse" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="allureCourse">Estimation des vitesses et temps de course</h3>
-<p><label for="vmaInput1">Entrez votre VMA (km/h) :</label> <input type="number" id="vmaInput1" value="15" step="0.1" size="4"></p>
+<p><label for="vmaInput1">Entrez votre VMA (km/h) :</label>
+<input type="number" id="vmaInput1" value="15" step="0.1" size="4" autocomplete="off"></p>
+
+<p style="margin-top: 15px;"><b>Estimer votre résistance avec :</b>
+<label style="margin-left: 10px;"><input type="radio" name="ieMode" id="modeNiveau" checked="" autocomplete="off"> le curseur</label>
+<label style="margin-left: 10px;"><input type="radio" name="ieMode" id="modeCourse" autocomplete="off"> une course récente</label></p>
+
+<div id="blocCourse" style="display: none; margin-bottom: 10px;">
+<label for="courseDist">Distance :</label>
+<select id="courseDist" autocomplete="off">
+  <option value="">(choisir)</option>
+  <option value="5">5 km</option>
+  <option value="10">10 km</option>
+  <option value="21.0975">Semi-marathon</option>
+  <option value="42.195">Marathon</option>
+</select>
+<label for="courseChrono" style="margin-left: 25px;">Chrono :</label>
+<input type="text" id="courseChrono" placeholder="40:14 ou 1:23:48" size="14" autocomplete="off">
+</div>
+
+<div style="max-width: 560px;">
+<label for="niveauInput">Votre résistance : <b id="niveauVal">3,0</b> sur 5</label>
+<input type="range" id="niveauInput" min="1" max="5" step="0.1" value="3" list="niveauTicks" autocomplete="off" style="width: 100%; display: block;">
+<datalist id="niveauTicks"><option value="1"></option><option value="2"></option><option value="3"></option><option value="4"></option><option value="5"></option></datalist>
+<div style="display: flex; justify-content: space-between; padding: 0 8px;"><span style="width: 0; display: flex; justify-content: center;">1</span><span style="width: 0; display: flex; justify-content: center;">2</span><span style="width: 0; display: flex; justify-content: center;">3</span><span style="width: 0; display: flex; justify-content: center;">4</span><span style="width: 0; display: flex; justify-content: center;">5</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 0.85em; color: #666; margin-bottom: 20px;"><span>Débutant</span><span>Moyenne</span><span>Très endurant</span></div>
+</div>
+
+<p id="ieInfo" style="margin-top: 10px;"></p>
 <div style="overflow-x: auto; max-width: 100%;">
 <table style="margin-top: 10px; border-collapse: collapse; width: 100%; text-align: center; font-family: sans-serif;">
 <thead>
@@ -336,89 +364,21 @@ Vitesse estimée<br>(km/h)
 Allure estimée<br>(min/km)
 </th>
 <th style="border: 1px solid #ccc; padding: 6px;">
+% VMA
+</th>
+<th style="border: 1px solid #ccc; padding: 6px;">
 Chrono estimé
 </th>
 </tr>
 </thead>
 <tbody id="resultsBody">
-<!-- Lignes générées dynamiquement -->
+<!-- Lignes générées par code/allures.js -->
 </tbody>
 </table>
 </div>
-<script>
-const courses = {
-  "5 km":          { a: -0.3275719, distance: 5 },
-  "10 km":         { a: -0.3830789, distance: 10 },
-  "Semi-marathon": { a: -0.4427105, distance: 21.097 },
-  "Marathon":      { a: -0.53,      distance: 42.195 }
-};
-
-const exponent = 1.08;
-
-function computeSpeed(vma, a) {
-  return Math.exp(a + exponent * Math.log(vma));
-}
-
-function speedToPace(speed) {
-  const s = Math.round(3600 / speed);
-  return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, '0')}`;
-}
-
-function timeFromSpeed(distance, speed) {
-  const totalMinutes = (distance / speed) * 60;
-  let h = Math.floor(totalMinutes / 60);
-  let m = Math.floor(totalMinutes % 60);
-  let s = Math.round((totalMinutes - h * 60 - m) * 60);
-  if (s === 60) {
-    s = 0;
-    m += 1;
-    if (m === 60) {
-      m = 0;
-      h += 1;
-    }
-  }
-  
-  const mm = m.toString().padStart(2, '0');
-  const ss = s.toString().padStart(2, '0');
-
-  if (h === 0) {
-    return `${mm}:${ss}`;
-  } else {
-    return `${h}:${mm}:${ss}`;
-  }
-}
-
-function updateTable(vma) {
-  const tbody = document.getElementById("resultsBody");
-  tbody.innerHTML = "";
-
-  for (const [course, { a, distance }] of Object.entries(courses)) {
-    const vitesse = computeSpeed(vma, a);
-    const allure = speedToPace(vitesse);
-    const tempsTotal = timeFromSpeed(distance, vitesse);
-
-    const row = `<tr>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${course}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${vitesse.toFixed(2)}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${allure}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${tempsTotal}</td>
-                 </tr>`;
-    tbody.insertAdjacentHTML("beforeend", row);
-  }
-  
-  // ajout seuil
-  const v_seuil = 0.83186 * vma;
-  const allure_seuil = speedToPace(v_seuil);
-  const seuilRow = `<tr>
-                      <td style="border: 1px solid #ccc; padding: 6px;">Seuil (60 min)</td>
-                      <td style="border: 1px solid #ccc; padding: 6px;">${v_seuil.toFixed(2)}</td>
-                      <td style="border: 1px solid #ccc; padding: 6px;">${allure_seuil}</td>
-                      <td style="border: 1px solid #ccc; padding: 6px;">1:00:00</td>
-                    </tr>`;
-  tbody.insertAdjacentHTML("beforeend", seuilRow);
-}
-</script>
-<p>Ce sont des estimations moyennes données sur <a href="https://www.campus.coach/calculateur/vma">Campus</a>, donc avec une marge d’erreur, mais ça devrait déjà donner une bonne idée. J’ai juste changé l’estimation du temps au marathon qui était vraiment pessimiste. Inversement, on pourrait utiliser certaines performances en compétition pour estimer sa VMA.</p>
+<p>Plus une course est longue, plus le pourcentage de sa VMA qu’on peut tenir est faible. L’<strong>indice d’endurance</strong> (Péronnet et Thibault) dit à quelle vitesse ce pourcentage baisse : plus il est proche de zéro, plus on est résistant. C’est pour ça que deux coureurs avec la même VMA peuvent avoir plusieurs minutes d’écart sur un semi. Par exemple, sur mes semis, mon indice est passé de −9,4 en 2023 à −6,6 en 2026, alors que ma VMA n’a gagné qu’environ 11 %.</p>
+<p>Au milieu du curseur (3 sur 5), on retrouve les estimations moyennes du <a href="https://www.campus.coach/calculateur/vma">calculateur Campus</a> utilisées auparavant sur ce guide. Si vous avez une course récente, renseignez-la : l’indice est alors calculé à partir de votre vraie performance, ce qui est bien plus fiable que de choisir un niveau.</p>
+<p>Ce sont des estimations, avec une marge d’erreur : elles dépendent de la qualité du test VMA, et le marathon dépend aussi beaucoup de la nutrition et de la gestion de course.</p>
 </section>
 </section>
 <section id="seuil" class="level2 unnumbered">
@@ -501,69 +461,7 @@ Chrono (par rep)
 </tbody>
 </table>
 </div>
-<script>
-const vmaEfforts = [
-  { distance: 0.200, pourcent: 105, totalMinutes: 12 },
-  { distance: 0.300, pourcent: 102, totalMinutes: 14 },
-  { distance: 0.400, pourcent: 100, totalMinutes: 16 },
-  { distance: 0.500, pourcent: 98,  totalMinutes: 18 },
-  { distance: 1.000, pourcent: 92,  totalMinutes: 24 }
-];
-
-function updateVmaTable(vma) {
-
-  const tbody = document.getElementById("vmaResultsBody");
-  tbody.innerHTML = "";
-
-  vmaEfforts.forEach(({ distance, pourcent, totalMinutes }) => {
-  
-    const speed = vma * (pourcent / 100); // vitesse en km/h
-    const pace = speedToPace(speed);
-
-    const timeMin = (distance / speed) * 60;
-    const reps = totalMinutes / timeMin;
-
-    let m = Math.floor(timeMin);
-    let s = Math.round((timeMin - m) * 60);
-    if (s === 60) {
-      s = 0;
-      m += 1;
-    }
-    const time = m === 0 ? `${s} sec` : `${m} min ${s} sec`;
-
-    const row = `<tr>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${(distance * 1000).toFixed(0)} m</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${pourcent}%</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${totalMinutes} min</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${pace}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">${time}</td>
-                   <td style="border: 1px solid #ccc; padding: 6px;">x ${reps.toFixed(1)}</td>
-                 </tr>`;
-    tbody.insertAdjacentHTML("beforeend", row);
-  });
-}
-</script>
-<script>
-const input1 = document.getElementById('vmaInput1');
-const input2 = document.getElementById('vmaInput2');
-
-function syncInputs(source, target) {
-  if (target.value !== source.value) {
-    target.value = source.value;
-  }
-  const vmaValue = parseFloat(source.value);
-  if (!isNaN(vmaValue)) {
-    updateTable(vmaValue);
-    updateVmaTable(vmaValue);
-  }
-}
-
-input1.addEventListener('input', () => syncInputs(input1, input2));
-input2.addEventListener('input', () => syncInputs(input2, input1));
-
-// Initialisation au chargement
-syncInputs(input1, input2);
-</script>
+<script src="code/allures.js"></script>
 </section>
 </section>
 <section id="endurance-active" class="level2 unnumbered">
